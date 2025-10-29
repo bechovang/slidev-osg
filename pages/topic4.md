@@ -215,7 +215,7 @@ Mỗi phong cách có ưu và nhược điểm riêng, được tối ưu cho nh
   <div class="text-center">
     <div class="i-carbon-security text-8xl text-green-500"></div>
     <p>NTFS</p>
-  </div>
+      </div>
   <div class="text-center">
     <div class="i-carbon-catalog text-8xl text-orange-500"></div>
     <p>ext4</p>
@@ -489,7 +489,7 @@ layout: two-cols-header
   <li v-click><strong>Hơi tốn kém:</strong> Lãng phí nguyên một "khối mục lục" cho các file rất nhỏ.</li>
 </ul>
 </div>
-</div>
+  </div>
 
 
 ::right::
@@ -497,40 +497,214 @@ layout: two-cols-header
 
 
 
-
-
+<!-- ==================================================================== -->
 
 ---
-layout: two-cols
+layout: default
+transition: fade
+---
+
+# Lập Lịch Cho Đĩa
+
+<p class="opacity-80 text-lg">Chiến Lược Di Chuyển Của "Thang Máy" Ổ Cứng</p>
+
+<div class="mt-4 grid grid-cols-2 gap-6 items-center">
+  <div>
+    <v-clicks>
+      <ul class="list-disc pl-5">
+        <li>Tưởng tượng ổ cứng là một <b>tòa nhà</b>, các yêu cầu dữ liệu là <b>những người đợi ở các tầng</b>.</li>
+        <li>"<b>Đầu đọc/ghi</b>" chính là chiếc <b>thang máy</b>.</li>
+        <li>Vấn đề: Thang máy nên di chuyển <b>thế nào</b> để phục vụ mọi người <b>nhanh</b> và <b>tốn ít công</b> nhất?</li>
+        <li>Đây chính là bài toán <b>Lập lịch I/O</b> cho đĩa.</li>
+      </ul>
+    </v-clicks>
+  </div>
+  <div>
+    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnRzbHBrMWZ5NGUxc2VuYTJydjNoeWgwcGlvbHczMjA5OHF6aXJ5ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/P8XjmO1TTX3Nu/giphy.gif" alt="Elevator" class="rounded-lg shadow mx-auto" style="max-width:min(90vw,720px); max-height:50vh; object-fit:contain;"/>
+  </div>
+</div>
+
+---
+layout: default
+transition: fade
+---
+
+## Tình huống thực tế
+
+<div class="opacity-80">Tòa nhà 200 tầng (0–199). Thang máy đang ở <b>tầng 53</b>. Khách đợi tại: <b>98, 183, 37, 122, 14, 124, 65, 67</b>.</div>
+
+<div class="mt-5">
+  <div class="relative mx-auto" style="height:56px; max-width:min(92vw,900px);">
+    <div class="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-1 bg-gray-300 rounded"></div>
+    <!-- ticks -->
+    <div class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 text-[10px]">0</div>
+    <div class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 text-[10px]">199</div>
+    <!-- elevator at 53 -->
+    <div class="absolute" style="left: calc(53/199*100%); top: 4px;">
+      <div class="px-2 py-0.5 text-xs rounded bg-sky-500 text-white shadow">53</div>
+    </div>
+    <!-- requests -->
+    <div class="absolute" style="left: calc(98/199*100%); bottom: 4px;"><div class="w-2 h-2 bg-emerald-500 rounded-full"></div><div class="text-[10px] text-center mt-1">98</div></div>
+    <div class="absolute" style="left: calc(183/199*100%); bottom: 4px;"><div class="w-2 h-2 bg-emerald-500 rounded-full"></div><div class="text-[10px] text-center mt-1">183</div></div>
+    <div class="absolute" style="left: calc(37/199*100%); bottom: 4px;"><div class="w-2 h-2 bg-emerald-500 rounded-full"></div><div class="text-[10px] text-center mt-1">37</div></div>
+    <!-- 122 label above to avoid overlap with 124 -->
+    <div class="absolute flex flex-col items-center" style="left: calc(122/199*100%); bottom: 4px;"><div class="text-[10px] text-center mb-1">122</div><div class="w-2 h-2 bg-emerald-500 rounded-full"></div></div>
+    <div class="absolute" style="left: calc(14/199*100%); bottom: 4px;"><div class="w-2 h-2 bg-emerald-500 rounded-full"></div><div class="text-[10px] text-center mt-1">14</div></div>
+    <!-- 124 stays below -->
+    <div class="absolute" style="left: calc(124/199*100%); bottom: 4px;"><div class="w-2 h-2 bg-emerald-500 rounded-full"></div><div class="text-[10px] text-center mt-1">124</div></div>
+    <!-- 65 label above to avoid overlap with 67 -->
+    <div class="absolute flex flex-col items-center" style="left: calc(65/199*100%); bottom: 4px;"><div class="text-[10px] text-center mb-1">65</div><div class="w-2 h-2 bg-emerald-500 rounded-full"></div></div>
+    <div class="absolute" style="left: calc(67/199*100%); bottom: 4px;"><div class="w-2 h-2 bg-emerald-500 rounded-full"></div><div class="text-[10px] text-center mt-1">67</div></div>
+  </div>
+</div>
+
+<div class="mt-4 opacity-80">Nhiệm vụ: tìm chiến lược di chuyển <b>tốt nhất</b> cho thang máy. Sẽ so sánh 4 chiến lược…</div>
+
+---
+layout: default
 transition: slide-left
 ---
 
-## Tăng Tốc & Bảo Vệ
+## FCFS — "Ai gọi trước, đón trước!"
 
-- <b v-click>Caching & Buffering</b>
-  - Ẩn độ trễ thiết bị, gom/đọc ghi hiệu quả.
-- <b v-click>Disk Scheduling</b>
-  - Ưu tiên thứ tự truy cập giảm seek time.
-  
-:::right::
+<v-clicks>
+<ul class="list-disc pl-5">
+  <li>Hoạt động: Phục vụ đúng <b>thứ tự đến</b>.</li>
+  <li class="opacity-80">Ưu điểm: <b>Công bằng</b>, không ai bị bỏ rơi.</li>
+  <li class="opacity-80">Nhược điểm: <b>Không hiệu quả</b>, đường đi ngoằn ngoèo.</li>
+  <li><b>Kết quả ví dụ</b>: Tổng quãng đường ≈ <b>640 tầng</b> 😱</li>
+</ul>
+</v-clicks>
 
-<div v-click="3" class="p-5 rounded-xl border border-gray-200/60 bg-white/60 dark:bg-white/5">
-  <div class="i-carbon-notebook text-3xl"></div>
-  <div class="mt-2 font-bold">Journaling</div>
-  <div class="text-sm opacity-80">Ghi log siêu dữ liệu để phục hồi sau sự cố.</div>
+<div class="mt-4 text-sm opacity-80">Lộ trình: 53 → 98 → 183 → 37 → 122 → 14 → 124 → 65 → 67</div>
+
+<figure class="mt-4">
+  <img src="/images/FCFS.jpg" alt="FCFS Route" class="rounded-lg shadow mx-auto" style="max-width:min(70vw,720px); max-height:36vh; width:auto; height:auto; object-fit:contain;"/>
+  <figcaption class="text-center mt-2 opacity-70">FCFS: lộ trình minh họa</figcaption>
+</figure>
+
+---
+layout: default
+transition: slide-left
+---
+
+## SSTF — "Ai ở gần nhất, đón trước!"
+
+<v-clicks>
+<ul class="list-disc pl-5">
+  <li>Hoạt động: Luôn chọn yêu cầu <b>gần nhất</b> so với vị trí hiện tại.</li>
+  <li class="opacity-80">Ưu điểm: <b>Giảm đáng kể</b> quãng đường di chuyển.</li>
+  <li class="opacity-80">Nhược điểm: Có thể gây <b>starvation</b> ở vùng xa.</li>
+  <li><b>Kết quả ví dụ</b>: Tổng quãng đường ≈ <b>236 tầng</b> 👍</li>
+</ul>
+</v-clicks>
+
+<div class="mt-4 text-sm opacity-80">Một lộ trình khả dĩ: 53 → 65 → 67 → 37 → 14 → 98 → 122 → 124 → 183</div>
+
+<figure class="mt-4">
+  <img src="/images/SSTF.jpg" alt="SSTF Route" class="rounded-lg shadow mx-auto" style="max-width:min(70vw,720px); max-height:36vh; width:auto; height:auto; object-fit:contain;"/>
+  <figcaption class="text-center mt-2 opacity-70">SSTF: lộ trình minh họa</figcaption>
+</figure>
+
+---
+layout: default
+transition: slide-left
+---
+
+## SCAN — "Thuật toán Thang Máy"
+
+<v-clicks>
+<ul class="list-disc pl-5">
+  <li>Hoạt động: Đi <b>một hướng</b>, phục vụ tất cả yêu cầu trên đường; đến cuối thì <b>đảo chiều</b>.</li>
+  <li class="opacity-80">Ưu điểm: <b>Công bằng</b> hơn SSTF, giảm bỏ rơi.</li>
+  <li class="opacity-80">Nhược điểm: Hơi thiên vị các tầng giữa.</li>
+  <li><b>Kết quả ví dụ</b>: Tổng quãng đường ≈ <b>331 tầng</b>.</li>
+</ul>
+</v-clicks>
+
+<div class="mt-4 text-sm opacity-80">Lộ trình: 53 → 65 → 67 → 98 → 122 → 124 → 183 → 199 → 37 → 14</div>
+
+<figure class="mt-4">
+  <img src="/images/SCAN.jpg" alt="SCAN Route" class="rounded-lg shadow mx-auto" style="max-width:min(70vw,720px); max-height:36vh; width:auto; height:auto; object-fit:contain;"/>
+  <figcaption class="text-center mt-2 opacity-70">SCAN: lộ trình minh họa</figcaption>
+</figure>
+
+---
+layout: default
+transition: slide-left
+---
+
+## C-SCAN — "Thang máy một chiều"
+
+<v-clicks>
+<ul class="list-disc pl-5">
+  <li>Hoạt động: Chỉ đi <b>một chiều</b> (ví dụ: đi lên). Đến đỉnh <b>nhảy về 0</b> (không phục vụ) rồi đi lên lại.</li>
+  <li class="opacity-80">Ưu điểm: Thời gian chờ <b>đồng đều</b> hơn.</li>
+  <li class="opacity-80">Nhược điểm: Có <b>chuyển động lớn</b> không phục vụ.</li>
+  <li><b>Kết quả ví dụ</b>: Tổng quãng đường ≈ <b>382 tầng</b>.</li>
+</ul>
+</v-clicks>
+
+<div class="mt-4 text-sm opacity-80">Lộ trình: 53 → 65 → 67 → 98 → 122 → 124 → 183 → 199 → 0 → 14 → 37</div>
+
+<figure class="mt-4">
+  <img src="/images/C-SCAN.jpg" alt="C-SCAN Route" class="rounded-lg shadow mx-auto" style="max-width:min(70vw,720px); max-height:36vh; width:auto; height:auto; object-fit:contain;"/>
+  <figcaption class="text-center mt-2 opacity-70">C-SCAN: lộ trình minh họa</figcaption>
+</figure>
+
+---
+layout: default
+transition: fade
+---
+
+## Chiến Lược Nào Tốt Nhất?
+
+<div class="overflow-x-auto mt-3">
+  <table class="w-full text-left border-separate border-spacing-y-2">
+    <thead class="text-sm opacity-70">
+      <tr>
+        <th class="px-3">Thuật toán</th>
+        <th class="px-3">Tổng quãng đường</th>
+        <th class="px-3">Tính công bằng</th>
+        <th class="px-3">Ghi chú</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr v-click class="bg-amber/10">
+        <td class="px-3 py-2 font-medium">FCFS</td>
+        <td class="px-3 py-2">640 (Tệ nhất 👎)</td>
+        <td class="px-3 py-2">⭐⭐⭐</td>
+        <td class="px-3 py-2">Đơn giản nhưng không hiệu quả</td>
+      </tr>
+      <tr v-click class="bg-emerald/10">
+        <td class="px-3 py-2 font-medium">SSTF</td>
+        <td class="px-3 py-2">236 (Tốt nhất 👍)</td>
+        <td class="px-3 py-2">⭐</td>
+        <td class="px-3 py-2">Nhanh nhưng có thể bỏ rơi</td>
+      </tr>
+      <tr v-click class="bg-sky/10">
+        <td class="px-3 py-2 font-medium">SCAN</td>
+        <td class="px-3 py-2">331</td>
+        <td class="px-3 py-2">⭐⭐</td>
+        <td class="px-3 py-2">Cân bằng tốt, giống thang máy thật</td>
+      </tr>
+      <tr v-click class="bg-indigo/10">
+        <td class="px-3 py-2 font-medium">C-SCAN</td>
+        <td class="px-3 py-2">382</td>
+        <td class="px-3 py-2">⭐⭐⭐</td>
+        <td class="px-3 py-2">Chờ đồng đều, có nhảy không phục vụ</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
-<div class="relative h-48 w-36 mt-8">
-  <div class="absolute left-1/2 -translate-x-1/2 h-full w-1.5 bg-gray-300 rounded"></div>
-  <div
-    v-motion
-    :initial="{ y: 0 }"
-    :enter="{ y: 0 }"
-    :click-2="{ y: 144 }"
-    class="absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-sky-500 shadow"
-  ></div>
-  <div class="absolute -left-2 top-0 text-xs opacity-60">Đầu đọc</div>
+<div class="mt-3 p-3 rounded border border-gray-200/70 bg-white/60 dark:bg-white/5">
+  <div class="font-bold mb-1">Kết luận</div>
+  <div class="opacity-80 text-sm">Trong thực tế, các biến thể như <b>LOOK</b> và <b>C-LOOK</b> thường được dùng vì cân bằng tốt giữa hiệu suất và công bằng.</div>
 </div>
+
+<!-- End Disk Scheduling block -->
+
 
 ---
 layout: section
