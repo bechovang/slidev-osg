@@ -3,7 +3,7 @@ title: "Topic 4: File Systems & Storage Management"
 mdc: true
 class: "text-left"
 ---
-
+lên
 ---
 layout: cover
 title: Topic 4: File Systems & Storage Management
@@ -79,33 +79,115 @@ transition: zoom-in
 </figure>
 ---
 layout: default
-transition: slide-up
+transition: fade
 ---
 
-# Bốn "Công Cụ" Cốt Lõi
+# Giờ hãy cùng tìm hiểu 4 khái niệm cơ bản trong File System
+
+<div class="opacity-80">FILE • DIRECTORY • METADATA • BLOCK</div>
+
+---
+layout: default
+transition: fade
+---
+
+# Hãy tưởng tượng: Sắp Xếp Sách = File System
+
+<div class="opacity-80">Một thư viện đại diện cho cách hệ điều hành tổ chức và lưu trữ dữ liệu.</div>
 
 <div class="grid grid-cols-2 gap-6 mt-6">
   <div v-click="1" class="p-6 rounded-xl border border-gray-200/60 shadow-sm bg-white/60 dark:bg-white/5">
-    <div class="i-carbon-document-blank text-3xl"></div>
+    <div class="i-carbon-book text-3xl"></div>
     <div class="mt-2 font-bold text-xl">FILE</div>
-    <div class="opacity-80">Đơn vị lưu trữ logic của dữ liệu người dùng.</div>
+    <div class="opacity-80">Như những "cuốn sách" chứa nội dung.</div>
   </div>
   <div v-click="2" class="p-6 rounded-xl border border-gray-200/60 shadow-sm bg-white/60 dark:bg-white/5">
     <div class="i-carbon-folder text-3xl"></div>
-    <div class="mt-2 font-bold text-xl">DIRECTORY</div>
-    <div class="opacity-80">Cấu trúc phân cấp sắp xếp và định danh file.</div>
+    <div class="mt-2 font-bold text-xl">DIRECTORY (Thư mục)</div>
+    <div class="opacity-80">Như những "kệ sách" để sắp xếp và định vị.</div>
   </div>
   <div v-click="3" class="p-6 rounded-xl border border-gray-200/60 shadow-sm bg-white/60 dark:bg-white/5">
-    <div class="i-carbon-information text-3xl"></div>
-    <div class="mt-2 font-bold text-xl">METADATA</div>
-    <div class="opacity-80">Thông tin về file: kích thước, thời gian, quyền, vị trí, ...</div>
+    <div class="i-carbon-tag text-3xl"></div>
+    <div class="mt-2 font-bold text-xl">METADATA (Siêu dữ liệu)</div>
+    <div class="opacity-80">"Tag" dán trên sách (tác giả, thể loại, vị trí...).</div>
   </div>
   <div v-click="4" class="p-6 rounded-xl border border-gray-200/60 shadow-sm bg-white/60 dark:bg-white/5">
-    <div class="i-carbon-data-structured text-3xl"></div>
+    <div class="i-carbon-cube text-3xl"></div>
     <div class="mt-2 font-bold text-xl">BLOCK</div>
-    <div class="opacity-80">Đơn vị cấp phát trên thiết bị lưu trữ (sector/cluster).</div>
+    <div class="opacity-80">Ổ đĩa chia sách thành các "hộp" nhỏ để lưu trữ.</div>
   </div>
 </div>
+
+---
+layout: default
+transition: fade
+---
+
+# Sau đây là mô tả khái niệm chính xác
+
+<div id="defsWrap" ref="defsWrap" class="grid grid-cols-1 gap-4 mt-4 max-h-[60vh] overflow-y-auto pr-2 pb-20" style="scrollbar-width: none; -ms-overflow-style: none;">
+  <div v-click="1" class="p-4 rounded-xl border border-gray-200/60 bg-white/60 dark:bg-white/5">
+    <div class="flex items-start gap-3">
+      <div class="i-carbon-book text-2xl mt-0.5"></div>
+      <div>
+        <div class="font-bold">1. File (Tệp tin)</div>
+        <div class="opacity-80 text-sm mt-1">Một tệp tin là một tập hợp các thông tin liên quan được lưu trữ dưới dạng một đơn vị duy nhất có tên gọi. Từ góc độ người dùng, tệp là đơn vị logic nhỏ nhất để lưu trữ dữ liệu. Hệ điều hành cung cấp các chức năng để tạo, sửa đổi, xóa và truy cập các tệp này.</div>
+      </div>
+    </div>
+  </div>
+  <div v-click="2" class="p-4 rounded-xl border border-gray-200/60 bg-white/60 dark:bg-white/5">
+    <div class="flex items-start gap-3">
+      <div class="i-carbon-cube text-2xl mt-0.5"></div>
+      <div>
+        <div class="font-bold">2. Block (Khối)</div>
+        <div class="opacity-80 text-sm mt-1">Block là đơn vị lưu trữ dữ liệu nhỏ nhất trên một thiết bị lưu trữ vật lý như ổ cứng. Dữ liệu được chia thành các khối có kích thước bằng nhau và được lưu trữ một cách độc lập.[1] Mỗi khối có một địa chỉ riêng, cho phép hệ thống truy cập trực tiếp vào từng khối dữ liệu mà không cần thông qua hệ thống tệp tin.[1]</div>
+      </div>
+    </div>
+  </div>
+  <div v-click="3" class="p-4 rounded-xl border border-gray-200/60 bg-white/60 dark:bg-white/5">
+    <div class="flex items-start gap-3">
+      <div class="i-carbon-folder text-2xl mt-0.5"></div>
+      <div>
+        <div class="font-bold">3. Directory (Thư mục)</div>
+        <div class="opacity-80 text-sm mt-1">Thư mục, hay còn gọi là folder, là một cấu trúc dùng để tổ chức và quản lý các tệp tin và các thư mục con khác. Về bản chất, thư mục là một loại tệp đặc biệt chứa thông tin về các tệp và thư mục khác mà nó chứa. Cấu trúc cây thư mục giúp người dùng và hệ thống dễ dàng điều hướng và tìm kiếm tệp tin.</div>
+      </div>
+    </div>
+  </div>
+  <div id="def-4" v-click="4" class="p-4 rounded-xl border border-gray-200/60 bg-white/60 dark:bg-white/5">
+    <div class="flex items-start gap-3">
+      <div class="i-carbon-information text-2xl mt-0.5"></div>
+      <div>
+        <div class="font-bold">4. Metadata (Siêu dữ liệu)</div>
+        <div class="opacity-80 text-sm mt-1">Metadata, hay siêu dữ liệu, là "dữ liệu về dữ liệu".[2][3] Nó cung cấp thông tin mô tả chi tiết về một tệp tin, giúp cho việc quản lý, tìm kiếm và sử dụng dữ liệu trở nên dễ dàng hơn.[2][4]</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div v-if="$clicks === 3" class="hidden">{{ scrollToTop() }}</div>
+<div v-if="$clicks === 4" class="hidden">{{ scrollToDef4() }}</div>
+
+<script setup>
+import { ref } from 'vue'
+const defsWrap = ref()
+function scrollToTop() {
+  const wrap = defsWrap?.value
+  if (wrap) {
+    wrap.scrollTop = 0
+  }
+  return ''
+}
+function scrollToDef4() {
+  const wrap = defsWrap?.value
+  if (wrap) {
+    wrap.scrollTo({ top: wrap.scrollHeight, behavior: 'smooth' })
+  }
+  return ''
+}
+</script>
+<style>
+#defsWrap::-webkit-scrollbar { display: none; }
+</style>
 
 ---
 transition: fade
