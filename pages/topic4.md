@@ -191,8 +191,148 @@ function scrollToDef4() {
 
 ---
 transition: fade
+layout: two-cols
+---
+
+# File System Architectures là gì?
+
+Nếu **File System** là một "Người Quản Lý Kho" cho dữ liệu của bạn...
+
+...thì **File System Architectures** chính là **phong cách làm việc** và **bộ quy tắc** mà người quản lý đó tuân theo.
+
+Mỗi phong cách có ưu và nhược điểm riêng, được tối ưu cho những "nhà kho" (hệ điều hành) khác nhau.
+
+::right::
+
+<br>
+<div class="text-center">
+<p class="font-bold text-xl">3 "File System Architectures" nổi tiếng nhất</p>
+<div class="flex justify-around items-center mt-8">
+  <div class="text-center">
+    <div class="i-carbon-notebook text-8xl text-blue-500"></div>
+    <p>FAT32</p>
+  </div>
+  <div class="text-center">
+    <div class="i-carbon-security text-8xl text-green-500"></div>
+    <p>NTFS</p>
+  </div>
+  <div class="text-center">
+    <div class="i-carbon-catalog text-8xl text-orange-500"></div>
+    <p>ext4</p>
+  </div>
+</div>
+</div>
+
+---
+layout: two-cols
+---
+
+# FAT32
+<p class="opacity-70">Đại diện của sự đơn giản và tương thích</p>
+
+<div class="mt-8">
+  <p class="font-bold text-green-500">✔️ Điểm mạnh:</p>
+  <ul>
+    <li><strong>Siêu đơn giản:</strong> Cấu trúc dễ hiểu.</li>
+    <li><strong>Tương thích tuyệt đối:</strong> "Nói" được mọi ngôn ngữ: Windows, macOS, Linux, TV, Máy ảnh...</li>
+  </ul>
+
+  <br>
+
+  <p class="font-bold text-red-500">❌ Điểm yếu:</p>
+  <ul>
+    <li>Dễ bừa bộn, hiệu suất kém (phân mảnh).</li>
+    <li>Không lưu được file lớn hơn 4GB.</li>
+    <li>Bảo mật gần như bằng không.</li>
+  </ul>
+
+</div>
+
+::right::
+
+<div class="flex flex-col items-center justify-center h-full">
+  <div class="i-carbon-notebook text-9xl text-blue-500"></div>
+</div>
+
+---
+layout: two-cols
+---
+
+# NTFS
+<p class="opacity-70">Nền tảng vững chắc của Windows</p>
+
+<div class="mt-8">
+  <p class="font-bold text-green-500">✔️ Điểm mạnh:</p>
+  <ul>
+    <li><strong>Bảo mật vượt trội:</strong> Phân quyền chi tiết cho từng người dùng (ACLs).</li>
+    <li><strong>An toàn dữ liệu:</strong> Có "nhật ký" (Journaling) chống mất điện đột ngột.</li>
+    <li><strong>Hiện đại & Mạnh mẽ:</strong> Hỗ trợ file và ổ cứng siêu lớn, nén, mã hóa...</li>
+  </ul>
+
+  <br>
+
+  <p class="font-bold text-red-500">❌ Điểm yếu:</p>
+  <ul>
+    <li>"Khó tính" với các hệ điều hành khác (Linux/macOS chỉ đọc, khó ghi).</li>
+  </ul>
+
+</div>
+
+
+::right::
+
+<div class="flex flex-col items-center justify-center h-full">
+  <div class="i-carbon-security text-9xl text-green-500"></div>
+</div>
+
+
+---
+layout: two-cols
+---
+
+# ext4
+<p class="opacity-70">Chuẩn mực cho thế giới Linux</p>
+
+<div class="mt-8">
+  <p class="font-bold text-green-500">✔️ Điểm mạnh:</p>
+  <ul>
+    <li><strong>Tốc độ tối ưu:</strong> Sắp xếp file lớn thông minh (Extents) giúp truy xuất cực nhanh.</li>
+    <li><strong>Đáng tin cậy:</strong> Có "nhật ký" an toàn, ổn định.</li>
+    <li><strong>Linh hoạt & Mã nguồn mở:</strong> Được cộng đồng liên tục cải tiến.</li>
+  </ul>
+  
+  <br>
+
+  <p class="font-bold text-red-500">❌ Điểm yếu:</p>
+  <ul>
+    <li>Windows không "hiểu" được cách tổ chức của nhà xưởng này.</li>
+  </ul>
+
+</div>
+
+::right::
+
+<div class="flex flex-col items-center justify-center h-full">
+  <div class="i-carbon-catalog text-9xl text-orange-500"></div>
+</div>
+
+---
 layout: default
 ---
+
+# Đặt Lên Bàn Cân
+
+| Tiêu chí | **FAT32** (Sổ tay) | **NTFS** (Tủ sắt) | **ext4** (Động cơ) |
+| :--- | :---: | :---: | :---: |
+| **Tương thích** | ⭐⭐⭐ (Tuyệt vời) | ⭐ (Kém) | ⭐ (Kém) |
+| **Bảo mật** | ⭐ (Rất kém) | ⭐⭐⭐ (Tuyệt vời) | ⭐⭐ (Tốt) |
+| **Hiệu suất** | ⭐ (Thấp) | ⭐⭐ (Tốt) | ⭐⭐⭐ (Rất nhanh) |
+| **Hệ điều hành** | Mọi thiết bị | **Windows** | **Linux** |
+
+
+
+
+
 
 # Ba Cách "Xếp Hộp"
 
