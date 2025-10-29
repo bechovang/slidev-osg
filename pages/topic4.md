@@ -572,13 +572,12 @@ transition: slide-left
   <li>Hoạt động: Phục vụ đúng <b>thứ tự đến</b>.</li>
   <li class="opacity-80">Ưu điểm: <b>Công bằng</b>, không ai bị bỏ rơi.</li>
   <li class="opacity-80">Nhược điểm: <b>Không hiệu quả</b>, đường đi ngoằn ngoèo.</li>
-  <li><b>Kết quả ví dụ</b>: Tổng quãng đường ≈ <b>640 tầng</b> 😱</li>
 </ul>
 </v-clicks>
 
-<div class="mt-4 text-sm opacity-80">Lộ trình: 53 → 98 → 183 → 37 → 122 → 14 → 124 → 65 → 67</div>
-
-<figure class="mt-4">
+<div v-click class="mt-4 text-sm opacity-80"><b>Kết quả ví dụ</b>: Tổng quãng đường ≈ <b>640 tầng</b> 😱</div>
+<div v-click class="mt-2 text-sm opacity-80">Lộ trình: 53 → 98 → 183 → 37 → 122 → 14 → 124 → 65 → 67</div>
+<figure v-click class="mt-4">
   <img src="/images/FCFS.jpg" alt="FCFS Route" class="rounded-lg shadow mx-auto" style="max-width:min(70vw,720px); max-height:36vh; width:auto; height:auto; object-fit:contain;"/>
   <figcaption class="text-center mt-2 opacity-70">FCFS: lộ trình minh họa</figcaption>
 </figure>
@@ -595,13 +594,13 @@ transition: slide-left
   <li>Hoạt động: Luôn chọn yêu cầu <b>gần nhất</b> so với vị trí hiện tại.</li>
   <li class="opacity-80">Ưu điểm: <b>Giảm đáng kể</b> quãng đường di chuyển.</li>
   <li class="opacity-80">Nhược điểm: Có thể gây <b>starvation</b> ở vùng xa.</li>
-  <li><b>Kết quả ví dụ</b>: Tổng quãng đường ≈ <b>236 tầng</b> 👍</li>
 </ul>
 </v-clicks>
 
-<div class="mt-4 text-sm opacity-80">Một lộ trình khả dĩ: 53 → 65 → 67 → 37 → 14 → 98 → 122 → 124 → 183</div>
+<div v-click class="mt-4 text-sm opacity-80"><b>Kết quả ví dụ</b>: Tổng quãng đường ≈ <b>236 tầng</b> 👍</div>
+<div v-click class="mt-2 text-sm opacity-80">Một lộ trình khả dĩ: 53 → 65 → 67 → 37 → 14 → 98 → 122 → 124 → 183</div>
 
-<figure class="mt-4">
+<figure v-click class="mt-4">
   <img src="/images/SSTF.jpg" alt="SSTF Route" class="rounded-lg shadow mx-auto" style="max-width:min(70vw,720px); max-height:36vh; width:auto; height:auto; object-fit:contain;"/>
   <figcaption class="text-center mt-2 opacity-70">SSTF: lộ trình minh họa</figcaption>
 </figure>
@@ -618,13 +617,13 @@ transition: slide-left
   <li>Hoạt động: Đi <b>một hướng</b>, phục vụ tất cả yêu cầu trên đường; đến cuối thì <b>đảo chiều</b>.</li>
   <li class="opacity-80">Ưu điểm: <b>Công bằng</b> hơn SSTF, giảm bỏ rơi.</li>
   <li class="opacity-80">Nhược điểm: Hơi thiên vị các tầng giữa.</li>
-  <li><b>Kết quả ví dụ</b>: Tổng quãng đường ≈ <b>331 tầng</b>.</li>
 </ul>
 </v-clicks>
 
-<div class="mt-4 text-sm opacity-80">Lộ trình: 53 → 65 → 67 → 98 → 122 → 124 → 183 → 199 → 37 → 14</div>
+<div v-click class="mt-4 text-sm opacity-80"><b>Kết quả ví dụ</b>: Tổng quãng đường ≈ <b>331 tầng</b>.</div>
+<div v-click class="mt-2 text-sm opacity-80">Lộ trình: 53 → 65 → 67 → 98 → 122 → 124 → 183 → 199 → 37 → 14</div>
 
-<figure class="mt-4">
+<figure v-click class="mt-4">
   <img src="/images/SCAN.jpg" alt="SCAN Route" class="rounded-lg shadow mx-auto" style="max-width:min(70vw,720px); max-height:36vh; width:auto; height:auto; object-fit:contain;"/>
   <figcaption class="text-center mt-2 opacity-70">SCAN: lộ trình minh họa</figcaption>
 </figure>
@@ -641,13 +640,13 @@ transition: slide-left
   <li>Hoạt động: Chỉ đi <b>một chiều</b> (ví dụ: đi lên). Đến đỉnh <b>nhảy về 0</b> (không phục vụ) rồi đi lên lại.</li>
   <li class="opacity-80">Ưu điểm: Thời gian chờ <b>đồng đều</b> hơn.</li>
   <li class="opacity-80">Nhược điểm: Có <b>chuyển động lớn</b> không phục vụ.</li>
-  <li><b>Kết quả ví dụ</b>: Tổng quãng đường ≈ <b>382 tầng</b>.</li>
 </ul>
 </v-clicks>
 
-<div class="mt-4 text-sm opacity-80">Lộ trình: 53 → 65 → 67 → 98 → 122 → 124 → 183 → 199 → 0 → 14 → 37</div>
+<div v-click class="mt-4 text-sm opacity-80"><b>Kết quả ví dụ</b>: Tổng quãng đường ≈ <b>382 tầng</b>.</div>
+<div v-click class="mt-2 text-sm opacity-80">Lộ trình: 53 → 65 → 67 → 98 → 122 → 124 → 183 → 199 → 0 → 14 → 37</div>
 
-<figure class="mt-4">
+<figure v-click class="mt-4">
   <img src="/images/C-SCAN.jpg" alt="C-SCAN Route" class="rounded-lg shadow mx-auto" style="max-width:min(70vw,720px); max-height:36vh; width:auto; height:auto; object-fit:contain;"/>
   <figcaption class="text-center mt-2 opacity-70">C-SCAN: lộ trình minh họa</figcaption>
 </figure>
