@@ -322,7 +322,7 @@ layout: default
 
 # Đặt Lên Bàn Cân
 
-| Tiêu chí | **FAT32** (Sổ tay) | **NTFS** (Tủ sắt) | **ext4** (Động cơ) |
+| Tiêu chí | **FAT32**| **NTFS**| **ext4**|
 | :--- | :---: | :---: | :---: |
 | **Tương thích** | ⭐⭐⭐ (Tuyệt vời) | ⭐ (Kém) | ⭐ (Kém) |
 | **Bảo mật** | ⭐ (Rất kém) | ⭐⭐⭐ (Tuyệt vời) | ⭐⭐ (Tốt) |
@@ -351,6 +351,26 @@ Hãy cùng khám phá 3 chiến lược xếp hàng kinh điển!
 Đây là slide giới thiệu vấn đề.
 -->
 
+
+
+
+---
+layout: default
+transition: fade
+---
+
+## 1. Contiguous
+
+<p class="text-center opacity-80">Cấp phát liên tục: Tìm một dãy kệ dài và trống, xếp toàn bộ lô hàng vào đó. (toàn bộ dữ liệu của file được đặt liền nhau trên đĩa).</p>
+
+<figure>
+  <img src="/images/contiguous.jpg" alt="Contiguous Allocation" class="rounded-lg shadow-md mx-auto" style="max-width: min(90vw, 1000px); max-height: 50vh; width: auto; height: auto; object-fit: contain;"/>
+  <figcaption class="text-center mt-2 opacity-80">Contiguous Allocation</figcaption>
+</figure>
+
+
+
+
 ---
 layout: two-cols-header
 ---
@@ -366,7 +386,7 @@ layout: two-cols-header
 <p class="font-bold text-green-500">✔️ Ưu điểm:</p>
 <ul>
   <li v-click><strong>Lấy hàng SIÊU NHANH:</strong> Chỉ cần đến đầu kệ rồi đi thẳng một mạch là xong. (vì nó xếp liên tiếp)</li>
-  <li v-click><strong>Dễ tìm kiếm:</strong> Tìm thùng thứ n rất nhanh. (chỉ cần gọi A[n] )</li>
+  <li v-click><strong>Dễ tìm kiếm:</strong> Tìm thùng thứ n rất nhanh.</li>
 </ul>
 </div>
 <div>
@@ -381,15 +401,19 @@ layout: two-cols-header
 ::right::
 <div></div>
 
+
+
 ---
 layout: default
 transition: fade
 ---
 
-## Linked - Minh họa
+## 2. Linked
+
+<p class="text-center opacity-80">Cấp phát nối kết: Xếp mỗi thùng vào một kệ trống, trên thùng ghi địa chỉ thùng tiếp theo. (mỗi khối dữ liệu chứa con trỏ tới khối tiếp theo).</p>
 
 <figure>
-  <img src="/images/contiguous.jpg" alt="Indexed Allocation" class="rounded-lg shadow-md mx-auto" style="max-width: min(90vw, 1000px); max-height: 60vh; width: auto; height: auto; object-fit: contain;"/>
+  <img src="/images/linked.jpg" alt="Linked Allocation" class="rounded-lg shadow-md mx-auto" style="max-width: min(90vw, 1000px); max-height: 50vh; width: auto; height: auto; object-fit: contain;"/>
   <figcaption class="text-center mt-2 opacity-80">Linked Allocation</figcaption>
 </figure>
 
@@ -415,7 +439,7 @@ layout: two-cols-header
 <div>
 <p class="font-bold text-red-500">❌ Nhược điểm:</p>
 <ul>
-  <li v-click><strong>Lấy hàng RẤT CHẬM:</strong> Phải đi lần lượt qua từng thùng để đọc "chỉ đường".</li>
+  <li v-click><strong>Lấy hàng RẤT CHẬM:</strong> Phải đi lần lượt qua từng thùng để đọc "chỉ đường" (muốn đến block 100 có thể phải duyệt 99 lần).</li>
   <li v-click><strong>Rủi ro cao:</strong> Mất một "chỉ dẫn" là mất hết phần hàng còn lại.</li>
 </ul>
 </div>
@@ -425,16 +449,19 @@ layout: two-cols-header
 ::right::
 <div></div>
 
+
 ---
 layout: default
 transition: fade
 ---
 
-## Linked - Minh họa
+## 3. Indexed
+
+<p class="text-center opacity-80">Cấp phát theo chỉ mục: Xếp rải rác, nhưng tạo một tờ 'Phiếu Mục Lục' riêng ghi lại tất cả địa chỉ (mỗi file có một khối chỉ mục liệt kê địa chỉ các khối dữ liệu).</p>
 
 <figure>
-  <img src="/images/linked.jpg" alt="Indexed Allocation" class="rounded-lg shadow-md mx-auto" style="max-width: min(90vw, 1000px); max-height: 60vh; width: auto; height: auto; object-fit: contain;"/>
-  <figcaption class="text-center mt-2 opacity-80">Linked Allocation</figcaption>
+  <img src="/images/indexed.jpg" alt="Indexed Allocation" class="rounded-lg shadow-md mx-auto" style="max-width: min(90vw, 1000px); max-height: 50vh; width: auto; height: auto; object-fit: contain;"/>
+  <figcaption class="text-center mt-2 opacity-80">Indexed Allocation: Phiếu mục lục trỏ đến các khối dữ liệu</figcaption>
 </figure>
 
 
@@ -468,17 +495,7 @@ layout: two-cols-header
 ::right::
 <div></div>
 
----
-layout: default
-transition: fade
----
 
-## Indexed - Minh họa
-
-<figure>
-  <img src="/images/indexed.jpg" alt="Indexed Allocation" class="rounded-lg shadow-md mx-auto" style="max-width: min(90vw, 1000px); max-height: 60vh; width: auto; height: auto; object-fit: contain;"/>
-  <figcaption class="text-center mt-2 opacity-80">Indexed Allocation: Phiếu mục lục trỏ đến các khối dữ liệu</figcaption>
-</figure>
 
 
 
