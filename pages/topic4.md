@@ -330,212 +330,158 @@ layout: default
 | **Hệ điều hành** | Mọi thiết bị | **Windows** | **Linux** |
 
 
+---
 
+# Phương Pháp Cấp Phát
+### "Xếp Hàng" Lên Kệ Ổ Cứng Như Thế Nào?
 
+Khi có một **lô hàng** (file) mới, **người quản lý kho** (Hệ điều hành) phải quyết định:
 
+<br>
 
-# Ba Cách "Xếp Hộp"
+<p class="text-3xl text-center">
+  Xếp các thùng hàng lên kệ ra sao?
+</p>
 
-<div class="grid grid-cols-3 gap-6 mt-6">
-  <div v-click="1" v-motion :initial="{ y: 20, opacity: 0 }" :enter="{ y: 0, opacity: 1 }" class="p-5 rounded-xl border border-gray-200/60 bg-white/60 dark:bg-white/5">
-    <div class="text-xl font-bold mb-2">Contiguous</div>
-    <div class="flex gap-1 mb-3">
-      <div class="h-5 w-6 bg-emerald-500 rounded"></div>
-      <div class="h-5 w-6 bg-emerald-500 rounded"></div>
-      <div class="h-5 w-6 bg-emerald-500 rounded"></div>
-      <div class="h-5 w-6 bg-emerald-500 rounded"></div>
-    </div>
-    <ul class="list-disc pl-5">
-      <li>Đơn giản, đọc tuần tự rất nhanh</li>
-      <li class="opacity-80">Dễ phân mảnh ngoại, khó mở rộng</li>
-    </ul>
-  </div>
-  <div v-click="2" v-motion :initial="{ y: 20, opacity: 0 }" :enter="{ y: 0, opacity: 1 }" class="p-5 rounded-xl border border-gray-200/60 bg-white/60 dark:bg-white/5">
-    <div class="text-xl font-bold mb-2">Linked</div>
-    <div class="flex items-center gap-1 mb-3">
-      <div class="h-5 w-6 bg-sky-500 rounded"></div>
-      <div class="i-carbon-chevron-right"></div>
-      <div class="h-5 w-6 bg-sky-500 rounded"></div>
-      <div class="i-carbon-chevron-right"></div>
-      <div class="h-5 w-6 bg-sky-500 rounded"></div>
-    </div>
-    <ul class="list-disc pl-5">
-      <li>Không phân mảnh ngoại, mở rộng linh hoạt</li>
-      <li class="opacity-80">Truy cập ngẫu nhiên kém</li>
-    </ul>
-  </div>
-  <div v-click="3" v-motion :initial="{ y: 20, opacity: 0 }" :enter="{ y: 0, opacity: 1 }" class="p-5 rounded-xl border border-gray-200/60 bg-white/60 dark:bg-white/5">
-    <div class="text-xl font-bold mb-2">Indexed</div>
-    <div class="flex items-center gap-3 mb-3">
-      <div class="p-1 rounded border border-gray-300 text-xs bg-white/70">
-        Index<br>Block
-      </div>
-      <div class="i-carbon-arrow-right"></div>
-      <div class="flex gap-1">
-        <div class="h-5 w-6 bg-amber-500 rounded"></div>
-        <div class="h-5 w-6 bg-amber-500 rounded"></div>
-        <div class="h-5 w-6 bg-amber-500 rounded"></div>
-      </div>
-    </div>
-    <ul class="list-disc pl-5">
-      <li>Truy cập ngẫu nhiên tốt</li>
-      <li class="opacity-80">Chi phí lưu chỉ mục</li>
-    </ul>
-  </div>
+<br>
+
+Hãy cùng khám phá 3 chiến lược xếp hàng kinh điển!
+
+<!-- 
+Đây là slide giới thiệu vấn đề.
+-->
+
+---
+layout: two-cols-header
+---
+
+# 1. Cấp phát Liên tục (Contiguous)
+
+## <span class="i-ph-books-duotone inline-block"></span> "Tìm một dãy kệ dài và trống, xếp toàn bộ lô hàng vào đó."
+
+<br>
+
+<div grid="~ cols-2 gap-4">
+<div>
+<p class="font-bold text-green-500">✔️ Ưu điểm:</p>
+<ul>
+  <li v-click><strong>Lấy hàng SIÊU NHANH:</strong> Chỉ cần đến đầu kệ rồi đi thẳng một mạch là xong. (vì nó xếp liên tiếp)</li>
+  <li v-click><strong>Dễ tìm kiếm:</strong> Tìm thùng thứ n rất nhanh. (chỉ cần gọi A[n] )</li>
+</ul>
+</div>
+<div>
+<p class="font-bold text-red-500">❌ Nhược điểm:</p>
+<ul>
+  <li v-click><strong>Khó tìm chỗ:</strong> Khó có dãy kệ trống đủ dài.</li>
+  <li v-click><strong>Lãng phí không gian:</strong> Các khoảng trống nhỏ lẻ bị bỏ phí (phân mảnh ngoài). </li>
+</ul>
+</div>
 </div>
 
----
-transition: slide-left
-layout: default
----
-
-# Sơ Đồ Ánh Xạ (Deliverable #1)
-
-<div class="grid grid-cols-2 gap-8 mt-4 items-start">
-  <div>
-    <p class="opacity-90">Sơ đồ minh họa cơ chế Indexed Allocation:</p>
-    <v-clicks>
-      <ul>
-        <li>Mỗi file có một <b>Index Block</b> lưu danh sách con trỏ</li>
-        <li>Con trỏ trỏ tới các <b>Data Block</b> chứa dữ liệu</li>
-        <li>Truy cập ngẫu nhiên: tra index → nhảy đến block tương ứng</li>
-      </ul>
-    </v-clicks>
-  </div>
-  <div class="relative">
-    <div class="p-3 rounded-lg border border-gray-300 bg-white/70 inline-block">
-      <div class="text-sm font-bold text-center">Index Block</div>
-      <div class="mt-2 space-y-1 text-xs">
-        <div class="px-2 py-1 rounded bg-gray-100">ptr → Data Block A</div>
-        <div class="px-2 py-1 rounded bg-gray-100">ptr → Data Block B</div>
-        <div class="px-2 py-1 rounded bg-gray-100">ptr → Data Block C</div>
-      </div>
-    </div>
-    <div class="absolute top-1/2 left-[190px] -translate-y-1/2 space-y-3">
-      <div class="px-3 py-2 rounded border border-emerald-500/50 bg-emerald-50/60 text-xs">Data Block A</div>
-      <div class="px-3 py-2 rounded border border-emerald-500/50 bg-emerald-50/60 text-xs">Data Block B</div>
-      <div class="px-3 py-2 rounded border border-emerald-500/50 bg-emerald-50/60 text-xs">Data Block C</div>
-    </div>
-    <div v-click class="absolute inset-0 pointer-events-none">
-      <Arrow x1="140" y1="52" x2="220" y2="52" color="#22c55e" width="2" />
-      <Arrow x1="140" y1="78" x2="220" y2="88" color="#22c55e" width="2" />
-      <Arrow x1="140" y1="104" x2="220" y2="124" color="#22c55e" width="2" />
-    </div>
-  </div>
-</div>
-
----
-layout: section
-transition: zoom-out
----
-
-# Ba "Chàng Lính Ngự Lâm": Các Kiến Trúc File System
-
----
-layout: two-cols
----
-
-## FAT32 vs ext4
-
-- FAT32
-  - Đơn giản, tương thích rộng
-  - Không journaling, giới hạn kích thước file/volume
-- ext4
-  - Journaling, extent, delayed allocation
-  - Hiệu năng và độ tin cậy tốt cho Linux
-
-:::right::
-
-### Gợi ý tiêu chí so sánh
-
-- Journaling
-- Giới hạn kích thước file/volume
-- Phân mảnh và hiệu năng
-- Quyền truy cập và bảo mật
-
----
-layout: default
----
-
-## NTFS – "Vũ khí" chủ lực
-
-<div class="grid grid-cols-3 gap-6 mt-4">
-  <div v-click class="p-4 rounded-xl border border-gray-200/60 bg-white/60 dark:bg-white/5">
-    <div class="i-carbon-user-role text-3xl"></div>
-    <div class="mt-2 font-bold">ACLs</div>
-    <div class="text-sm opacity-80">Phân quyền chi tiết theo người dùng/nhóm.</div>
-  </div>
-  <div v-click class="p-4 rounded-xl border border-gray-200/60 bg-white/60 dark:bg-white/5">
-    <div class="i-carbon-encryption text-3xl"></div>
-    <div class="mt-2 font-bold">EFS</div>
-    <div class="text-sm opacity-80">Mã hóa file ở mức hệ thống.</div>
-  </div>
-  <div v-click class="p-4 rounded-xl border border-gray-200/60 bg-white/60 dark:bg-white/5">
-    <div class="i-carbon-time text-3xl"></div>
-    <div class="mt-2 font-bold">VSS</div>
-    <div class="text-sm opacity-80">Snapshot phiên bản để phục hồi.</div>
-  </div>
-</div>
+::right::
+<div></div>
 
 ---
 layout: default
 transition: fade
 ---
 
-# Bảng So Sánh (Deliverable #2)
+## Linked - Minh họa
 
-<div class="overflow-x-auto mt-4">
-  <table class="w-full text-left border-separate border-spacing-y-2">
-    <thead class="text-sm opacity-70">
-      <tr>
-        <th class="px-3">Tiêu chí</th>
-        <th class="px-3">FAT32</th>
-        <th class="px-3">NTFS</th>
-        <th class="px-3">ext4</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr v-click class="bg-amber/10">
-        <td class="px-3 py-2 font-medium">Journaling</td>
-        <td class="px-3 py-2">Không</td>
-        <td class="px-3 py-2">Có</td>
-        <td class="px-3 py-2">Có</td>
-      </tr>
-      <tr v-click class="bg-amber/10">
-        <td class="px-3 py-2 font-medium">Giới hạn file</td>
-        <td class="px-3 py-2">~4GB</td>
-        <td class="px-3 py-2">Rất lớn</td>
-        <td class="px-3 py-2">Rất lớn</td>
-      </tr>
-      <tr v-click class="bg-amber/10">
-        <td class="px-3 py-2 font-medium">Giới hạn volume</td>
-        <td class="px-3 py-2">Nhỏ</td>
-        <td class="px-3 py-2">Rất lớn</td>
-        <td class="px-3 py-2">Rất lớn</td>
-      </tr>
-      <tr v-click class="bg-amber/10">
-        <td class="px-3 py-2 font-medium">Quyền/Bảo mật</td>
-        <td class="px-3 py-2">Cơ bản</td>
-        <td class="px-3 py-2">ACLs, EFS, VSS</td>
-        <td class="px-3 py-2">POSIX perms, ACLs</td>
-      </tr>
-      <tr v-click class="bg-amber/10">
-        <td class="px-3 py-2 font-medium">Tương thích</td>
-        <td class="px-3 py-2">Rộng</td>
-        <td class="px-3 py-2">Windows</td>
-        <td class="px-3 py-2">Linux</td>
-      </tr>
-      <tr v-click class="bg-amber/10">
-        <td class="px-3 py-2 font-medium">Trường hợp dùng</td>
-        <td class="px-3 py-2">USB, thẻ nhớ</td>
-        <td class="px-3 py-2">Desktop/Server Windows</td>
-        <td class="px-3 py-2">Desktop/Server Linux</td>
-      </tr>
-    </tbody>
-  </table>
-  <div class="text-sm opacity-70 mt-2">Gợi ý: click đến hàng nói tới để highlight theo lời trình bày.</div>
-  
+<figure>
+  <img src="/images/contiguous.jpg" alt="Indexed Allocation" class="rounded-lg shadow-md mx-auto" style="max-width: min(90vw, 1000px); max-height: 60vh; width: auto; height: auto; object-fit: contain;"/>
+  <figcaption class="text-center mt-2 opacity-80">Linked Allocation</figcaption>
+</figure>
+
+
+---
+layout: two-cols-header
+---
+
+# 2. Cấp phát Nối kết (Linked)
+
+## <span class="i-ph-link-bold inline-block"></span> "Xếp mỗi thùng vào một kệ trống, trên thùng ghi địa chỉ thùng tiếp theo."
+
+<br>
+
+<div grid="~ cols-2 gap-4">
+<div>
+<p class="font-bold text-green-500">✔️ Ưu điểm:</p>
+<ul>
+  <li v-click><strong>Linh hoạt:</strong> Tận dụng được mọi kệ trống.</li>
+  <li v-click><strong>Dễ thêm hàng:</strong> Cứ tìm kệ trống rồi nối vào "chuỗi".</li>
+</ul>
 </div>
+<div>
+<p class="font-bold text-red-500">❌ Nhược điểm:</p>
+<ul>
+  <li v-click><strong>Lấy hàng RẤT CHẬM:</strong> Phải đi lần lượt qua từng thùng để đọc "chỉ đường".</li>
+  <li v-click><strong>Rủi ro cao:</strong> Mất một "chỉ dẫn" là mất hết phần hàng còn lại.</li>
+</ul>
+</div>
+</div>
+
+
+::right::
+<div></div>
+
+---
+layout: default
+transition: fade
+---
+
+## Linked - Minh họa
+
+<figure>
+  <img src="/images/linked.jpg" alt="Indexed Allocation" class="rounded-lg shadow-md mx-auto" style="max-width: min(90vw, 1000px); max-height: 60vh; width: auto; height: auto; object-fit: contain;"/>
+  <figcaption class="text-center mt-2 opacity-80">Linked Allocation</figcaption>
+</figure>
+
+
+---
+layout: two-cols-header
+---
+
+# 3. Cấp phát theo Chỉ mục (Indexed)
+
+## <span class="i-ph-list-bullets-bold inline-block"></span> "Xếp rải rác, nhưng tạo một tờ 'Phiếu Mục Lục' riêng ghi lại tất cả địa chỉ."
+
+<br>
+
+<div grid="~ cols-2 gap-4">
+<div>
+<p class="font-bold text-green-500">✔️ Ưu điểm:</p>
+<ul>
+  <li v-click><strong>Vừa nhanh vừa linh hoạt:</strong> Muốn tìm thùng nào, chỉ cần tra "mục lục".</li>
+  <li v-click>Vẫn tận dụng tốt không gian như cách Nối kết.</li>
+</ul>
+</div>
+<div>
+<p class="font-bold text-red-500">❌ Nhược điểm:</p>
+<ul>
+  <li v-click><strong>Hơi tốn kém:</strong> Lãng phí nguyên một "khối mục lục" cho các file rất nhỏ.</li>
+</ul>
+</div>
+</div>
+
+
+::right::
+<div></div>
+
+---
+layout: default
+transition: fade
+---
+
+## Indexed - Minh họa
+
+<figure>
+  <img src="/images/indexed.jpg" alt="Indexed Allocation" class="rounded-lg shadow-md mx-auto" style="max-width: min(90vw, 1000px); max-height: 60vh; width: auto; height: auto; object-fit: contain;"/>
+  <figcaption class="text-center mt-2 opacity-80">Indexed Allocation: Phiếu mục lục trỏ đến các khối dữ liệu</figcaption>
+</figure>
+
+
+
 
 ---
 layout: two-cols
