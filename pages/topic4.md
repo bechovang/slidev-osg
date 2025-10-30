@@ -910,43 +910,156 @@ layout: two-cols-header
   <li v-click><strong>Phức tạp:</strong> Cấu trúc MFT tạo ra nhiều overhead (dữ liệu quản lý).</li>
   <li v-click class="font-bold text-red-400"><strong>Tương thích kém:</strong> Đây là điểm yếu lớn nhất. Linux & macOS đọc thì dễ, nhưng ghi dữ liệu một cách ổn định thì rất khó khăn.</li>
 </ul>
+
+
+
 ---
-layout: two-cols
-transition: slide-up
+layout: section
 ---
 
-## Kỷ Nguyên SSD & Thách Thức Mới
-
-- <b v-click>"Gót Chân Achilles"</b>
-  - Write Amplification, mòn cell, GC/WA ảnh hưởng hiệu năng
-- <b v-click>Giảm WA</b>
-  - TRIM, over-provisioning, log-structured FS
-
-:::right::
-
-<img v-click src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXJ2NDh2dWl6eWNhdmRhNTRxNTUyM2FodG9rdzZpY2F3M2YzN3Z1biZlcD12MV9naWZzX3NlYXJjaCZjdD1n/2vnf3j9G6zGyw/giphy.gif" alt="Write Amplification" class="rounded-lg shadow"/>
+# 4. Thảo Luận & Nhìn Về Tương Lai
 
 ---
 layout: default
-transition: zoom-in
 ---
 
-## Tương Lai & Tổng Kết
+# Những Gì Chúng Ta Đã Thấy: Sự Đánh Đổi
+### Không có giải pháp nào là hoàn hảo!
 
-<div :class="{ 'opacity-50': $clicks >= 2 }" class="flex items-center gap-6">
-  <img v-click src="https://upload.wikimedia.org/wikipedia/commons/4/4b/OpenZFS_logo.svg" alt="ZFS" class="h-14"/>
-  <img v-click src="https://upload.wikimedia.org/wikipedia/commons/4/43/ReFS_logo.svg" alt="ReFS" class="h-12"/>
+<div class="grid grid-cols-2 gap-8 mt-8 items-center">
+<div>
+  <div class="i-carbon-scale text-8xl text-orange-500"></div>
 </div>
 
-<div v-click class="mt-4 p-4 rounded-xl border border-gray-200/60 bg-white/60 dark:bg-white/5">
-  <div class="font-bold mb-2">Tổng Kết</div>
+<div class="space-y-4">
+<div v-click class="p-4 rounded bg-gray-500/10">
+  <p class="font-bold">Journaling (Ghi nhật ký)</p>
+  <p class="text-sm opacity-80">Đánh đổi <span class="text-green-500">Độ tin cậy</span> lấy một chút <span class="text-red-500">Hiệu năng</span> (vì phải ghi nhiều hơn).</p>
+</div>
+
+<div v-click class="p-4 rounded bg-gray-500/10">
+  <p class="font-bold">Phương pháp cấp phát</p>
+  <p class="text-sm opacity-80">Đánh đổi giữa <span class="text-green-500">Tốc độ truy cập</span> (Liên tục) và <span class="text-blue-500">Sự linh hoạt</span> (Chỉ mục).</p>
+</div>
+</div>
+</div>
+
+<p v-click class="text-center mt-8 text-xl opacity-80">
+Việc lựa chọn thiết kế hệ thống file luôn là một sự cân bằng tinh tế giữa các yếu tố.
+</p>
+
+---
+layout: two-cols-header
+---
+
+# Cú Sốc Mang Tên SSD
+### Luật chơi đã thay đổi hoàn toàn
+
+::left::
+</br>
+
+### <span class="i-carbon-data-base inline-block"></span> HDD (Ổ đĩa cơ)
+
+<div class="p-4 rounded bg-gray-500/10 mt-4">
   <ul class="list-disc pl-5">
-    <li v-click>Khái niệm cốt lõi: file, directory, metadata, block</li>
-    <li v-click>Ba cấp phát: contiguous, linked, indexed</li>
-    <li v-click>NTFS: MFT, ACLs/EFS/VSS nổi bật</li>
+    <li><strong>Thế giới cơ học:</strong> Có đầu đọc vật lý di chuyển.</li>
+    <li><strong>Thời gian tìm kiếm (seek time)</strong> là kẻ thù số một.</li>
+    <li><strong>Thuật toán Thang máy (SCAN)</strong> là "Vua" để tối ưu hóa đường đi.</li>
   </ul>
 </div>
 
-<div v-click class="mt-6 text-center text-xl opacity-90">Cảm ơn cô và các bạn đã lắng nghe!</div>
+::right::
 
+### <span class="i-carbon-chip inline-block"></span> SSD (Ổ đĩa thể rắn)
 
+<div class="p-4 rounded bg-blue-500/10 mt-4">
+  <ul class="list-disc pl-5">
+    <li><strong>Thế giới điện tử:</strong> Không có bộ phận chuyển động.</li>
+    <li>Truy cập mọi vị trí <strong>nhanh như nhau</strong>.</li>
+    <li><strong>Thuật toán Thang máy</strong> trở nên... vô dụng!</li>
+  </ul>
+</div>
+
+---
+layout: default
+---
+
+# Thách Thức Mới Của Thế Giới SSD
+
+<div class="grid grid-cols-2 gap-8 mt-10">
+<div v-click class="p-4 text-center rounded bg-gray-500/10">
+  <div class="i-carbon-settings text-6xl text-red-500"></div>
+  <h3 class="font-bold mt-2">Write Amplification (Khuếch đại ghi)</h3>
+  <p class="text-sm opacity-80 mt-2">
+    Bạn muốn ghi <span class="font-bold">1MB</span>, nhưng thực tế ổ đĩa phải làm việc tới <span class="font-bold">3MB</span>! <br>
+    (Do cơ chế "đọc-sửa-ghi" phức tạp). <br>
+    ➡️ Làm giảm hiệu năng và tuổi thọ.
+  </p>
+</div>
+
+<div v-click class="p-4 text-center rounded bg-gray-500/10">
+  <div class="i-carbon-chart-scatter text-6xl text-blue-500"></div>
+  <h3 class="font-bold mt-2">Wear Leveling (Cân bằng độ mòn)</h3>
+  <p class="text-sm opacity-80 mt-2">
+    Mỗi ô nhớ có tuổi thọ hữu hạn. Bộ điều khiển phải "thông minh" để ghi dữ liệu đều ra khắp ổ đĩa. <br>
+    (Giống như dùng đều các trang trong một cuốn sổ). <br>
+    ➡️ Tối đa hóa tuổi thọ của ổ đĩa.
+  </p>
+</div>
+</div>
+
+---
+layout: default
+---
+
+# Tóm Tắt Những Gì ĐÃ Học
+
+<ul class="mt-8 space-y-4 text-xl">
+  <li v-click class="flex items-center gap-4"><span class="i-carbon-checkbox-checked text-green-500 text-3xl"></span> Các khái niệm nền tảng: File, Block, Directory, Metadata.</li>
+  <li v-click class="flex items-center gap-4"><span class="i-carbon-checkbox-checked text-green-500 text-3xl"></span> So sánh 3 kiến trúc: FAT (Tương thích), NTFS (Bảo mật), ext4 (Hiệu năng).</li>
+  <li v-click class="flex items-center gap-4"><span class="i-carbon-checkbox-checked text-green-500 text-3xl"></span> 3 phương pháp cấp phát và sự đánh đổi của chúng.</li>
+  <li v-click class="flex items-center gap-4"><span class="i-carbon-checkbox-checked text-green-500 text-3xl"></span> Các thuật toán lập lịch cho đĩa và vai trò của chúng với HDD.</li>
+  <li v-click class="flex items-center gap-4"><span class="i-carbon-checkbox-checked text-green-500 text-3xl"></span> Tác động của SSD và những thách thức mới cho hệ điều hành.</li>
+</ul>
+
+---
+layout: default
+---
+
+# Tương Lai: Các Hệ Thống File "Thông Minh Hơn"
+### Không chỉ nhanh hơn, mà còn tự bảo vệ dữ liệu
+
+<div class="grid grid-cols-2 gap-8 mt-8">
+<div v-click class="p-4 rounded bg-gray-500/10">
+  <h3 class="font-bold flex items-center gap-2"><span class="i-carbon-copy-file text-2xl text-blue-500"></span> Copy-on-Write (CoW)</h3>
+  <p class="text-sm opacity-80 mt-2">
+    Không bao giờ ghi đè lên dữ liệu cũ, luôn tạo một bản sao mới. <br>
+    <strong>Lợi ích:</strong> Tạo "snapshot" tức thời, an toàn tuyệt đối khi có sự cố.
+  </p>
+</div>
+
+<div v-click class="p-4 rounded bg-gray-500/10">
+  <h3 class="font-bold flex items-center gap-2"><span class="i-carbon-security text-2xl text-green-500"></span> Data Integrity (Toàn vẹn dữ liệu)</h3>
+  <p class="text-sm opacity-80 mt-2">
+    Sử dụng checksum (giống "vân tay số") để tự động phát hiện và sửa các lỗi dữ liệu "thầm lặng".
+  </p>
+</div>
+</div>
+
+<div v-click class="mt-8 text-center">
+  <p class="text-lg">Các đại diện tiêu biểu cho tương lai:</p>
+  <div class="flex justify-center gap-8 mt-4 text-2xl font-bold">
+    <span>ZFS</span>
+    <span>Btrfs</span>
+    <span>ReFS</span>
+  </div>
+</div>
+
+---
+layout: center
+class: "text-center"
+---
+
+# Cảm ơn!
+
+### Hỏi & Đáp
