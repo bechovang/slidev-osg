@@ -46,7 +46,7 @@ layout: default
     <div class="text-gray-500">MSSV: SE203055</div>
   </div>
   <div class="flex flex-col items-center">
-    <img src="https://i.pravatar.cc/240?img=22" alt="Avatar" class="w-28 h-28 rounded-full object-cover shadow-lg"/>
+    <img src="https://i.pravatar.cc/240?img=63" alt="Avatar" class="w-28 h-28 rounded-full object-cover shadow-lg"/>
     <div class="mt-3 text-lg font-bold">Dam Le Tuan Anh</div>
     <div class="text-gray-500">MSSV: SE204111</div>
   </div>
@@ -74,8 +74,8 @@ transition: zoom-in
 ::right::
 
 <figure>
-  <img src="/images/thuviengongang.png" alt="Modern FPT library" class="rounded-lg shadow-md" style="width: 520px; height: 320px; object-fit: cover;"/>
-  <figcaption class="text-center mt-2 opacity-80">FPT University Library</figcaption>
+  <img src="/images/thuviengongang.png" alt="Modern F library" class="rounded-lg shadow-md" style="width: 520px; height: 320px; object-fit: cover;"/>
+  <figcaption class="text-center mt-2 opacity-80">F University Library</figcaption>
 </figure>
 ---
 layout: default
