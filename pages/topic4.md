@@ -3,7 +3,7 @@ title: "Topic 4: File Systems & Storage Management"
 mdc: true
 class: "text-left"
 ---
-lên
+HI
 ---
 layout: cover
 title: Topic 4: File Systems & Storage Management
@@ -74,8 +74,8 @@ transition: zoom-in
 ::right::
 
 <figure>
-  <img src="/images/thuviengongang.png" alt="Thư viện FPT hiện đại" class="rounded-lg shadow-md" style="width: 520px; height: 320px; object-fit: cover;"/>
-  <figcaption class="text-center mt-2 opacity-80">Thư viện Trường FPT</figcaption>
+  <img src="/images/thuviengongang.png" alt="Thư viện F hiện đại" class="rounded-lg shadow-md" style="width: 520px; height: 320px; object-fit: cover;"/>
+  <figcaption class="text-center mt-2 opacity-80">Thư viện Trường F</figcaption>
 </figure>
 ---
 layout: default
@@ -117,77 +117,6 @@ transition: fade
     <div class="opacity-80">Ổ đĩa chia sách thành các "hộp" nhỏ để lưu trữ.</div>
   </div>
 </div>
-
----
-layout: default
-transition: fade
----
-
-# Sau đây là mô tả khái niệm chính xác
-
-<div id="defsWrap" ref="defsWrap" class="grid grid-cols-1 gap-4 mt-4 max-h-[60vh] overflow-y-auto pr-2 pb-20" style="scrollbar-width: none; -ms-overflow-style: none;">
-  <div v-click="1" class="p-4 rounded-xl border border-gray-200/60 bg-white/60 dark:bg-white/5">
-    <div class="flex items-start gap-3">
-      <div class="i-carbon-book text-2xl mt-0.5"></div>
-      <div>
-        <div class="font-bold">1. File (Tệp tin)</div>
-        <div class="opacity-80 text-sm mt-1">Một tệp tin là một tập hợp các thông tin liên quan được lưu trữ dưới dạng một đơn vị duy nhất có tên gọi. Từ góc độ người dùng, tệp là đơn vị logic nhỏ nhất để lưu trữ dữ liệu. Hệ điều hành cung cấp các chức năng để tạo, sửa đổi, xóa và truy cập các tệp này.</div>
-      </div>
-    </div>
-  </div>
-  <div v-click="2" class="p-4 rounded-xl border border-gray-200/60 bg-white/60 dark:bg-white/5">
-    <div class="flex items-start gap-3">
-      <div class="i-carbon-cube text-2xl mt-0.5"></div>
-      <div>
-        <div class="font-bold">2. Block (Khối)</div>
-        <div class="opacity-80 text-sm mt-1">Block là đơn vị lưu trữ dữ liệu nhỏ nhất trên một thiết bị lưu trữ vật lý như ổ cứng. Dữ liệu được chia thành các khối có kích thước bằng nhau và được lưu trữ một cách độc lập.[1] Mỗi khối có một địa chỉ riêng, cho phép hệ thống truy cập trực tiếp vào từng khối dữ liệu mà không cần thông qua hệ thống tệp tin.[1]</div>
-      </div>
-    </div>
-  </div>
-  <div v-click="3" class="p-4 rounded-xl border border-gray-200/60 bg-white/60 dark:bg-white/5">
-    <div class="flex items-start gap-3">
-      <div class="i-carbon-folder text-2xl mt-0.5"></div>
-      <div>
-        <div class="font-bold">3. Directory (Thư mục)</div>
-        <div class="opacity-80 text-sm mt-1">Thư mục, hay còn gọi là folder, là một cấu trúc dùng để tổ chức và quản lý các tệp tin và các thư mục con khác. Về bản chất, thư mục là một loại tệp đặc biệt chứa thông tin về các tệp và thư mục khác mà nó chứa. Cấu trúc cây thư mục giúp người dùng và hệ thống dễ dàng điều hướng và tìm kiếm tệp tin.</div>
-      </div>
-    </div>
-  </div>
-  <div id="def-4" v-click="4" class="p-4 rounded-xl border border-gray-200/60 bg-white/60 dark:bg-white/5">
-    <div class="flex items-start gap-3">
-      <div class="i-carbon-information text-2xl mt-0.5"></div>
-      <div>
-        <div class="font-bold">4. Metadata (Siêu dữ liệu)</div>
-        <div class="opacity-80 text-sm mt-1">Metadata, hay siêu dữ liệu, là "dữ liệu về dữ liệu".[2][3] Nó cung cấp thông tin mô tả chi tiết về một tệp tin, giúp cho việc quản lý, tìm kiếm và sử dụng dữ liệu trở nên dễ dàng hơn.[2][4]</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div v-if="$clicks === 3" class="hidden">{{ scrollToTop() }}</div>
-<div v-if="$clicks === 4" class="hidden">{{ scrollToDef4() }}</div>
-
-<script setup>
-import { ref } from 'vue'
-const defsWrap = ref()
-function scrollToTop() {
-  const wrap = defsWrap?.value
-  if (wrap) {
-    wrap.scrollTop = 0
-  }
-  return ''
-}
-function scrollToDef4() {
-  const wrap = defsWrap?.value
-  if (wrap) {
-    wrap.scrollTo({ top: wrap.scrollHeight, behavior: 'smooth' })
-  }
-  return ''
-}
-</script>
-<style>
-#defsWrap::-webkit-scrollbar { display: none; }
-</style>
 
 ---
 transition: fade
@@ -706,6 +635,8 @@ transition: fade
 
 <!-- =============================CASE STUDY-->
 ---
+layout: default
+---
 # Case Study: Đi Sâu Vào NTFS
 ### "Thư Viện Số Siêu Cấp" Của Windows
 
@@ -928,7 +859,7 @@ layout: default
 
 <div class="grid grid-cols-2 gap-8 mt-8 items-center">
 <div>
-  <div class="i-carbon-scale text-8xl text-orange-500"></div>
+    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeG5pbHBvenhzaDJxOHE2Zm4zY3UzMGJpY3ZoeGVndndibzNhNm9ldyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kjhkPCFKyGaj6cOSZR/giphy.gif" alt="Elevator" class="rounded-lg shadow mx-auto" style="max-width:min(90vw,720px); max-height:50vh; object-fit:contain;"/>
 </div>
 
 <div class="space-y-4">
@@ -1012,20 +943,6 @@ layout: default
 layout: default
 ---
 
-# Tóm Tắt Những Gì ĐÃ Học
-
-<ul class="mt-8 space-y-4 text-xl">
-  <li v-click class="flex items-center gap-4"><span class="i-carbon-checkbox-checked text-green-500 text-3xl"></span> Các khái niệm nền tảng: File, Block, Directory, Metadata.</li>
-  <li v-click class="flex items-center gap-4"><span class="i-carbon-checkbox-checked text-green-500 text-3xl"></span> So sánh 3 kiến trúc: FAT (Tương thích), NTFS (Bảo mật), ext4 (Hiệu năng).</li>
-  <li v-click class="flex items-center gap-4"><span class="i-carbon-checkbox-checked text-green-500 text-3xl"></span> 3 phương pháp cấp phát và sự đánh đổi của chúng.</li>
-  <li v-click class="flex items-center gap-4"><span class="i-carbon-checkbox-checked text-green-500 text-3xl"></span> Các thuật toán lập lịch cho đĩa và vai trò của chúng với HDD.</li>
-  <li v-click class="flex items-center gap-4"><span class="i-carbon-checkbox-checked text-green-500 text-3xl"></span> Tác động của SSD và những thách thức mới cho hệ điều hành.</li>
-</ul>
-
----
-layout: default
----
-
 # Tương Lai: Các Hệ Thống File "Thông Minh Hơn"
 ### Không chỉ nhanh hơn, mà còn tự bảo vệ dữ liệu
 
@@ -1060,6 +977,4 @@ layout: center
 class: "text-center"
 ---
 
-# Cảm ơn!
-
-### Hỏi & Đáp
+# Cảm ơn mọi người đã lắng nghe!
