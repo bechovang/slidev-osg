@@ -697,84 +697,219 @@ transition: fade
   </table>
 </div>
 
-<div class="mt-3 p-3 rounded border border-gray-200/70 bg-white/60 dark:bg-white/5">
+<div v-click class="mt-3 p-3 rounded border border-gray-200/70 bg-white/60 dark:bg-white/5">
   <div class="font-bold mb-1">Kết luận</div>
   <div class="opacity-80 text-sm">Trong thực tế, các biến thể như <b>LOOK</b> và <b>C-LOOK</b> thường được dùng vì cân bằng tốt giữa hiệu suất và công bằng.</div>
 </div>
 
-<!-- End Disk Scheduling block -->
+<!-- ============================================End Disk Scheduling block -->
 
-
+<!-- =============================CASE STUDY-->
 ---
-layout: section
-transition: zoom-out
----
+# Case Study: Đi Sâu Vào NTFS
+### "Thư Viện Số Siêu Cấp" Của Windows
 
-# Case Study: "Mổ Xẻ" NTFS
-
----
-layout: default
-transition: slide-right
----
-
-## Trái Tim Của NTFS: MFT
-
-<div class="grid grid-cols-2 gap-10 items-start mt-4">
-  <div>
-    <p class="opacity-90">Master File Table (MFT) lưu metadata của mọi file/thư mục.</p>
-    <div v-click class="mt-4 p-4 rounded-lg border border-gray-200/70 bg-amber-50/50 dark:bg-amber-500/10">
-      <b>Resident Data</b>: dữ liệu nhỏ được lưu trực tiếp trong record của MFT.
-    </div>
-  </div>
-  <div class="relative">
-    <div class="p-4 rounded-xl border border-gray-200/60 bg-white/60 dark:bg-white/5 w-[360px]">
-      <div class="font-bold text-center">MFT</div>
-      <div class="mt-2 grid grid-cols-1 gap-2">
-        <div class="p-2 rounded border border-gray-300 bg-white/70">MFT Record #1</div>
-        <div class="p-2 rounded border border-gray-300 bg-white/70 relative">
-          MFT Record #2
-          <div
-            v-motion
-            :initial="{ x: -160, y: -40, opacity: 0 }"
-            :click-1="{ x: 16, y: 6, opacity: 1, transition: { duration: 600 } }"
-            class="absolute -top-2 -left-2 px-2 py-1 text-[11px] rounded bg-emerald-500 text-white shadow"
-          >file.txt</div>
-        </div>
-        <div class="p-2 rounded border border-gray-300 bg-white/70">MFT Record #3</div>
-      </div>
-    </div>
-  </div>
+<div class="grid grid-cols-2 gap-8 items-center">
+<div>
+<p v-click>
+Tại sao NTFS ra đời? Để thay thế "người tiền nhiệm" <strong>FAT</strong> đã cũ kỹ và yếu ớt.
+</p>
+<p v-click class="mt-4">
+<strong>Mục tiêu:</strong> Xây dựng một nền tảng lưu trữ <strong>Mạnh Mẽ</strong>, <strong>An Toàn</strong>, và <strong>Linh Hoạt</strong> cho môi trường doanh nghiệp.
+</p>
+<p v-click class="mt-4">
+Ngày nay, NTFS là hệ thống file mặc định, không thể thiếu trên mọi máy tính Windows.
+</p>
+</div>
+<div class="text-center" v-click>
+  <div class="i-carbon-logo-windows text-8xl inline-block"></div>
+  <div class="i-mdi-library-shelves text-8xl inline-block"></div>
+</div>
 </div>
 
 ---
 layout: default
-transition: fade
 ---
 
-## NTFS - Các Tính Năng Nâng Cao
+# Kiến Trúc Cốt Lõi: Master File Table (MFT)
+### "Cuốn Sổ Cái Toàn Năng" của Thư Viện
+
+<div v-click class="p-4 rounded bg-gray-500/10 text-center">
+Triết lý thiết kế: <strong class="text-green-500">"Mọi thứ trên ổ đĩa đều là một file"</strong> — ngay cả chính MFT!
+</div>
+
+<div v-click class="mt-8 text-center">
+  <p>MFT về bản chất là một <strong>cơ sở dữ liệu</strong>, chứa một <strong>"hồ sơ" (record)</strong> cho TẤT CẢ các file và thư mục.</p>
+  <div class="flex justify-center items-center gap-8 mt-6">
+    <div class="i-carbon-folder text-5xl opacity-70"></div>
+    <div class="i-carbon-document text-5xl opacity-70"></div>
+    <div class="i-carbon-arrow-right text-4xl"></div>
+    <div class="p-4 border rounded shadow-lg">
+      <div class="i-mdi-database-search text-7xl"></div>
+      <p class="font-bold">MFT</p>
+    </div>
+    <div class="i-carbon-arrow-left text-4xl"></div>
+    <div class="i-carbon-image text-5xl opacity-70"></div>
+    <div class="i-carbon-video text-5xl opacity-70"></div>
+  </div>
+</div>
+
+---
+layout: two-cols-header
+---
+
+# Bên Trong MFT: Mỗi File Là Một "Tấm Thẻ Mục Lục"
+
+Mỗi "hồ sơ" (MFT Record) chứa tất cả **Thuộc tính (Attributes)** của file.
 
 <v-clicks>
 
-<div class="grid grid-cols-3 gap-6 mt-2">
-  <div v-motion :initial="{ y: 30, opacity: 0 }" :enter="{ y: 0, opacity: 1 }" class="p-4 rounded-xl border border-gray-200/60 bg-white/60 dark:bg-white/5">
-    <div class="i-carbon-user-role text-3xl"></div>
-    <div class="mt-2 font-bold">ACLs</div>
-    <div class="text-sm opacity-80">Kiểm soát truy cập chi tiết.</div>
-  </div>
-  <div v-motion :initial="{ y: 30, opacity: 0 }" :enter="{ y: 0, opacity: 1 }" class="p-4 rounded-xl border border-gray-200/60 bg-white/60 dark:bg-white/5">
-    <div class="i-carbon-encryption text-3xl"></div>
-    <div class="mt-2 font-bold">EFS</div>
-    <div class="text-sm opacity-80">Mã hóa trong suốt.</div>
-  </div>
-  <div v-motion :initial="{ y: 30, opacity: 0 }" :enter="{ y: 0, opacity: 1 }" class="p-4 rounded-xl border border-gray-200/60 bg-white/60 dark:bg-white/5">
-    <div class="i-carbon-time text-3xl"></div>
-    <div class="mt-2 font-bold">VSS</div>
-    <div class="text-sm opacity-80">Snapshot & phục hồi.</div>
-  </div>
-</div>
+- **`$FILE_NAME`**: Tên file, tất nhiên rồi!
+- **`$STANDARD_INFORMATION`**: Ngày tạo, chủ sở hữu, quyền truy cập...
+- ... và nhiều thuộc tính khác.
+- Quan trọng nhất là **`$DATA`**, nơi chứa dữ liệu của file... hoặc "địa chỉ" của nó.
 
 </v-clicks>
 
+::right::
+
+<div class="p-4 rounded bg-gray-500/10 shadow-md">
+<p class="font-bold text-center">Ví dụ về một MFT Record</p>
+<div class="mt-4 font-mono text-sm space-y-2">
+  <p><strong>Record Header</strong>: [Thông tin quản lý]</p>
+  <p><strong>Attr: $STANDARD_INFO</strong>: { Timestamps, Owner... }</p>
+  <p><strong>Attr: $FILE_NAME</strong>: "baocao.docx"</p>
+  <p class="p-2 bg-blue-500/20 rounded"><strong>Attr: $DATA</strong>: { ...Nội dung hoặc Con trỏ... }</p>
+  <p><strong>Attr: $SECURITY_DESCRIPTOR</strong>: { ACLs... }</p>
+</div>
+</div>
+
+---
+layout: two-cols-header
+---
+
+# Tối Ưu Tốc Độ: "Nội Trú" vs "Ngoại Trú"
+
+::left::
+
+### <span class="i-carbon-home inline-block"></span> Dữ Liệu Nội Trú (Resident)
+<p class="opacity-70">"Nội dung được ghi thẳng lên thẻ"</p>
+<div v-click>
+<p>Với file <strong>siêu nhỏ</strong> (vài dòng text), NTFS lưu luôn dữ liệu <strong>bên trong MFT record</strong>.</p>
+<p class="mt-4 font-bold text-green-500">➡️ Truy cập cực nhanh, không cần phải "vào kho" tìm kiếm!</p>
+    </div>
+
+::right::
+
+### <span class="i-carbon-building inline-block"></span> Dữ Liệu Ngoại Trú (Non-resident)
+<p class="opacity-70">"Thẻ chỉ ghi địa chỉ trong kho"</p>
+<div v-click>
+<p>Với file <strong>lớn</strong>, MFT record chỉ lưu <strong>"địa chỉ"</strong> nơi dữ liệu thực sự được cất giữ trên đĩa.</p>
+<p class="mt-4 font-bold">➡️ Đây là cách hoạt động thông thường.</p>
+  </div>
+
+---
+layout: two-cols-header
+---
+
+# Tính Năng #1: Journaling - "Sổ Ghi Chép An Toàn"
+
+<p v-click><strong>Vấn đề:</strong> Điều gì xảy ra nếu mất điện khi đang lưu file?</p>
+<p v-click><strong>Giải pháp của NTFS:</strong> Trước khi thực hiện bất kỳ thay đổi nào, nó sẽ ghi "ý định" vào một cuốn sổ nhật ký đặc biệt (`$LogFile`).</p>
+<p v-click class="font-bold text-green-500 mt-4">Lợi ích: Lỡ bị mất điện thì Khi có điện lại, hệ thống chỉ cần đọc lại sổ nhật ký để hoàn thành nốt việc đang dang dở hoặc hủy bỏ. Đảm bảo dữ liệu luôn nhất quán!</p>
+
+::right::
+
+<div v-click class="p-4 rounded bg-gray-500/10">
+  <p class="font-bold text-center">Luồng Hoạt Động An Toàn</p>
+  <ol class="mt-4 space-y-4 text-center">
+    <li>Ứng dụng yêu cầu Ghi file</li>
+    <div class="i-carbon-arrow-down mx-auto text-2xl"></div>
+    <li>Ghi vào <span class="font-mono text-blue-500">Nhật Ký ($LogFile)</span></li>
+  <div class="relative">
+      <div class="i-carbon-arrow-down mx-auto text-2xl"></div>
+      <div v-click class="i-carbon-flash-filled absolute text-3xl text-yellow-400 -right-2 top-0 animate-ping"></div>
+    </div>
+    <li>Ghi vào Đĩa (Vị trí thật)</li>
+  </ol>
+</div>
+
+---
+layout: two-cols-header
+---
+
+# Tính Năng #2: Security - "Thẻ Thư Viện Phân Quyền"
+
+**Access Control Lists (ACLs):** Cho phép thiết lập quyền truy cập cực kỳ chi tiết.
+
+<v-clicks>
+
+- Vượt xa mô hình 3 lớp đơn giản (owner, group, other) của Linux.
+- Có thể gán quyền (Đọc, Ghi, Xóa,...) cho **từng người dùng** hoặc **từng nhóm** trên **từng file/thư mục**.
+- **Quy tắc vàng:** Một lệnh <span class="text-red-500 font-bold">Từ chối (Deny)</span> luôn mạnh hơn mọi lệnh <span class="text-green-500 font-bold">Cho phép (Allow)</span>.
+
+</v-clicks>
+
+::right::
+
+<div v-click class="p-4 rounded bg-gray-500/10">
+  <p class="font-bold text-center flex items-center gap-2"><span class="i-carbon-document"></span> baocao.docx ACLs</p>
+  <ul class="mt-4 font-mono text-sm space-y-2">
+    <li class="flex justify-between"><span>User: Alice</span> <span class="text-green-500">[Allow: Read, Write]</span></li>
+    <li class="flex justify-between"><span>Group: Marketing</span> <span class="text-green-500">[Allow: Read]</span></li>
+    <li class="flex justify-between"><span>User: Bob</span> <span class="text-red-500">[Deny: All]</span></li>
+    <li class="flex justify-between"><span>Everyone</span> <span class="text-gray-500">[None]</span></li>
+  </ul>
+</div>
+
+---
+
+# Các "Siêu Năng Lực" Khác
+
+<div class="grid grid-cols-3 gap-8 mt-8 text-center">
+<div v-click>
+  <div class="i-carbon-camera text-6xl"></div>
+  <h3 class="font-bold mt-2">Volume Shadow Copy (VSS)</h3>
+  <p class="text-sm opacity-80">Tạo "ảnh chụp" tức thời của ổ đĩa để sao lưu an toàn. Nền tảng của System Restore.</p>
+  </div>
+<div v-click>
+  <div class="i-carbon-locked text-6xl"></div>
+  <h3 class="font-bold mt-2">Encryption (EFS)</h3>
+  <p class="text-sm opacity-80">Mã hóa file/thư mục. Chỉ người dùng có "chìa khóa" mới có thể đọc được dữ liệu.</p>
+  </div>
+<div v-click>
+  <div class="i-carbon-arrows-vertical text-6xl"></div>
+  <h3 class="font-bold mt-2">Compression</h3>
+  <p class="text-sm opacity-80">Tự động nén dữ liệu một cách "vô hình" để tiết kiệm dung lượng ổ đĩa.</p>
+  </div>
+</div>
+
+
+---
+layout: two-cols-header
+---
+
+# Tổng Kết: NTFS Dưới Kính Lúp
+
+::left::
+
+### <span class="i-carbon-checkmark-outline inline-block text-green-500"></span> Ưu điểm
+
+<ul>
+  <li v-click><strong>Độ tin cậy cao</strong> (nhờ Journaling).</li>
+  <li v-click><strong>Bảo mật mạnh mẽ</strong> (nhờ ACLs).</li>
+  <li v-click><strong>Hiệu năng linh hoạt</strong> (xử lý tốt file nhỏ và lớn).</li>
+  <li v-click><strong>Bộ tính năng doanh nghiệp</strong> phong phú.</li>
+</ul>
+
+::right::
+
+### <span class="i-carbon-close-outline inline-block text-red-500"></span> Nhược điểm
+
+<ul>
+  <li v-click><strong>Phức tạp:</strong> Cấu trúc MFT tạo ra nhiều overhead (dữ liệu quản lý).</li>
+  <li v-click class="font-bold text-red-400"><strong>Tương thích kém:</strong> Đây là điểm yếu lớn nhất. Linux & macOS đọc thì dễ, nhưng ghi dữ liệu một cách ổn định thì rất khó khăn.</li>
+</ul>
 ---
 layout: two-cols
 transition: slide-up
