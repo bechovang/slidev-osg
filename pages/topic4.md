@@ -917,7 +917,7 @@ layout: default
 <div class="grid grid-cols-2 gap-8 mt-10">
 <div v-click class="p-4 text-center rounded bg-gray-500/10">
   <div class="i-carbon-settings text-6xl text-red-500"></div>
-  <h3 class="font-bold mt-2">Write Amplification (Write amplification)</h3>
+  <h3 class="font-bold mt-2">Write Amplification</h3>
   <p class="text-sm opacity-80 mt-2">
     You want to write <span class="font-bold">1MB</span>, but the actual disk needs to work up to <span class="font-bold">3MB</span>! <br>
     (Due to complex "read-modify-write" mechanism). <br>
@@ -927,7 +927,7 @@ layout: default
 
 <div v-click class="p-4 text-center rounded bg-gray-500/10">
   <div class="i-carbon-chart-scatter text-6xl text-blue-500"></div>
-  <h3 class="font-bold mt-2">Wear Leveling (Wear leveling)</h3>
+  <h3 class="font-bold mt-2">Wear Leveling</h3>
   <p class="text-sm opacity-80 mt-2">
     Each memory cell has a finite lifespan. The controller must be "smart" to write data evenly across the disk. <br>
     (Similar to using all pages in a book). <br>
@@ -953,7 +953,7 @@ layout: default
 </div>
 
 <div v-click class="p-4 rounded bg-gray-500/10">
-  <h3 class="font-bold flex items-center gap-2"><span class="i-carbon-security text-2xl text-green-500"></span> Data Integrity (Data integrity)</h3>
+  <h3 class="font-bold flex items-center gap-2"><span class="i-carbon-security text-2xl text-green-500"></span> Data Integrity</h3>
   <p class="text-sm opacity-80 mt-2">
     Uses checksum (like "fingerprint") to automatically detect and fix "silent" data errors.
   </p>
