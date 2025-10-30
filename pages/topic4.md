@@ -42,18 +42,18 @@ layout: default
 <div class="grid grid-cols-3 gap-8 mt-8">
   <div class="flex flex-col items-center">
     <img src="https://i.pravatar.cc/240?img=11" alt="Avatar" class="w-28 h-28 rounded-full object-cover shadow-lg"/>
-    <div class="mt-3 text-lg font-bold">[Họ Tên 1]</div>
-    <div class="text-gray-500">MSSV: [xxxxxxxxx]</div>
+    <div class="mt-3 text-lg font-bold">Nguyen Ngoc Phuc</div>
+    <div class="text-gray-500">MSSV: SE203055</div>
   </div>
   <div class="flex flex-col items-center">
     <img src="https://i.pravatar.cc/240?img=22" alt="Avatar" class="w-28 h-28 rounded-full object-cover shadow-lg"/>
-    <div class="mt-3 text-lg font-bold">[Họ Tên 2]</div>
-    <div class="text-gray-500">MSSV: [xxxxxxxxx]</div>
+    <div class="mt-3 text-lg font-bold">Dam Le Tuan Anh</div>
+    <div class="text-gray-500">MSSV: SE204111</div>
   </div>
   <div class="flex flex-col items-center">
     <img src="https://i.pravatar.cc/240?img=33" alt="Avatar" class="w-28 h-28 rounded-full object-cover shadow-lg"/>
-    <div class="mt-3 text-lg font-bold">[Họ Tên 3]</div>
-    <div class="text-gray-500">MSSV: [xxxxxxxxx]</div>
+    <div class="mt-3 text-lg font-bold">Nguyen Quang Son</div>
+    <div class="text-gray-500">MSSV: SE171738</div>
   </div>
 </div>
 
@@ -84,7 +84,10 @@ transition: fade
 
 # Let’s explore 4 core concepts in a File System
 
-<div class="opacity-80">FILE • DIRECTORY • METADATA • BLOCK</div>
+- FILE 
+- DIRECTORY 
+- METADATA 
+- BLOCK
 
 ---
 layout: default
@@ -163,7 +166,7 @@ layout: two-cols
   <p class="font-bold text-green-500">✔️ Strengths:</p>
   <ul>
     <li><strong>Extremely simple:</strong> Easy to understand structure.</li>
-    <li><strong>Absolutely compatible:</strong> "Speaks" all languages: Windows, macOS, Linux, TV, Cameras...</li>
+    <li><strong>Absolutely compatible:</strong>: Windows, macOS, Linux, TV, Cameras...</li>
   </ul>
 
   <br>
