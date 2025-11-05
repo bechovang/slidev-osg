@@ -52,7 +52,6 @@ transition: fade
     <ul class="space-y-2">
       <li><strong>Project:</strong> FPT Campus Network Infrastructure</li>
       <li><strong>Group:</strong> 4</li>
-      <li><strong>Instructor:</strong> [Instructor's Name]</li>
     </ul>
   </div>
   
