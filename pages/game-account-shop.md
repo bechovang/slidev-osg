@@ -32,38 +32,8 @@ routerMode: hash
 
 <div class="mt-4 flex items-center gap-4">
   <div class="border-2 border-solid border-green-800 bg-green-800/20 rounded-lg px-4 py-2">
-    <span class="text-green-400 font-bold">85% Hoàn Thành</span>
+    <span class="text-green-400 font-bold">Team: AECoding</span>
   </div>
-  <div class="border-2 border-solid border-blue-800 bg-blue-800/20 rounded-lg px-4 py-2">
-    <span class="text-blue-400">15/18 Stories</span>
-  </div>
-</div>
-
----
-layout: center
-class: text-center
-glowSeed: 56
----
-
-# Tổng Quan Dự Án
-
-<div class="flex items-center justify-center gap-12 mt-8">
-  <div class="text-center">
-    <div class="text-6xl font-bold text-green-400">85%</div>
-    <div class="text-sm opacity-70">Hoàn Thành</div>
-  </div>
-  <div class="text-center">
-    <div class="text-6xl font-bold text-blue-400">15/18</div>
-    <div class="text-sm opacity-70">Stories</div>
-  </div>
-  <div class="text-center">
-    <div class="text-6xl font-bold text-purple-400">10%</div>
-    <div class="text-sm opacity-70">Phí Nền Tảng</div>
-  </div>
-</div>
-
-<div class="mt-12">
-  <span class="text-xl opacity-80">Spring Boot 3.5.0 + Thymeleaf + MySQL</span>
 </div>
 
 ---
@@ -160,8 +130,8 @@ glowSeed: 88
   </div>
   <div class="flex flex-col gap-3">
     <div>
-      <div class="text-lg font-semibold text-green-300">~30,000 tỷ VNĐ/năm</div>
-      <div class="text-sm opacity-70">Quy mô thị trường game Việt Nam</div>
+      <div class="text-lg font-semibold text-green-300">Thị trường lớn</div>
+      <div class="text-sm opacity-70">Quy mô thị trường game Việt Nam ngày càng tăng</div>
     </div>
     <div>
       <div class="text-lg font-semibold text-green-300">Nhu cầu cao</div>
@@ -177,12 +147,12 @@ glowSeed: 88
 <div v-click class="border-2 border-solid border-red-800 bg-red-800/20 rounded-lg p-6">
   <div class="flex items-center gap-3 mb-4">
     <div class="i-carbon:warning-alt text-red-300 text-3xl" />
-    <span class="font-bold text-2xl">Vấn Đề Hiện Tại</span>
+    <span class="font-bold text-2xl">Nhưng... Giao dịch hiện tại là một 'Canh Bạc'</span>
   </div>
   <div class="flex flex-col gap-3">
     <div class="flex items-center gap-2">
       <div class="i-carbon:close text-red-400" />
-      <span>Giao dịch qua Facebook/Zalo - Không bảo vệ</span>
+      <span>Giao dịch qua mạng - Không bảo đảm</span>
     </div>
     <div class="flex items-center gap-2">
       <div class="i-carbon:close text-red-400" />
@@ -194,7 +164,7 @@ glowSeed: 88
     </div>
     <div class="flex items-center gap-2">
       <div class="i-carbon:close text-red-400" />
-      <span>Thanh toán thủ công - Tranh chấp cao</span>
+      <span>Thanh toán thủ công - Khó truy cứu</span>
     </div>
   </div>
 </div>
@@ -207,27 +177,27 @@ class: text-center
 glowSeed: 104
 ---
 
-# "Mua Bán Không Chính Thức"
+# Người Mua ➔ Facebook/Zalo ➔ Người Bán
 
 <div class="mt-8 text-xl opacity-80">
-  Rủi ro khi giao dịch qua Facebook/Zalo
+  80% giao dịch tự phát tiềm ẩn rủi ro lừa đảo
 </div>
 
 <div class="mt-6 flex justify-center gap-4">
 
 <div class="border-2 border-solid border-red-800 bg-red-900/30 rounded-lg px-6 py-3">
   <div class="i-carbon:warning-alt text-red-300 text-2xl mb-2" />
-  <div class="font-bold">Rủi ro cao</div>
+  <div class="font-bold">Chuyển tiền xong bị block</div>
 </div>
 
 <div class="border-2 border-solid border-red-800 bg-red-900/30 rounded-lg px-6 py-3">
   <div class="i-carbon:warning-alt text-red-300 text-2xl mb-2" />
-  <div class="font-bold">Lừa đảo</div>
+  <div class="font-bold">Nick sai mật khẩu</div>
 </div>
 
 <div class="border-2 border-solid border-red-800 bg-red-900/30 rounded-lg px-6 py-3">
   <div class="i-carbon:warning-alt text-red-300 text-2xl mb-2" />
-  <div class="font-bold">Không bảo vệ</div>
+  <div class="font-bold">Không ai giải quyết</div>
 </div>
 
 </div>
@@ -466,7 +436,7 @@ glowSeed: 168
 <div v-click class="mt-6 flex justify-center">
   <div class="border-2 border-solid border-green-800 bg-green-900/30 rounded-lg px-6 py-3 flex items-center gap-3">
     <div class="i-carbon:star text-yellow-300 text-2xl" />
-    <span>Đăng nhập game & Đánh giá (Optional)</span>
+    <span>Đăng nhập game & Đánh giá (Optional - Upcoming)</span>
   </div>
 </div>
 
@@ -669,6 +639,312 @@ glowSeed: 216
 </div>
 
 </div>
+
+
+
+---
+class: py-10
+glowSeed: 296
+---
+
+# Security Features - Tính Năng Bảo Mật
+
+<div class="mt-6 grid grid-cols-2 gap-6">
+
+<div class="border-2 border-solid border-green-800 bg-green-800/20 rounded-lg p-5">
+  <div class="font-bold mb-4 flex items-center gap-2 text-green-300">
+    <div class="i-carbon:shield text-xl" />
+    <span>Authentication</span>
+  </div>
+  <div class="flex flex-col gap-2 text-sm">
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:checkmark-outline text-green-400 min-w-5" />
+      <span>BCrypt 10 rounds - Password hashing mạnh</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:checkmark-outline text-green-400 min-w-5" />
+      <span>Session timeout - 30 phút không hoạt động</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:checkmark-outline text-green-400 min-w-5" />
+      <span>RBAC - Role-based: USER, ADMIN</span>
+    </div>
+  </div>
+</div>
+
+<div class="border-2 border-solid border-purple-800 bg-purple-800/20 rounded-lg p-5">
+  <div class="font-bold mb-4 flex items-center gap-2 text-purple-300">
+    <div class="i-carbon:locked text-xl" />
+    <span>Authorization</span>
+  </div>
+  <div class="flex flex-col gap-2 text-sm">
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:checkmark-outline text-green-400 min-w-5" />
+      <span>CSRF protection - Bảo vệ state-changing</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:checkmark-outline text-green-400 min-w-5" />
+      <span>@PreAuthorize - Method-level security</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:checkmark-outline text-green-400 min-w-5" />
+      <span>Business logic - Seller không mua listing của mình</span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+---
+class: py-10
+glowSeed: 312
+---
+
+# Key Achievements - Thành Tựu Nổi Bật
+
+<div class="mt-6 grid grid-cols-2 gap-6">
+
+<div v-click class="border-2 border-solid border-green-800 bg-green-800/20 rounded-lg p-5">
+  <div class="font-bold mb-3 flex items-center gap-2 text-green-300">
+    <div class="i-carbon:checkmark-filled text-xl" />
+    <span>User-Friendly</span>
+  </div>
+  <div class="flex flex-col gap-2 text-sm">
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:checkmark-outline text-green-400" />
+      <span>Giao diện tiếng Việt 100%</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:checkmark-outline text-green-400" />
+      <span>QR payment - Dễ sử dụng</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:checkmark-outline text-green-400" />
+      <span>Email tự động</span>
+    </div>
+  </div>
+</div>
+
+<div v-click class="border-2 border-solid border-blue-800 bg-blue-800/20 rounded-lg p-5">
+  <div class="font-bold mb-3 flex items-center gap-2 text-blue-300">
+    <div class="i-carbon:shield text-xl" />
+    <span>Secure</span>
+  </div>
+  <div class="flex flex-col gap-2 text-sm">
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:checkmark-outline text-green-400" />
+      <span>BCrypt, RBAC</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:checkmark-outline text-green-400" />
+      <span>Email verification</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:checkmark-outline text-green-400" />
+      <span>Admin xác thực</span>
+    </div>
+  </div>
+</div>
+
+<div v-click class="border-2 border-solid border-purple-800 bg-purple-800/20 rounded-lg p-5">
+  <div class="font-bold mb-3 flex items-center gap-2 text-purple-300">
+    <div class="i-carbon:idea text-xl" />
+    <span>Transparent</span>
+  </div>
+  <div class="flex flex-col gap-2 text-sm">
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:checkmark-outline text-green-400" />
+      <span>10% phí minh bạch</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:checkmark-outline text-green-400" />
+      <span>Monthly payouts rõ ràng</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:checkmark-outline text-green-400" />
+      <span>Quy trình transparent</span>
+    </div>
+  </div>
+</div>
+
+<div v-click class="border-2 border-solid border-amber-800 bg-amber-800/20 rounded-lg p-5">
+  <div class="font-bold mb-3 flex items-center gap-2 text-amber-300">
+    <div class="i-carbon:chart-line-smooth text-xl" />
+    <span>Scalable</span>
+  </div>
+  <div class="flex flex-col gap-2 text-sm">
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:checkmark-outline text-green-400" />
+      <span>Modular architecture</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:checkmark-outline text-green-400" />
+      <span>Well-documented</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:checkmark-outline text-green-400" />
+      <span>Sẵn sàng scale</span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+---
+class: py-10
+glowSeed: 328
+---
+
+# Future Enhancements - Tính Năng Tương Lai
+
+<div class="mt-6 grid grid-cols-2 gap-6">
+
+<div class="border-2 border-solid border-blue-800 bg-blue-800/20 rounded-lg p-5">
+  <div class="font-bold mb-4 flex items-center gap-2 text-blue-300">
+    <div class="i-carbon:calendar text-xl" />
+    <span>Phase 2 Features</span>
+  </div>
+  <div class="flex flex-col gap-2 text-sm">
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:calendar text-gray-400" />
+      <span>Admin Dashboard với charts (Chart.js)</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:calendar text-gray-400" />
+      <span>Seller Profile public page</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:calendar text-gray-400" />
+      <span>Buyer purchase history</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:calendar text-gray-400" />
+      <span>Advanced search filters</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:calendar text-gray-400" />
+      <span>Wallet system (deposit/withdraw)</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:calendar text-gray-400" />
+      <span>Post-puchase rating</span>
+    </div>
+  </div>
+</div>
+
+<div class="border-2 border-solid border-purple-800 bg-purple-800/20 rounded-lg p-5">
+  <div class="font-bold mb-4 flex items-center gap-2 text-purple-300">
+    <div class="i-carbon:rocket text-xl" />
+    <span>Phase 3 Features</span>
+  </div>
+  <div class="flex flex-col gap-2 text-sm">
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:calendar text-gray-400" />
+      <span>Multi-currency support</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:calendar text-gray-400" />
+      <span>Escrow service</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:calendar text-gray-400" />
+      <span>Dispute resolution system</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:calendar text-gray-400" />
+      <span>Mobile app (Flutter)</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:calendar text-gray-400" />
+      <span>AI-powered fraud detection</span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+---
+layout: center
+class: text-center
+glowSeed: 344
+---
+
+# Kết Luận
+
+<div class="mt-8 text-xl opacity-90">
+  <div class="mb-6">Game Account Shop - MVP hoàn chỉnh</div>
+</div>
+
+<div class="grid grid-cols-2 gap-4 max-w-3xl mx-auto mt-8">
+
+<div class="border-2 border-solid border-green-800 bg-green-800/20 rounded-lg p-4 text-left">
+  <div class="flex items-center gap-2 mb-3">
+    <div class="i-carbon:checkmark-filled text-green-300 text-xl" />
+    <span class="font-bold text-green-300">An toàn</span>
+  </div>
+  <div class="text-sm opacity-80">Xác thực admin, credentials sau thanh toán</div>
+</div>
+
+<div class="border-2 border-solid border-green-800 bg-green-800/20 rounded-lg p-4 text-left">
+  <div class="flex items-center gap-2 mb-3">
+    <div class="i-carbon:checkmark-filled text-green-300 text-xl" />
+    <span class="font-bold text-green-300">Uy tín</span>
+  </div>
+  <div class="text-sm opacity-80">Review system, email verification</div>
+</div>
+
+<div class="border-2 border-solid border-green-800 bg-green-800/20 rounded-lg p-4 text-left">
+  <div class="flex items-center gap-2 mb-3">
+    <div class="i-carbon:checkmark-filled text-green-300 text-xl" />
+    <span class="font-bold text-green-300">Minh bạch</span>
+  </div>
+  <div class="text-sm opacity-80">10% phí platform, quy trình rõ ràng</div>
+</div>
+
+<div class="border-2 border-solid border-green-800 bg-green-800/20 rounded-lg p-4 text-left">
+  <div class="flex items-center gap-2 mb-3">
+    <div class="i-carbon:checkmark-filled text-green-300 text-xl" />
+    <span class="font-bold text-green-300">Bền vững</span>
+  </div>
+  <div class="text-sm opacity-80">Kiến trúc vững chắc, sẵn sàng scale</div>
+</div>
+
+</div>
+
+<div class="mt-12">
+  <span class="text-2xl font-bold text-green-400">Ready for Production! 🚀</span>
+</div>
+
+---
+layout: center
+class: text-center
+glowSeed: 56
+
+---
+
+# Phần tài liệu
+
+<div class="flex items-center justify-center gap-12 mt-8">
+  <div class="text-center">
+    <div class="text-6xl font-bold text-green-400">Epics Breakdown</div>
+  </div>
+</div>
+
+<div class="mt-12">
+  <span class="text-xl opacity-80">Dự án F-Code Challenge 3 - Xây dựng bởi AECoing</span>
+</div>
+
+
+
+
+
+<!-- ======================================================================================================== -->
+<!-- Đọc thêm
+<!-- ======================================================================================================== -->
+
+
+
+
 
 ---
 class: py-10
@@ -911,274 +1187,7 @@ glowSeed: 280
 
 </div>
 
----
-class: py-10
-glowSeed: 296
----
 
-# Security Features - Tính Năng Bảo Mật
-
-<div class="mt-6 grid grid-cols-2 gap-6">
-
-<div class="border-2 border-solid border-green-800 bg-green-800/20 rounded-lg p-5">
-  <div class="font-bold mb-4 flex items-center gap-2 text-green-300">
-    <div class="i-carbon:shield text-xl" />
-    <span>Authentication</span>
-  </div>
-  <div class="flex flex-col gap-2 text-sm">
-    <div class="flex items-center gap-2">
-      <div class="i-carbon:checkmark-outline text-green-400 min-w-5" />
-      <span>BCrypt 10 rounds - Password hashing mạnh</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div class="i-carbon:checkmark-outline text-green-400 min-w-5" />
-      <span>Session timeout - 30 phút không hoạt động</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div class="i-carbon:checkmark-outline text-green-400 min-w-5" />
-      <span>RBAC - Role-based: USER, ADMIN</span>
-    </div>
-  </div>
-</div>
-
-<div class="border-2 border-solid border-purple-800 bg-purple-800/20 rounded-lg p-5">
-  <div class="font-bold mb-4 flex items-center gap-2 text-purple-300">
-    <div class="i-carbon:locked text-xl" />
-    <span>Authorization</span>
-  </div>
-  <div class="flex flex-col gap-2 text-sm">
-    <div class="flex items-center gap-2">
-      <div class="i-carbon:checkmark-outline text-green-400 min-w-5" />
-      <span>CSRF protection - Bảo vệ state-changing</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div class="i-carbon:checkmark-outline text-green-400 min-w-5" />
-      <span>@PreAuthorize - Method-level security</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div class="i-carbon:checkmark-outline text-green-400 min-w-5" />
-      <span>Business logic - Seller không mua listing của mình</span>
-    </div>
-  </div>
-</div>
-
-</div>
-
----
-class: py-10
-glowSeed: 312
----
-
-# Key Achievements - Thành Tựu Nổi Bật
-
-<div class="mt-6 grid grid-cols-2 gap-6">
-
-<div v-click class="border-2 border-solid border-green-800 bg-green-800/20 rounded-lg p-5">
-  <div class="font-bold mb-3 flex items-center gap-2 text-green-300">
-    <div class="i-carbon:checkmark-filled text-xl" />
-    <span>User-Friendly</span>
-  </div>
-  <div class="flex flex-col gap-2 text-sm">
-    <div class="flex items-center gap-2">
-      <div class="i-carbon:checkmark-outline text-green-400" />
-      <span>Giao diện tiếng Việt 100%</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div class="i-carbon:checkmark-outline text-green-400" />
-      <span>QR payment - Dễ sử dụng</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div class="i-carbon:checkmark-outline text-green-400" />
-      <span>Email tự động</span>
-    </div>
-  </div>
-</div>
-
-<div v-click class="border-2 border-solid border-blue-800 bg-blue-800/20 rounded-lg p-5">
-  <div class="font-bold mb-3 flex items-center gap-2 text-blue-300">
-    <div class="i-carbon:shield text-xl" />
-    <span>Secure</span>
-  </div>
-  <div class="flex flex-col gap-2 text-sm">
-    <div class="flex items-center gap-2">
-      <div class="i-carbon:checkmark-outline text-green-400" />
-      <span>BCrypt, RBAC</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div class="i-carbon:checkmark-outline text-green-400" />
-      <span>Email verification</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div class="i-carbon:checkmark-outline text-green-400" />
-      <span>Admin xác thực</span>
-    </div>
-  </div>
-</div>
-
-<div v-click class="border-2 border-solid border-purple-800 bg-purple-800/20 rounded-lg p-5">
-  <div class="font-bold mb-3 flex items-center gap-2 text-purple-300">
-    <div class="i-carbon:idea text-xl" />
-    <span>Transparent</span>
-  </div>
-  <div class="flex flex-col gap-2 text-sm">
-    <div class="flex items-center gap-2">
-      <div class="i-carbon:checkmark-outline text-green-400" />
-      <span>10% phí minh bạch</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div class="i-carbon:checkmark-outline text-green-400" />
-      <span>Monthly payouts rõ ràng</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div class="i-carbon:checkmark-outline text-green-400" />
-      <span>Quy trình transparent</span>
-    </div>
-  </div>
-</div>
-
-<div v-click class="border-2 border-solid border-amber-800 bg-amber-800/20 rounded-lg p-5">
-  <div class="font-bold mb-3 flex items-center gap-2 text-amber-300">
-    <div class="i-carbon:chart-line-smooth text-xl" />
-    <span>Scalable</span>
-  </div>
-  <div class="flex flex-col gap-2 text-sm">
-    <div class="flex items-center gap-2">
-      <div class="i-carbon:checkmark-outline text-green-400" />
-      <span>Modular architecture</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div class="i-carbon:checkmark-outline text-green-400" />
-      <span>Well-documented</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div class="i-carbon:checkmark-outline text-green-400" />
-      <span>Sẵn sàng scale</span>
-    </div>
-  </div>
-</div>
-
-</div>
-
----
-class: py-10
-glowSeed: 328
----
-
-# Future Enhancements - Tính Năng Tương Lai
-
-<div class="mt-6 grid grid-cols-2 gap-6">
-
-<div class="border-2 border-solid border-blue-800 bg-blue-800/20 rounded-lg p-5">
-  <div class="font-bold mb-4 flex items-center gap-2 text-blue-300">
-    <div class="i-carbon:calendar text-xl" />
-    <span>Phase 2 Features</span>
-  </div>
-  <div class="flex flex-col gap-2 text-sm">
-    <div class="flex items-center gap-2">
-      <div class="i-carbon:calendar text-gray-400" />
-      <span>Admin Dashboard với charts (Chart.js)</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div class="i-carbon:calendar text-gray-400" />
-      <span>Seller Profile public page</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div class="i-carbon:calendar text-gray-400" />
-      <span>Buyer purchase history</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div class="i-carbon:calendar text-gray-400" />
-      <span>Advanced search filters</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div class="i-carbon:calendar text-gray-400" />
-      <span>Wallet system (deposit/withdraw)</span>
-    </div>
-  </div>
-</div>
-
-<div class="border-2 border-solid border-purple-800 bg-purple-800/20 rounded-lg p-5">
-  <div class="font-bold mb-4 flex items-center gap-2 text-purple-300">
-    <div class="i-carbon:rocket text-xl" />
-    <span>Phase 3 Features</span>
-  </div>
-  <div class="flex flex-col gap-2 text-sm">
-    <div class="flex items-center gap-2">
-      <div class="i-carbon:calendar text-gray-400" />
-      <span>Multi-currency support</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div class="i-carbon:calendar text-gray-400" />
-      <span>Escrow service</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div class="i-carbon:calendar text-gray-400" />
-      <span>Dispute resolution system</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div class="i-carbon:calendar text-gray-400" />
-      <span>Mobile app (Flutter)</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div class="i-carbon:calendar text-gray-400" />
-      <span>AI-powered fraud detection</span>
-    </div>
-  </div>
-</div>
-
-</div>
-
----
-layout: center
-class: text-center
-glowSeed: 344
----
-
-# Kết Luận
-
-<div class="mt-8 text-xl opacity-90">
-  <div class="mb-6">Game Account Shop - MVP hoàn chỉnh</div>
-</div>
-
-<div class="grid grid-cols-2 gap-4 max-w-3xl mx-auto mt-8">
-
-<div class="border-2 border-solid border-green-800 bg-green-800/20 rounded-lg p-4 text-left">
-  <div class="flex items-center gap-2 mb-3">
-    <div class="i-carbon:checkmark-filled text-green-300 text-xl" />
-    <span class="font-bold text-green-300">An toàn</span>
-  </div>
-  <div class="text-sm opacity-80">Xác thực admin, credentials sau thanh toán</div>
-</div>
-
-<div class="border-2 border-solid border-green-800 bg-green-800/20 rounded-lg p-4 text-left">
-  <div class="flex items-center gap-2 mb-3">
-    <div class="i-carbon:checkmark-filled text-green-300 text-xl" />
-    <span class="font-bold text-green-300">Uy tín</span>
-  </div>
-  <div class="text-sm opacity-80">Review system, email verification</div>
-</div>
-
-<div class="border-2 border-solid border-green-800 bg-green-800/20 rounded-lg p-4 text-left">
-  <div class="flex items-center gap-2 mb-3">
-    <div class="i-carbon:checkmark-filled text-green-300 text-xl" />
-    <span class="font-bold text-green-300">Minh bạch</span>
-  </div>
-  <div class="text-sm opacity-80">10% phí platform, quy trình rõ ràng</div>
-</div>
-
-<div class="border-2 border-solid border-green-800 bg-green-800/20 rounded-lg p-4 text-left">
-  <div class="flex items-center gap-2 mb-3">
-    <div class="i-carbon:checkmark-filled text-green-300 text-xl" />
-    <span class="font-bold text-green-300">Bền vững</span>
-  </div>
-  <div class="text-sm opacity-80">Kiến trúc vững chắc, sẵn sàng scale</div>
-</div>
-
-</div>
-
-<div class="mt-12">
-  <span class="text-2xl font-bold text-green-400">Ready for Production! 🚀</span>
-</div>
 
 ---
 layout: center
@@ -1186,30 +1195,24 @@ class: text-center
 glowSeed: 360
 ---
 
-# Cảm ơn!
+# Cảm ơn tất cả mọi người vì đã lắng nghe!
+
+<div class="mt-8 text-xl opacity-80">
+  Thank you !
+</div>
 
 <div class="mt-8 text-xl opacity-80">
   Questions & Answers
-</div>
-
-<div class="mt-12 flex justify-center gap-4">
-
-<div class="border-2 border-solid border-white/5 bg-white/5 rounded-lg px-6 py-3">
-  <div class="i-ri:github-fill text-2xl mb-2" />
-  <div class="text-sm">GitHub Repository</div>
-</div>
-
-<div class="border-2 border-solid border-white/5 bg-white/5 rounded-lg px-6 py-3">
-  <div class="i-carbon:email text-2xl mb-2" />
-  <div class="text-sm">Contact</div>
-</div>
-
 </div>
 
 <div class="mt-8 opacity-60 text-sm">
   F-Code Challenge 3 - Game Account Shop<br/>
   Spring Boot 3.5.0 + Thymeleaf + MySQL
 </div>
+
+
+
+
 
 <!-- ======================================================= -->
 <!-- SLIDE TEMPLATES - Copy & Edit for New Slides -->
