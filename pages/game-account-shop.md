@@ -396,6 +396,17 @@ glowSeed: 152
 
 ---
 class: py-10
+glowSeed: 160
+---
+
+# Database ERD Diagram
+
+<div class="mt-6 flex justify-center">
+  <img src="/images_fcode_challenge3/ERD.svg" class="max-h-[70vh] w-auto rounded-lg" alt="Entity Relationship Diagram" />
+</div>
+
+---
+class: py-10
 glowSeed: 168
 ---
 
