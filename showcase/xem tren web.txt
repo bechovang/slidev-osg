@@ -1,0 +1,11 @@
+denuvo-slides
+https://momo5502.com/slides/denuvo/1
+
+py-intro
+https://kareimgazer.github.io/py-intro/1
+
+talks
+https://baizeai.github.io/talks/2025-06-11-kubecon-hk/#/1
+
+2022-jsconf-presentation
+https://moonlit-nougat-422445.netlify.app/1

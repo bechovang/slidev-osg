@@ -5,3 +5,26 @@ dist
 .vite-inspect
 .remote-assets
 components.d.ts
+
+
+# BMAD Framework Outputs
+# Ignore toàn bộ BMAD 
+_bmad/
+
+# Nhưng cho phép thư mục implementation-artifacts
+!_bmad-output/
+
+# Claude AI
+.claude/
+*.claude
+.claude*
+settings.local.json
+*.local.json
+
+.cursor/
+
+.agent/
+
+
+.github/
+
