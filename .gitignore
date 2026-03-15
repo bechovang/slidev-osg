@@ -6,6 +6,8 @@ dist
 .remote-assets
 components.d.ts
 
+mas present/
+
 
 # BMAD Framework Outputs
 # Ignore toàn bộ BMAD 

@@ -1,5 +1,5 @@
 ---
-src: ./pages/game-account-shop.md
+src: ./pages/mas291-project.md
 hide: false
 highlighter: shiki
 css: unocss
