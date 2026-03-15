@@ -447,7 +447,7 @@ class: py-8
 glowSeed: 120
 ---
 
-# PHẦN 4: PHÂN PHỐI MẪU (SAMPLING DISTRIBUTION)
+# PHẦN 4: PHÂN PHỐI MẪU 
 
 <div class="grid grid-cols-2 gap-5 mt-3">
 
@@ -487,7 +487,7 @@ glowSeed: 120
   <div class="text-sm space-y-2">
     <div class="bg-black/30 rounded p-2">
       <div class="opacity-60 text-xs">Sample A (Khối 8)</div>
-      <div class="font-mono">n = 50, x-bar = 153.9 cm</div>
+      <div class="font-mono">n = 50, x-bar = 153.82 cm</div>
     </div>
     <div class="bg-black/30 rounded p-2">
       <div class="opacity-60 text-xs">Sample B (Khối 9)</div>
@@ -538,8 +538,8 @@ glowSeed: 133
   <div class="text-sm space-y-2">
     <div>Dùng <span class="text-blue-300 font-bold">một giá trị</span> để ước lượng tham số tổng thể</div>
     <div class="p-2 bg-blue-900/20 rounded text-xs">
-      <div class="font-mono mb-1">mu-hat = x-bar = 153.9 cm</div>
-      <div class="opacity-80">→ Chiều cao TB Khối 8 ≈ 153.9 cm</div>
+      <div class="font-mono mb-1">mu-hat = x-bar = 153.82 cm</div>
+      <div class="opacity-80">→ Chiều cao TB Khối 8 ≈ 153.82 cm</div>
     </div>
     <div class="text-xs opacity-70">
       <div class="i-carbon:warning text-amber-300 inline" /> Hạn chế: Không cho biết độ chính xác
@@ -555,7 +555,7 @@ glowSeed: 133
   <div class="text-sm space-y-2">
     <div>Dùng <span class="text-green-300 font-bold">khoảng giá trị</span> để ước lượng với độ tin cậy nào đó</div>
     <div class="p-2 bg-green-900/20 rounded text-xs">
-      <div class="font-mono mb-1">95% CI: [152.61 ; 155.19]</div>
+      <div class="font-mono mb-1">95% CI: [152.58 ; 155.06]</div>
       <div class="opacity-80">→ Tin 95% rằng giá trị thật nằm trong khoảng này</div>
     </div>
     <div class="text-xs opacity-70">
@@ -599,12 +599,12 @@ glowSeed: 146
 <div class="border-2 border-solid border-green-800/30 bg-green-800/10 rounded-lg p-3">
   <div class="text-green-300 font-bold mb-2">Áp Dụng Cho Khối 8</div>
   <div class="text-xs space-y-1">
-    <div>x-bar = 153.9, s = 4.595, n = 50</div>
-    <div>df = 49, t(0.025, 49) = 2.009</div>
-    <div>Sai số: 2.009 × (4.595/√50) = 1.3058</div>
+    <div>x-bar = 153.82, s = 4.36, n = 50</div>
+    <div>df = 49, t(0.025, 49) = 2.01</div>
+    <div>Sai số: 2.01 × (4.36/√50) = 1.24</div>
     <div class="mt-2 p-2 bg-green-900/30 rounded">
       <div class="text-green-300 font-bold">95% CI:</div>
-      <div class="font-mono">[152.61 ; 155.19]</div>
+      <div class="font-mono">[152.58 ; 155.06]</div>
     </div>
   </div>
 </div>
@@ -635,11 +635,11 @@ glowSeed: 159
   <div class="space-y-2 text-sm">
     <div class="bg-black/30 rounded p-2">
       <div class="opacity-60 text-xs">Mean (x-bar-A)</div>
-      <div class="text-xl font-bold font-mono">153.9 cm</div>
+      <div class="text-xl font-bold font-mono">153.82 cm</div>
     </div>
     <div class="bg-black/30 rounded p-2">
       <div class="opacity-60 text-xs">Std (s-A)</div>
-      <div class="text-xl font-bold font-mono">4.595 cm</div>
+      <div class="text-xl font-bold font-mono">4.36 cm</div>
     </div>
     <div class="bg-black/30 rounded p-2">
       <div class="opacity-60 text-xs">n</div>
@@ -677,7 +677,7 @@ glowSeed: 159
     <div class="i-carbon:chart-line text-amber-300 text-xl" />
     <span class="font-bold">95% CI cho hiệu số (mu-A - mu-B):</span>
   </div>
-  <div class="font-mono text-lg text-red-300">[-6.39 ; -1.49]</div>
+  <div class="font-mono text-lg text-red-300">[-6.08 ; -1.96]</div>
   <div class="text-sm mt-2 opacity-90">
     <span class="i-carbon:checkmark-filled text-green-400 inline" /> <strong>Kết luận:</strong> Khoảng này hoàn toàn âm → Khối 8 thấp hơn Khối 9 với độ tin cậy 95%
   </div>
@@ -766,8 +766,8 @@ glowSeed: 185
     <span class="font-bold">Câu Hỏi</span>
   </div>
   <div class="text-sm">
-    <div>Chiều cao trung bình của Sample A có khác 155cm không?</div>
-    <div class="mt-2 opacity-70">(Mức ý nghĩa alpha = 0.05)</div>
+    <div>Chiều cao Khối 8 có khác chuẩn trung bình quốc gia (155cm) không?</div>
+    <div class="mt-2 opacity-70 text-xs italic">(Theo số liệu tham khảo Viện Dinh dưỡng Quốc gia)</div>
   </div>
 </div>
 
@@ -778,9 +778,9 @@ glowSeed: 185
   </div>
   <div class="text-sm font-mono">
     <div>H-0: mu = 155</div>
-    <div class="opacity-70">(Chiều cao TB = 155cm)</div>
+    <div class="opacity-70">(Khối 8 = chuẩn quốc gia)</div>
     <div class="mt-1">H-1: mu ≠ 155</div>
-    <div class="opacity-70">(Chiều cao TB ≠ 155cm)</div>
+    <div class="opacity-70">(Khối 8 ≠ chuẩn quốc gia)</div>
   </div>
 </div>
 
@@ -790,10 +790,10 @@ glowSeed: 185
     <span class="font-bold">Tính Toán</span>
   </div>
   <div class="text-xs space-y-1">
-    <div>x-bar = 145.67, s = 6.44, n = 30</div>
-    <div>t = (145.67 - 155) / (6.44/√30)</div>
+    <div>x-bar = 153.82, s = 4.36, n = 50 (Khối 8)</div>
+    <div>t = (153.82 - 155) / (4.36/√50)</div>
     <div class="p-2 bg-amber-900/20 rounded mt-2">
-      <div class="text-amber-300 font-bold">t = -7.94</div>
+      <div class="text-amber-300 font-bold">t = -1.91</div>
       <div class="opacity-70">(Test Statistic)</div>
     </div>
   </div>
@@ -805,15 +805,15 @@ glowSeed: 185
     <span class="font-bold">Kết Luận</span>
   </div>
   <div class="text-xs space-y-1">
-    <div>Critical value (df=29): ±2.045</div>
+    <div>Critical value (df=49): ±2.01</div>
     <div class="flex items-center gap-2 mt-2">
-      <span>-7.94</span>
-      <span class="text-red-400">< < -2.045</span>
+      <span>-1.91</span>
+      <span class="text-green-400">> -2.01</span>
     </div>
-    <div class="p-2 bg-red-900/30 rounded mt-2 text-red-300 font-bold">
-      → Bác bỏ H-0
+    <div class="p-2 bg-green-900/30 rounded mt-2 text-green-300 font-bold">
+      → KHÔNG bác bỏ H-0
     </div>
-    <div class="opacity-80">Chiều cao Sample A ≠ 155cm</div>
+    <div class="opacity-80">Chưa đủ bằng chứng thống kê để khẳng định Khối 8 khác chuẩn 155cm</div>
   </div>
 </div>
 
@@ -860,7 +860,7 @@ glowSeed: 211
     <span class="font-bold">Câu Hỏi</span>
   </div>
   <div class="text-sm">
-    <div>Sample A có thấp hơn Sample B không?</div>
+    <div>Khối 8 có thấp hơn Khối 9 không?</div>
     <div class="mt-2 opacity-70">(Mức ý nghĩa alpha = 0.05)</div>
   </div>
 </div>
@@ -872,9 +872,9 @@ glowSeed: 211
   </div>
   <div class="text-sm font-mono">
     <div>H-0: mu-1 = mu-2</div>
-    <div class="opacity-70">(Hai mẫu bằng nhau)</div>
+    <div class="opacity-70">(Hai khối bằng nhau)</div>
     <div class="mt-1">H-1: mu-1 < mu-2</div>
-    <div class="opacity-70">(Sample A < Sample B)</div>
+    <div class="opacity-70">(Khối 8 < Khối 9)</div>
   </div>
 </div>
 
@@ -884,11 +884,12 @@ glowSeed: 211
     <span class="font-bold">Tính Toán</span>
   </div>
   <div class="text-xs space-y-1">
-    <div>Giả định phương sai bằng nhau</div>
-    <div>Phương sai gộp: Sp² = 29.38</div>
-    <div>t = (145.67 - 153.50) / √(29.38(1/30 + 1/30))</div>
+    <div>Khối 8: x-bar = 153.82, s = 4.36, n = 50</div>
+    <div>Khối 9: x-bar = 157.84, s = 5.91, n = 50</div>
+    <div>Phương sai gộp: Sp² = 26.97</div>
+    <div>t = (153.82 - 157.84) / √(26.97(1/50 + 1/50))</div>
     <div class="p-2 bg-amber-900/20 rounded mt-2">
-      <div class="text-amber-300 font-bold">t = -5.60</div>
+      <div class="text-amber-300 font-bold">t = -3.87</div>
     </div>
   </div>
 </div>
@@ -899,15 +900,15 @@ glowSeed: 211
     <span class="font-bold">Kết Luận</span>
   </div>
   <div class="text-xs space-y-1">
-    <div>Critical value (one-tail): -1.67</div>
+    <div>Critical value (df=98, one-tail): -1.66</div>
     <div class="flex items-center gap-2 mt-2">
-      <span>-5.60</span>
-      <span class="text-red-400">< < -1.67</span>
+      <span>-3.87</span>
+      <span class="text-red-400">< < -1.66</span>
     </div>
     <div class="p-2 bg-green-900/30 rounded mt-2 text-green-300 font-bold">
       → Bác bỏ H-0, Chấp nhận H-1
     </div>
-    <div class="opacity-80">Sample A THẤP HƠN Sample B</div>
+    <div class="opacity-80">Khối 8 THẤP HƠN Khối 9</div>
   </div>
 </div>
 
@@ -1081,6 +1082,89 @@ glowSeed: 250
 </div>
 
 ---
+class: py-8
+glowSeed: 262
+---
+
+# INSIGHT & Ý NGHĨA THỰC TẾ
+
+<div class="mt-6 grid grid-cols-2 gap-4">
+
+<v-clicks>
+
+<div class="border-2 border-solid border-green-800/40 bg-green-800/10 rounded-lg p-4">
+  <div class="flex items-center gap-2 mb-3">
+    <div class="i-carbon-trending-up text-green-300 text-2xl" />
+    <span class="font-bold text-green-300">Tăng Trưởng Theo Tuổi</span>
+  </div>
+  <div class="text-sm space-y-2">
+    <div class="font-mono text-xs bg-black/30 rounded p-2">
+      K6 (146cm) → K7 (152cm) → K8 (153.8cm) → K9 (157.8cm)
+    </div>
+    <div class="opacity-80">
+      Trung bình tăng <span class="text-green-300 font-bold">~4cm/năm</span>
+    </div>
+    <div class="text-xs opacity-70 italic">
+      Nhưng K7→K8 chỉ +2cm — dậy thì không đều
+    </div>
+  </div>
+</div>
+
+<div class="border-2 border-solid border-blue-800/40 bg-blue-800/10 rounded-lg p-4">
+  <div class="flex items-center gap-2 mb-3">
+    <div class="i-carbon-earth-filled text-blue-300 text-2xl" />
+    <span class="font-bold text-blue-300">So Chuẩn Quốc Gia</span>
+  </div>
+  <div class="text-sm space-y-2">
+    <div>Khối 8 <span class="text-blue-300">khác biệt không có ý nghĩa</span> với chuẩn 155cm</div>
+    <div class="p-2 bg-blue-900/20 rounded text-xs">
+      <div class="font-bold text-blue-300">→ Kết luận:</div>
+      <div>Học sinh nông thôn Thái Nguyên phát triển <span class="text-green-300">tương đương</span> chuẩn quốc gia</div>
+    </div>
+  </div>
+</div>
+
+<div class="border-2 border-solid border-purple-800/40 bg-purple-800/10 rounded-lg p-4">
+  <div class="flex items-center gap-2 mb-3">
+    <div class="i-carbon-chart-multiline text-purple-300 text-2xl" />
+    <span class="font-bold text-purple-300">Hạn Chế Của Mô Hình</span>
+  </div>
+  <div class="text-sm space-y-2">
+    <div>R² = <span class="text-purple-300 font-bold">0.46</span> — chiều cao chỉ giải thích 46% cân nặng</div>
+    <div class="text-xs opacity-80">
+      54% còn lại do: <span class="text-amber-300">giới tính, ăn uống, vận động...</span>
+    </div>
+    <div class="p-2 bg-purple-900/20 rounded text-xs">
+      <span class="text-purple-300">Gợi ý:</span> Thêm biến giới tính → R² tăng đáng kể
+    </div>
+  </div>
+</div>
+
+<div class="border-2 border-solid border-amber-800/40 bg-amber-800/10 rounded-lg p-4">
+  <div class="flex items-center gap-2 mb-3">
+    <div class="i-carbon-warning-alt text-amber-300 text-2xl" />
+    <span class="font-bold text-amber-300">Điểm Cần Chú Ý</span>
+  </div>
+  <div class="text-sm space-y-2">
+    <div>Cân nặng tối đa: <span class="text-amber-300 font-bold">90kg</span> (trung bình = 48kg)</div>
+    <div class="text-xs opacity-80">
+      Học sinh nặng gấp gần <span class="text-red-300">2 lần</span> trung bình
+    </div>
+    <div class="text-xs opacity-70 italic">
+      Giải thích variance cân nặng lớn hơn chiều cao
+    </div>
+  </div>
+</div>
+
+</v-clicks>
+
+</div>
+
+<div v-click class="mt-6 p-4 border-2 border-solid border-cyan-800/30 bg-cyan-800/10 rounded-lg text-center">
+  <div class="text-cyan-300 font-bold">Thống kê không chỉ là số — nó kể câu chuyện về sức khỏe học sinh</div>
+</div>
+
+---
 layout: center
 class: text-center
 glowSeed: 263
@@ -1088,7 +1172,7 @@ glowSeed: 263
 
 # PHẦN 8: TỔNG KẾT
 
-<div class="mt-6 grid grid-cols-3 gap-4 max-w-4xl mx-auto">
+<div class="mt-6 grid grid-cols-2 gap-4 max-w-4xl mx-auto">
 
 <v-clicks>
 
@@ -1107,7 +1191,7 @@ glowSeed: 263
   <div class="font-bold text-lg mb-2">Ước Lượng</div>
   <div class="text-sm opacity-70 space-y-1">
     <div>95% CI Khối 8</div>
-    <div>[152.6 ; 155.2]</div>
+    <div>[152.58 ; 155.06]</div>
     <div>Khối 9 > Khối 8</div>
   </div>
 </div>
@@ -1119,6 +1203,17 @@ glowSeed: 263
     <div>Y = 0.712X - 60.41</div>
     <div>R = 0.678</div>
     <div>Mô hình ý nghĩa</div>
+  </div>
+</div>
+
+<div class="border-2 border-solid border-red-800/40 bg-red-800/10 rounded-lg p-5">
+  <div class="i-carbon:test-tool text-red-300 text-4xl mb-3" />
+  <div class="font-bold text-lg mb-2">Kiểm Định</div>
+  <div class="text-sm opacity-70 space-y-1">
+    <div>1-sample: Khối 8 vs 155cm</div>
+    <div class="text-green-300">→ Không bác bỏ H0</div>
+    <div>2-sample: Khối 8 vs Khối 9</div>
+    <div class="text-red-300">→ Bác bỏ H0 (K8 < K9)</div>
   </div>
 </div>
 
@@ -1166,5 +1261,5 @@ glowSeed: 276
 </div>
 
 <div class="mt-8 text-center opacity-50 text-sm">
-  MAS291 - Xác Suất Thống Kê | FPT University - SE1853
+  MAS291 - Xác Suất Thống Kê | FPT University
 </div>
