@@ -32,20 +32,24 @@ routerMode: hash
 
 <div class="mt-4 flex items-center gap-4">
   <div class="border-2 border-solid border-blue-800 bg-blue-800/20 rounded-lg px-4 py-2">
-    <span class="text-blue-300 font-bold">Project Presentation</span>
+    <span class="text-blue-300 font-bold">Nhóm 3</span>
   </div>
 </div>
 
-<div class="mt-4 flex flex-wrap gap-3 text-sm opacity-70">
-  <div>Nguyen Thanh Long</div>
+<div class="mt-12 max-w-xl mx-auto flex flex-wrap justify-center gap-4 text-sm opacity-60 text-center">
+  <div>Nguyễn Ngọc Phúc</div>
   <div>•</div>
-  <div>Pham Anh Duc</div>
+  <div>Bùi Đồng Vỹ</div>
   <div>•</div>
-  <div>Le Nam Cuong</div>
+  <div>Nguyễn Phú</div>
   <div>•</div>
-  <div>Nguyen Thanh Thu</div>
+  <div>Đinh Trường</div>
   <div>•</div>
-  <div>Do Trung Hieu</div>
+  <div>Nguyễn Thành An</div>
+  <div>•</div>
+  <div>Nhật Huy</div>
+  <div>•</div>
+  <div>Phạm An</div>
 </div>
 
 ---
@@ -274,7 +278,7 @@ class: py-8
 glowSeed: 94
 ---
 
-# PHẦN 3: THỐNG KÊ MÔ Tả (DESCRIPTIVE STATISTICS)
+# PHẦN 3: THỐNG KÊ MÔ Tả 
 
 <div class="text-center mb-4">
   <span class="text-lg opacity-80">Các chỉ số thống kê cơ bản - "Bức tranh tổng quan về dữ liệu"</span>
@@ -684,7 +688,7 @@ class: py-6
 glowSeed: 172
 ---
 
-# PHẦN 6: KIỂM ĐỊNH GIẢ THUYẾT (HYPOTHESIS TESTING)
+# PHẦN 6: KIỂM ĐỊNH GIẢ THUYẾT 
 
 <div class="text-center mb-3">
   <span class="text-lg opacity-80">Trả lời câu hỏi: "Liệu sự khác biệt này có ý nghĩa thống kê hay chỉ do ngẫu nhiên?"</span>
@@ -916,7 +920,7 @@ class: py-8
 glowSeed: 224
 ---
 
-# PHẦN 7: HỒI QUY TUYẾN TÍNH (LINEAR REGRESSION)
+# PHẦN 7: HỒI QUY TUYẾN TÍNH 
 
 <div class="text-center mb-3">
   <span class="text-lg opacity-80">Mối quan hệ giữa Chiều cao (X) và Cân nặng (Y)</span>
@@ -1145,16 +1149,20 @@ glowSeed: 276
   <div class="text-2xl opacity-80">Questions & Discussion</div>
 </div>
 
-<div class="mt-12 flex justify-center gap-6 text-sm opacity-60">
-  <div>Nguyen Thanh Long</div>
+<div class="mt-12 max-w-xl mx-auto flex flex-wrap justify-center gap-4 text-sm opacity-60 text-center">
+  <div>Nguyễn Ngọc Phúc</div>
   <div>•</div>
-  <div>Pham Anh Duc</div>
+  <div>Bùi Đồng Vỹ</div>
   <div>•</div>
-  <div>Le Nam Cuong</div>
+  <div>Nguyễn Phú</div>
   <div>•</div>
-  <div>Nguyen Thanh Thu</div>
+  <div>Đinh Trường</div>
   <div>•</div>
-  <div>Do Trung Hieu</div>
+  <div>Nguyễn Thành An</div>
+  <div>•</div>
+  <div>Nhật Huy</div>
+  <div>•</div>
+  <div>Phạm An</div>
 </div>
 
 <div class="mt-8 text-center opacity-50 text-sm">
