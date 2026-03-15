@@ -1221,17 +1221,6 @@ glowSeed: 263
 
 </div>
 
-<div class="mt-8">
-  <v-click>
-    <div class="inline-block border-2 border-solid border-amber-800/40 bg-amber-800/10 rounded-lg px-8 py-4">
-      <span class="font-bold text-xl">Cảm ơn Cô & Các Bạn Đã Lắng Nghe!</span>
-    </div>
-  </v-click>
-</div>
-
-<div v-click class="mt-6 text-sm opacity-70">
-  Q&A - Câu Hỏi & Trả Lời
-</div>
 
 ---
 layout: end
