@@ -25,7 +25,7 @@ routerMode: hash
 <span class="text-xl opacity-80">Phân Tích Thống Kê Kết Quả Khám Sức Khỏe Học Sinh THCS</span>
 
 <div class="mt-8">
-  <span class="text-sm opacity-60">MAS291 - Xác Suất Thống Kê | FPT University - SE1853</span>
+  <span class="text-sm opacity-60">MAS291 - Xác Suất Thống Kê | FPT University</span>
 </div>
 
 </div>
@@ -272,6 +272,22 @@ glowSeed: 81
 <div v-click class="mt-4 border-2 border-solid border-amber-800/30 bg-amber-800/10 rounded-lg p-3 text-center">
   <span class="text-amber-300 font-bold">Nguồn dữ liệu:</span> Khảo sát ngẫu nhiên tại trường THCS thị trấn Đu, Phú Lương, Thái Nguyên
 </div>
+
+---
+layout: default
+glowSeed: 119
+---
+
+# Dữ Liệu Excel
+### 200 Học Sinh THCS Thị Trấn Đu, Phú Lương Thái Nguyên
+
+<div class="text-sm opacity-70 mb-4">
+  Bảng dữ liệu gốc từ file Excel - 200 học sinh
+</div>
+
+<img src="/images_mas291/excel screenshot data.png" class="mx-auto rounded-xl shadow-2xl" width="700"/>
+
+
 
 ---
 class: py-8
