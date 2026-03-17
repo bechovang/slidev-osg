@@ -462,9 +462,22 @@ glowSeed: 107
 class: py-8
 glowSeed: 120
 ---
-
 # PHẦN 4: PHÂN PHỐI MẪU 
+## Sample A & Sample B
+### Dữ liệu 2 mẫu dùng cho Ước lượng & Kiểm định
 
+<div class="text-sm opacity-70 mb-4">
+  Sample A (Khối 8) và Sample B (Khối 9) — Mỗi mẫu 50 học sinh
+</div>
+
+<img src="/images_mas291/data sample A sample B.png" class="mx-auto rounded-xl shadow-2xl" width="670"/>
+
+---
+class: py-8
+glowSeed: 120
+---
+
+# KHÁI NIỆM PHÂN PHỐI MẪU 
 <div class="grid grid-cols-2 gap-5 mt-3">
 
 <v-clicks>
