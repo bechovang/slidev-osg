@@ -1,0 +1,12 @@
+❯ cái của game-account-shop.md ấy
+❯ hiện tại nhiều slide dài lố trang màn hình quá, nêu ra giải pháp cho tôi,
+
+bạn tham khảo các template, layout , cấu trúc của dự án trước ấy, tuân thủ nó,
+hình có nhỏ cũng được, nội dung nhiều thì tách ra nhiều slide
+❯ giờ hãy đọc toàn bộ  nội dung và cấu trúc layout, template, slide hiện tại và
+ tận dụng cấu trúc, layout template đó để làm bài thuyết trình với nội dung này
+
+
+xem folder C:\Users\Admin\Desktop\GIT CLONE\slidev-osg\thuyet trinh dbi
+
+nhớ tận dụng các ảnh trong images, các pdf là ảnh ấy
