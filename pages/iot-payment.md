@@ -32,9 +32,20 @@ routerMode: hash
 
 <div class="mt-8 flex items-center gap-4">
   <div class="border-2 border-solid border-green-800 bg-green-800/20 rounded-lg px-4 py-2">
-    <span class="text-green-400 font-bold">Group 3</span>
+    <span class="text-green-400 font-bold">Group 2</span>
   </div>
 </div>
+
+
+
+<div class="mt-6 flex flex-col gap-2">
+1. Nguyen Ngoc Phuc <br>
+2. Than Nhat Huy <br>
+3. Dam Le Tuan Anh <br>
+4. Nguyen Pham An
+</div>
+
+
 
 </div>
 
@@ -58,16 +69,24 @@ glowSeed: 58
   </div>
   <div class="flex flex-col gap-2 text-sm">
     <div class="flex items-center gap-2">
-      <div class="i-carbon:close text-red-400 text-sm" />
+      <div class="i-carbon:close text-red-400 text-sm shrink-0" />
       <span>POS thương mại đắt đỏ (vài triệu/máy), cồng kềnh</span>
     </div>
     <div class="flex items-center gap-2">
-      <div class="i-carbon:close text-red-400 text-sm" />
-      <span>Khó tùy biến, phụ thuộc nhà cung cấp</span>
+      <div class="i-carbon:close text-red-400 text-sm shrink-0" />
+      <span>Khó tùy biến, phụ thuộc nhà cung cấp dịch vụ</span>
     </div>
     <div class="flex items-center gap-2">
-      <div class="i-carbon:close text-red-400 text-sm" />
-      <span>Thu ngân vẫn phải ngó điện thoại để check bill</span>
+      <div class="i-carbon:close text-red-400 text-sm shrink-0" />
+      <span>Thu ngân vẫn phải ngó điện thoại khách để check bill thủ công</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:close text-red-400 text-sm shrink-0" />
+      <span>QR tĩnh (giấy) khách chuyển khoản nhầm số tiền</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:close text-red-400 text-sm shrink-0" />
+      <span>Nạn lừa đảo bằng hình ảnh giao dịch giả mạo (Fake Bill) ngày càng tinh vi</span>
     </div>
   </div>
 </div>
@@ -79,16 +98,24 @@ glowSeed: 58
   </div>
   <div class="flex flex-col gap-2 text-sm">
     <div class="flex items-center gap-2">
-      <div class="i-carbon:checkmark text-green-400 text-sm" />
-      <span>Thiết bị nhúng để bàn, dưới vài trăm nghìn đồng</span>
+      <div class="i-carbon:checkmark text-green-400 text-sm shrink-0" />
+      <span>Thiết bị nhúng để bàn, chi phí cực thấp (dưới vài trăm nghìn đồng)</span>
     </div>
     <div class="flex items-center gap-2">
-      <div class="i-carbon:checkmark text-green-400 text-sm" />
-      <span>Tự hiển thị mã QR, khách quét & chuyển khoản</span>
+      <div class="i-carbon:checkmark text-green-400 text-sm shrink-0" />
+      <span>Tự chủ hoàn toàn công nghệ phần cứng và firmware</span>
     </div>
     <div class="flex items-center gap-2">
-      <div class="i-carbon:checkmark text-green-400 text-sm" />
-      <span>Loa tự đọc to số tiền khi thanh toán xong</span>
+      <div class="i-carbon:checkmark text-green-400 text-sm shrink-0" />
+      <span>Loa tự đọc to số tiền khi thanh toán xong, thu ngân không cần chạm điện thoại</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:checkmark text-green-400 text-sm shrink-0" />
+      <span>Tự động tạo mã QR động chứa sẵn số tiền, loại bỏ rủi ro sai sót và dán đè</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="i-carbon:checkmark text-green-400 text-sm shrink-0" />
+      <span>Xác thực giao dịch tức thì qua Webhook bảo mật, chặn đứng Fake Bill</span>
     </div>
   </div>
 </div>
@@ -116,7 +143,7 @@ glowSeed: 58
 </div>
 
 <!--
-"Vấn đề cốt lõi: POS đắt và cồng kềnh, thu ngân vẫn phải nhìn điện thoại. Giải pháp là một thiết bị nhúng giá chỉ khoảng 160 nghìn — rẻ hơn POS hàng chục lần — tự hiển thị QR và đọc to số tiền. Toàn bộ tiền chạy thật qua VietQR của PayOS."
+"Vấn đề cốt lõi: POS thương mại đắt đỏ, thu ngân tốn thời gian ngó điện thoại, QR tĩnh dễ bị tráo mã hoặc nhập sai số tiền, và nạn fake bill hoành hành. Giải pháp là thiết bị nhúng giá rẻ 160k tự hiển thị QR động chính xác số tiền, xác thực giao dịch qua webhook tức thì và phát loa báo để thu ngân rảnh tay."
 -->
 
 ---
@@ -182,7 +209,7 @@ glowSeed: 106
 # Sơ Đồ Đấu Nối Phần Cứng — Wokwi
 
 <div class="flex flex-col items-center justify-center mt-2">
-  <ZoomableImage src="/iot/image/schema%20wokwi.jpg" alt="Schematic" class="max-h-[470px] w-auto border border-white/10 rounded-lg shadow-lg" />
+  <ZoomableImage src="/iot/image/schema%20wokwi.jpg" alt="Schematic" class="max-h-[400px] w-auto border border-white/10 rounded-lg shadow-lg" />
   <div class="text-xs italic opacity-60 mt-2 text-center">Sơ đồ đấu nối thực tế: OLED SH1106 (I2C) + MAX98357A + loa (I2S) trên ESP32</div>
 </div>
 
@@ -231,11 +258,11 @@ glowSeed: 122
 <div class="text-xs flex flex-col gap-2">
   <div class="bg-white/5 border border-white/10 rounded p-2.5">
     <span class="font-bold text-blue-300">I2C — OLED</span>
-    <p class="opacity-80 mt-1">Chỉ 2 dây (SDA/SCL), tiết kiệm GPIO để vẽ mã QR 64px.</p>
+    <p class="opacity-80 mt-1">Chỉ 2 dây (SDA/SCL).</p>
   </div>
   <div class="bg-white/5 border border-white/10 rounded p-2.5">
     <span class="font-bold text-purple-300">I2S — Âm thanh số</span>
-    <p class="opacity-80 mt-1">DAC MAX98357A cho phép <strong>ghép âm động</strong> đọc số tiền bất kỳ — DFPlayer không làm được.</p>
+    <p class="opacity-80 mt-1">DAC MAX98357A cho phép <strong>ghép âm động</strong> đọc số tiền bất kỳ.</p>
   </div>
   <div class="bg-white/5 border border-white/10 rounded p-2.5">
     <span class="font-bold text-amber-300">⚠️ Lưu ý phần cứng</span>
@@ -367,7 +394,7 @@ glowSeed: 202
   <div class="font-mono text-[10px] opacity-80 mb-2">g_current_mutex → {qr_code, amount, queue_no}</div>
   <div class="flex flex-col gap-1.5 opacity-90">
     <div>• Bảo vệ đơn hàng hiện tại giữa NetworkTask (ghi) & UI (đọc).</div>
-    <div>• <strong>Vì sao mutex:</strong> chuỗi <code>String</code> QR copy <strong>không nguyên tử</strong> → 2 nhân đè nhau gây hỏng bộ nhớ.</div>
+    <div>• <strong>Vì sao mutex:</strong> chuỗi <code>String</code> QR copy <strong>không nguyên tử (atomic)</strong> → 2 nhân đè nhau gây hỏng bộ nhớ.</div>
     <div>• Giữ khóa <strong>cực ngắn</strong>: copy ra biến cục bộ rồi thả ngay, render OLED làm ngoài khóa.</div>
   </div>
 </div>
@@ -380,7 +407,7 @@ glowSeed: 202
   <div class="font-mono text-[10px] opacity-80 mb-2">g_paid_queue (len = 8)</div>
   <div class="flex flex-col gap-1.5 opacity-90">
     <div>• Truyền sự kiện "đã thanh toán" từ Core 0 sang Core 1.</div>
-    <div>• <strong>Vì sao queue:</strong> sự kiện "1 lần", tự thread-safe & tự xếp hàng — nếu loa đang đọc, event nằm chờ, không mất.</div>
+    <div>• <strong>Vì sao queue:</strong> mỗi sự kiện "1 lần", tự xếp hàng — nếu loa đang đọc, event nằm chờ, không mất.</div>
     <div>• <code>xQueueSend</code> / <code>xQueueReceive</code>, timeout nhỏ.</div>
   </div>
 </div>
@@ -505,7 +532,7 @@ class: py-8
 glowSeed: 218
 ---
 
-# Điểm Kỹ Thuật 1 — Tối Ưu QR Cho OLED 64px
+# Tối Ưu QR Cho OLED 64px
 
 <div class="grid grid-cols-5 gap-5 mt-4 items-start">
 
@@ -538,8 +565,9 @@ glowSeed: 218
     <div class="text-xs opacity-70">Hiển thị trên OLED</div>
     <div class="text-2xl font-extrabold text-blue-400 my-1">scale ×2</div>
     <div class="text-sm opacity-90">58 × 58 px trên màn 64px → nét, quét nhạy</div>
+    <div class="text-[10px] opacity-60 text-center italic">Thư viện: <code>ricmoo/QRCode</code> (sinh QR nhúng)</div>
   </div>
-  <div class="text-[10px] opacity-60 text-center italic">Thư viện: <code>ricmoo/QRCode</code> (sinh QR nhúng)</div>
+  
 </div>
 
 </div>
@@ -553,7 +581,7 @@ class: py-8
 glowSeed: 234
 ---
 
-# Điểm Kỹ Thuật 2 — Engine Đọc Số Tiền Tiếng Việt
+# Engine Đọc Số Tiền Tiếng Việt
 
 <div class="grid grid-cols-5 gap-5 mt-4 items-start">
 
@@ -570,8 +598,7 @@ glowSeed: 234
     <div class="mt-1 opacity-90">
       1. Tách tiền → <code>trieu / nghin / le</code><br/>
       2. <code>read_below_1000()</code> đọc từng nhóm (tram/chuc/donvi)<br/>
-      3. Xử lý biến âm: "mười <strong>mốt</strong>" vs "hai <strong>mươi</strong>", "<strong>lăm/lẻ</strong>"<br/>
-      4. Xếp token; phát lần lượt — xong 1 file (<code>audio_eof_mp3</code>) mới phát kế
+      3. Xếp token; phát lần lượt — xong 1 file (<code>audio_eof_mp3</code>) mới phát kế
     </div>
   </div>
 </div>
@@ -587,10 +614,11 @@ glowSeed: 234
       + nghin_dong
     </div>
     <div class="text-center text-[11px] italic opacity-80 mt-2">→ "đã nhận được mười một nghìn đồng"</div>
-  </div>
-  <div class="bg-white/5 border border-white/10 rounded p-2.5">
+    <div class="bg-white/5 border border-white/10 rounded p-2.5">
     <span class="font-bold text-purple-300">Xuất âm:</span> giải mã MP3 từ LittleFS → <strong>I2S DAC</strong> MAX98357A. Thư viện <code>ESP32-audioI2S</code>.
   </div>
+  </div>
+  
 </div>
 
 </div>
@@ -736,15 +764,19 @@ glowSeed: 260
 
 <div class="border-l-4 border-purple-500 pl-4">
   <div class="flex items-center gap-2 font-bold text-purple-300 text-sm mb-1">
-    <div class="i-carbon:cloud-services text-lg" /> Triển khai công khai
+    <div class="i-carbon:cloud-services text-lg" /> Kiến trúc Lai (Hybrid SSL)
   </div>
-  <p class="opacity-85">LAN: không cần auth. Công khai (VPS / Cloudflare Tunnel) → đặt <code>API_TOKEN</code> + đặt backend sau <strong>HTTPS</strong> (reverse proxy).</p>
+  <p class="opacity-85">
+    • <strong>PayOS ↔ Tunnel (HTTPS)</strong>: Bắt buộc mã hóa để nhận Webhook từ Internet.<br/>
+    • <strong>Backend ↔ ESP32 (HTTP LAN)</strong>: Tiết kiệm RAM cho ESP32 & tránh lỗi hết hạn chứng chỉ SSL (Cert Expiry).<br/>
+    • <strong>Bảo mật</strong>: Được cô lập bên sau Router LAN và bảo vệ bằng <code>API_TOKEN</code>.
+  </p>
 </div>
 
 </div>
 
 <!--
-"Bốn lớp bảo mật: verify chữ ký webhook để chống giả PAID, token bảo vệ API ghi, key giấu trong env, và khi deploy công khai thì bật token lẫn HTTPS. Trong LAN demo thì gọn nhẹ, khi ra Internet thì chặt chẽ."
+"Bảo mật sử dụng mô hình Hybrid: PayOS gọi Webhook qua HTTPS của Cloudflare Tunnel, sau đó giải mã về HTTP truyền cho ESP32 trong mạng LAN nội bộ. Cách này vừa đáp ứng chuẩn HTTPS của PayOS, vừa giúp ESP32 tiết kiệm RAM và không bao giờ lo lỗi hết hạn chứng chỉ SSL."
 -->
 
 ---

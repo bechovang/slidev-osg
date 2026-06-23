@@ -1,4 +1,4 @@
-﻿<template>
+<template>
   <div
     ref="wrapper"
     class="zoomable-wrapper relative inline-block overflow-hidden select-none"
@@ -13,7 +13,7 @@
     <img
       :src="src"
       :alt="alt"
-      class="block max-w-full transition-transform duration-75 will-change-transform pointer-events-none"
+      class="zoomable-img block max-w-full object-contain transition-transform duration-75 will-change-transform pointer-events-none"
       :style="imgStyle"
       draggable="false"
     />
@@ -118,6 +118,9 @@ function onPointerUp() {
 </script>
 
 <style scoped>
+.zoomable-img {
+  max-height: inherit;
+}
 .zbtn {
   display: flex;
   align-items: center;
