@@ -1,5 +1,5 @@
 ---
-src: ./pages/smartroute-vong3.md
+src: ./pages/iot-payment.md
 hide: false
 highlighter: shiki
 css: unocss
