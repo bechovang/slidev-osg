@@ -30,3 +30,8 @@ settings.local.json
 
 .github/
 
+.vercel/
+
+_bmad-output/
+.vercel
+.env*

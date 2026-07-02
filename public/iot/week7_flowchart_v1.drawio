@@ -1,0 +1,123 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram id="flowEN01" name="Flowchart-EN">
+    <mxGraphModel dx="992" dy="688" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1700" math="0" shadow="0">
+      <root>
+        <mxCell id="e0" />
+        <mxCell id="e1" parent="e0" />
+        <mxCell id="etitle" parent="e1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;fontStyle=1;" value="Flowchart: QR Payment via PayOS (ESP32 + OLED + Speaker)" vertex="1">
+          <mxGeometry height="40" width="700" x="60" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="estart" parent="e1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111827;fontSize=13;fontStyle=1;" value="Start (power on ESP32)" vertex="1">
+          <mxGeometry height="56" width="220" x="260" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="einit" parent="e1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111827;fontSize=12;" value="Init: OLED (I2C), Audio I2S + LittleFS, create mutex/queue, create NetworkTask (Core 0)" vertex="1">
+          <mxGeometry height="60" width="320" x="210" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="ewifi" parent="e1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111827;fontSize=12;" value="NetworkTask: connect WiFi LAN (setup does not block on WiFi)" vertex="1">
+          <mxGeometry height="50" width="320" x="210" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="eready" parent="e1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111827;fontSize=12;" value="OLED shows Ready / wait for order" vertex="1">
+          <mxGeometry height="48" width="320" x="210" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="ecashier" parent="e1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#eef2ff;strokeColor=#6366f1;fontSize=12;" value="(Cashier) create order on Streamlit&amp;nbsp;&lt;div&gt;-&amp;gt; server calls PayOS for qrCode + orderCode&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="360" x="190" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="epollcur" parent="e1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111827;fontSize=12;" value="NetworkTask poll GET /api/device/current (every 1.5s)" vertex="1">
+          <mxGeometry height="50" width="320" x="210" y="535" as="geometry" />
+        </mxCell>
+        <mxCell id="ehas" parent="e1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111827;fontSize=12;" value="Pending order?" vertex="1">
+          <mxGeometry height="100" width="190" x="275" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="eqr" parent="e1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111827;fontSize=12;" value="Core 1: draw PayOS QR on OLED (zoom x2) + show queue no, amount" vertex="1">
+          <mxGeometry height="60" width="320" x="210" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="escan" parent="e1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#eef2ff;strokeColor=#6366f1;fontSize=12;" value="Customer scans QR -&amp;gt; transfers money.&amp;nbsp;&lt;div&gt;PayOS sends PAID webhook -&amp;gt; server marks PAID&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="360" x="190" y="855" as="geometry" />
+        </mxCell>
+        <mxCell id="epollpaid" parent="e1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111827;fontSize=12;" value="NetworkTask poll GET /api/device/paid-event" vertex="1">
+          <mxGeometry height="50" width="320" x="210" y="950" as="geometry" />
+        </mxCell>
+        <mxCell id="epaid" parent="e1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111827;fontSize=12;" value="paid == true?" vertex="1">
+          <mxGeometry height="100" width="190" x="275" y="1035" as="geometry" />
+        </mxCell>
+        <mxCell id="epush" parent="e1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111827;fontSize=12;" value="push PaidEvent into FreeRTOS queue (Core 0 -&gt; Core 1)" vertex="1">
+          <mxGeometry height="50" width="360" x="190" y="1170" as="geometry" />
+        </mxCell>
+        <mxCell id="esucc" parent="e1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111827;fontSize=12;" value="Core 1: OLED SUCCESS + speaker reads amount aloud (I2S)" vertex="1">
+          <mxGeometry height="56" width="360" x="190" y="1255" as="geometry" />
+        </mxCell>
+        <mxCell id="ereset" parent="e1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#111827;fontSize=12;" value="Wait &gt;= 4s and audio done -&gt; back to Ready" vertex="1">
+          <mxGeometry height="50" width="360" x="190" y="1350" as="geometry" />
+        </mxCell>
+        <mxCell id="ewait" parent="e1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff7ed;strokeColor=#c2410c;fontSize=12;" value="Keep waiting / update WiFi status" vertex="1">
+          <mxGeometry height="56" width="200" x="610" y="1057" as="geometry" />
+        </mxCell>
+        <mxCell id="ee1" edge="1" parent="e1" source="estart" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#111827;endArrow=block;endFill=1;" target="einit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ee2" edge="1" parent="e1" source="einit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#111827;endArrow=block;endFill=1;" target="ewifi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ee3" edge="1" parent="e1" source="ewifi" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#111827;endArrow=block;endFill=1;" target="eready">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ee4" edge="1" parent="e1" source="eready" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#111827;endArrow=block;endFill=1;" target="ecashier">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ee5" edge="1" parent="e1" source="ecashier" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#111827;endArrow=block;endFill=1;" target="epollcur">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ee6" edge="1" parent="e1" source="epollcur" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#111827;endArrow=block;endFill=1;" target="ehas">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ee7" edge="1" parent="e1" source="ehas" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#c2410c;endArrow=block;endFill=1;" target="epollcur" value="No">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="670" />
+              <mxPoint x="150" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ee8" edge="1" parent="e1" source="ehas" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#111827;endArrow=block;endFill=1;" target="eqr" value="Yes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ee9" edge="1" parent="e1" source="eqr" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#111827;endArrow=block;endFill=1;" target="escan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ee10" edge="1" parent="e1" source="escan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#111827;endArrow=block;endFill=1;" target="epollpaid">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ee11" edge="1" parent="e1" source="epollpaid" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#111827;endArrow=block;endFill=1;" target="epaid">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ee12" edge="1" parent="e1" source="epaid" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#c2410c;endArrow=block;endFill=1;" target="ewait" value="No">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ee13" edge="1" parent="e1" source="ewait" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#c2410c;endArrow=block;endFill=1;" target="epollpaid" value="continue">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="710" y="975" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ee14" edge="1" parent="e1" source="epaid" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#111827;endArrow=block;endFill=1;" target="epush" value="Yes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ee15" edge="1" parent="e1" source="epush" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#111827;endArrow=block;endFill=1;" target="esucc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ee16" edge="1" parent="e1" source="esucc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#111827;endArrow=block;endFill=1;" target="ereset">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ee17" edge="1" parent="e1" source="ereset" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#111827;endArrow=block;endFill=1;" target="epollcur" value="next order">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="110" y="1375" />
+              <mxPoint x="110" y="570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

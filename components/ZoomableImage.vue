@@ -1,7 +1,7 @@
 <template>
   <div
     ref="wrapper"
-    class="zoomable-wrapper relative inline-block overflow-hidden select-none"
+    class="zoomable-wrapper group relative inline-block overflow-hidden select-none"
     :class="{ 'cursor-grab': zoom > 1 && !dragging, 'cursor-grabbing': dragging }"
     @wheel.prevent="onWheel"
     @dblclick="reset"
@@ -19,7 +19,7 @@
     />
 
     <!-- Controls -->
-    <div class="absolute bottom-1 right-1 flex gap-1 bg-black/55 backdrop-blur rounded-md px-1.5 py-1 text-white/90">
+    <div class="absolute bottom-1 right-1 flex gap-1 bg-black/55 backdrop-blur rounded-md px-1.5 py-1 text-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
       <button class="zbtn" title="Thu nho" @click.stop="zoomBy(-0.3)">
         <div class="i-carbon:zoom-out text-base" />
       </button>
@@ -34,7 +34,7 @@
 
     <div
       v-if="zoom === 1"
-      class="absolute top-1 left-1 bg-black/45 rounded px-1.5 py-0.5 text-[9px] text-white/70 pointer-events-none"
+      class="absolute top-1 left-1 bg-black/45 rounded px-1.5 py-0.5 text-[9px] text-white/70 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300"
     >
       Cuon chuot / nut + de phong to, keo de di chuyen
     </div>

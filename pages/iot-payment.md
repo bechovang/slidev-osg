@@ -895,26 +895,7 @@ glowSeed: 298
 # Cảm Ơn Thầy Cô & Các Bạn!
 
 <div class="text-2xl font-bold bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent mt-4">
-  Hỏi & Đáp (Q&A)
-</div>
-
-<div class="mt-8 flex justify-center gap-4 text-xs">
-
-<div class="border border-white/10 bg-white/5 rounded-lg px-4 py-3 max-w-[200px]">
-  <div class="font-bold text-green-400 mb-1">ESP32 vs Raspberry Pi?</div>
-  <p class="opacity-70 text-[11px]">ESP32 cực rẻ, tiêu thụ cực ít điện, có Wi-Fi sẵn, đủ đáp ứng trạm thanh toán.</p>
-</div>
-
-<div class="border border-white/10 bg-white/5 rounded-lg px-4 py-3 max-w-[200px]">
-  <div class="font-bold text-blue-400 mb-1">Tại sao dùng LAN Polling?</div>
-  <p class="opacity-70 text-[11px]">Đơn giản, ổn định, tránh việc ESP32 phải NAT ra Internet để nhận Push.</p>
-</div>
-
-<div class="border border-white/10 bg-white/5 rounded-lg px-4 py-3 max-w-[200px]">
-  <div class="font-bold text-purple-400 mb-1">Mất Wi-Fi thì sao?</div>
-  <p class="opacity-70 text-[11px]">Core 0 tự reconnect ngầm. OLED & Loa trên Core 1 không bị đơ giật.</p>
-</div>
-
+  Cảm ơn mọi người đã chú ý lắng nghe phần thuyết trình của chúng em.
 </div>
 
 <!--

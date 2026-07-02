@@ -1,0 +1,1310 @@
+
+---
+layout: default
+glowSeed: 105
+---
+
+# PHẦN 4: PHÂN PHỐI MẪU 🌉
+## Điểm Giao Thở: Từ Mẫu → Tổng Thể
+
+<v-click>
+
+<div class="border-l-4 border-yellow-500 bg-yellow-900/20 p-4 rounded-lg mb-3">
+  <div class="font-bold text-yellow-300 text-lg mb-2">🌉 TỪ PHẦN 3 → VẤN ĐỀ MỚI</div>
+  <div class="text-sm">
+    <div>Đã thống kê được: <span class="font-mono">Mean = 152.5 cm, SD = 6.9 cm</span></div>
+    <div class="mt-2"><span class="text-red-300 font-bold">NHƯNG...</span> đây chỉ là <span class="text-amber-300 font-bold">200 học sinh</span>!</div>
+    <div class="mt-2 p-2 bg-red-900/30 rounded">
+      <span class="text-yellow-300 font-bold">Câu hỏi NGUỒN:</span> Thiết kế thực đơn cho <span class="text-green-300 font-bold">TỔNG TRƯỜNG (2000+ học sinh)</span>
+      <br>→ <span class="text-red-300 font-bold">Làm sao "nhỏ" nói về "lớn"?</span>
+    </div>
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="border-l-4 border-purple-500 bg-purple-900/20 p-4 rounded-lg">
+  <div class="font-bold text-purple-300 text-lg mb-2">🎯 MỤC TIÊU PHẦN NÀY</div>
+  <div class="text-sm">
+    Hiểu cách dùng <span class="text-green-300 font-bold">MẪU (sample)</span> để suy luận về <span class="text-amber-300 font-bold">TỔNG THỂ (population)</span>
+    <br><br>
+    <div class="grid grid-cols-2 gap-2 text-xs">
+      <div class="bg-blue-900/30 rounded p-2">
+        <span class="text-blue-300 font-bold">x̄ (Sample Mean)</span>
+        <br>→ CÓ thể tính được
+      </div>
+      <div class="bg-purple-900/30 rounded p-2">
+        <span class="text-purple-300 font-bold">μ (Population Mean)</span>
+        <br>→ KHÔNG bao giờ biết
+      </div>
+    </div>
+  </div>
+</div>
+
+</v-click>
+
+---
+layout: default
+glowSeed: 106
+---
+
+# SAMPLE vs POPULATION
+### Mẫu (Sample) và Tổng thể (Population) — Bạn hiểu gì?
+
+<div class="grid grid-cols-2 gap-4 mt-4">
+
+<v-click>
+
+<div class="border-2 border-solid border-blue-800/40 bg-blue-800/10 rounded-lg p-4">
+  <div class="flex items-center gap-2 mb-3">
+    <div class="i-carbon:chart-bar text-blue-300 text-2xl" />
+    <span class="font-bold text-blue-300 text-lg">SAMPLE (Mẫu)</span>
+  </div>
+  <div class="text-sm space-y-2">
+    <div>Quy mô: <span class="font-mono text-green-300 font-bold">n = 200</span> học sinh</div>
+    <div>Đã đo: Chiều cao, Cân nặng</div>
+    <div class="p-2 bg-green-900/20 rounded text-xs">
+      <span class="i-carbon:checkmark-filled text-green-400"></span>
+      CÓ DỮ LIỆU → Có thể tính x̄
+    </div>
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="border-2 border-solid border-purple-800/40 bg-purple-800/10 rounded-lg p-4">
+  <div class="flex items-center gap-2 mb-3">
+    <div class="i-carbon:chart-multiline text-purple-300 text-2xl" />
+    <span class="font-bold text-purple-300 text-lg">POPULATION (Tổng thể)</span>
+  </div>
+  <div class="text-sm space-y-2">
+    <div>Quy mô: <span class="font-mono text-amber-300 font-bold">2000+</span> học sinh</div>
+    <div>Toàn trường THCS thị trấn Đu</div>
+    <div class="p-2 bg-red-900/20 rounded text-xs">
+      <span class="i-carbon:warning text-red-400"></span>
+      KHÔNG CÓ DỮ LIỆU → μ = ?
+    </div>
+  </div>
+</div>
+
+</v-click>
+
+</div>
+
+<v-click>
+
+<div class="mt-4 p-3 bg-gradient-to-r from-blue-900/30 to-purple-900/30 border border-blue-700/50 rounded-lg text-center">
+  <div class="font-bold text-cyan-300">🌉 CÂU HỎI CHỐT:</div>
+  <div class="text-sm mt-1">Làm sao từ <span class="text-blue-300 font-bold">x̄ (mẫu)</span> suy ra <span class="text-purple-300 font-bold">μ (tổng thể)</span>?</div>
+</div>
+
+</v-click>
+
+---
+layout: default
+glowSeed: 107
+---
+
+# SAMPLE A & SAMPLE B
+### 2 Mẫu dùng cho Ước lượng & Kiểm định
+
+<v-click>
+
+<div class="text-sm opacity-70 mb-3">
+  Tại sao cần 2 mẫu? → Để <span class="text-green-300 font-bold">so sánh</span> Khối 8 vs Khối 9 ở phần sau
+</div>
+
+</v-click>
+
+<img src="/images_mas291/data sample A sample B.png" class="mx-auto rounded-xl shadow-2xl" width="700"/>
+
+<v-click>
+
+<div class="mt-3 grid grid-cols-2 gap-3">
+  <div class="border-l-4 border-blue-500 bg-blue-900/20 p-2 rounded">
+    <span class="text-blue-300 font-bold text-sm">Sample A (Khối 8):</span> n=50, x̄=153.82 cm
+  </div>
+  <div class="border-l-4 border-green-500 bg-green-900/20 p-2 rounded">
+    <span class="text-green-300 font-bold text-sm">Sample B (Khối 9):</span> n=50, x̄=157.84 cm
+  </div>
+</div>
+
+</v-click>
+
+---
+layout: default
+glowSeed: 108
+---
+
+# KÝ HIỆU THỐNG KÊ QUAN TRỌNG
+### x̄, μ, μ̂ — Phân biệt rõ trước khi đi tiếp!
+
+<div class="grid grid-cols-3 gap-3 mt-4">
+
+<v-click>
+
+<div class="border-2 border-solid border-blue-800/40 bg-blue-800/10 rounded-lg p-3">
+  <div class="text-center mb-2">
+    <div class="font-mono text-4xl text-green-300 font-bold">x̄</div>
+  </div>
+  <div class="font-bold text-blue-300 text-center text-sm mb-2">x-bar (Sample Mean)</div>
+  <div class="text-xs space-y-1">
+    <div class="opacity-70">Trung bình của MẪU</div>
+    <div class="p-2 bg-blue-900/30 rounded text-center">
+      <span class="font-mono">x̄ = 153.82 cm</span>
+    </div>
+    <div class="text-green-300">✓ Có thể tính được</div>
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="border-2 border-solid border-purple-800/40 bg-purple-800/10 rounded-lg p-3">
+  <div class="text-center mb-2">
+    <div class="font-mono text-4xl text-purple-300 font-bold">μ</div>
+  </div>
+  <div class="font-bold text-purple-300 text-center text-sm mb-2">mu (Population Mean)</div>
+  <div class="text-xs space-y-1">
+    <div class="opacity-70">Trung bình của TỔNG THỂ</div>
+    <div class="p-2 bg-purple-900/30 rounded text-center">
+      <span class="font-mono">μ = ?</span>
+    </div>
+    <div class="text-red-300">✗ KHÔNG bao giờ biết</div>
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="border-2 border-solid border-amber-800/40 bg-amber-800/10 rounded-lg p-3">
+  <div class="text-center mb-2">
+    <div class="font-mono text-4xl text-amber-300 font-bold">μ̂</div>
+  </div>
+  <div class="font-bold text-amber-300 text-center text-sm mb-2">mu-hat (Estimator)</div>
+  <div class="text-xs space-y-1">
+    <div class="opacity-70">Ước lượng của μ</div>
+    <div class="p-2 bg-amber-900/30 rounded text-center">
+      <span class="font-mono">μ̂ ≈ x̄</span>
+    </div>
+    <div class="text-cyan-300">→ Dùng x̄ để ước μ</div>
+  </div>
+</div>
+
+</v-click>
+
+</div>
+
+<v-click>
+
+<div class="mt-4 p-3 bg-gradient-to-r from-blue-900/30 to-amber-900/30 border border-blue-700/50 rounded-lg text-center">
+  <div class="text-sm">
+    <span class="font-bold text-yellow-300">Mối quan hệ:</span>
+    μ (không biết) → Dùng x̄ (có thể tính) → Ra μ̂ (ước lượng)
+  </div>
+</div>
+
+</v-click>
+
+---
+layout: default
+glowSeed: 109
+---
+
+# 🌉 CẦU NỐI ĐẾN PHẦN 5
+### Đã hiểu x̄ có thể ước lượng μ — Nhưng ước lượng NHƯ THẾ NÀO?
+
+<v-click>
+
+<div class="border-l-4 border-green-500 bg-green-900/20 p-4 rounded-lg">
+  <div class="font-bold text-green-300 text-lg mb-2">✅ ĐÃ BIẾT</div>
+  <div class="text-sm">
+    <div>• x̄ (trung bình mẫu) có thể ước lượng μ (trung bình tổng thể)</div>
+    <div>• Sample A (Khối 8): x̄ = 153.82 cm</div>
+    <div>• Sample B (Khối 9): x̄ = 157.84 cm</div>
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="border-l-4 border-amber-500 bg-amber-900/20 p-4 rounded-lg">
+  <div class="font-bold text-amber-300 text-lg mb-2">❓ CÂU HỎI MỚI</div>
+  <div class="text-sm">
+    Ước lượng <span class="font-mono">x̄ = 153.82</span> có <span class="text-red-300 font-bold">độ chính xác bao nhiêu?</span>
+    <br><br>
+    <div class="text-green-300 font-bold">→ Có 2 cách ước lượng:</div>
+    <div class="ml-4">1) Point (Điểm) — 1 giá trị</div>
+    <div class="ml-4">2) Interval (Khoảng) — Khoảng + độ tin cậy</div>
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="mt-4 p-4 bg-gradient-to-r from-cyan-900/30 to-purple-900/30 border border-cyan-700/50 rounded-lg text-center">
+  <div class="font-bold text-cyan-300 text-xl">→ PHẦN 5: ƯỚC LƯỢNG</div>
+  <div class="text-sm opacity-80">Khoảng tin cậy (Confidence Interval)</div>
+</div>
+
+</v-click>
+
+---
+class: py-8
+glowSeed: 120
+---
+
+# PHẦN 5: ƯỚC LƯỢNG
+### Từ mẫu nhỏ → Suy ra tổng thể
+
+<v-click>
+
+<div class="border-l-4 border-purple-500 bg-purple-900/20 p-4 rounded-lg mb-4">
+  <div class="font-bold text-purple-300 text-lg mb-2">🤔 VẤN ĐỀ</div>
+  <div class="text-sm">
+    Mean = <span class="font-mono">153.82 cm</span> (chỉ <span class="text-amber-300 font-bold">50 HS Khối 8</span>)
+    <br>Nhưng toàn trường có <span class="text-red-300 font-bold">1000+ HS</span>!
+    <br><br>
+    <span class="text-green-300 font-bold">CÂU HỎI:</span> Làm sao từ 50 con số → nói về <strong>TOÀN BỘ</strong> học sinh khối 8?
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="grid grid-cols-2 gap-4">
+  <div class="border-2 border-solid border-blue-800/30 bg-blue-800/10 rounded-lg p-4">
+    <div class="flex items-center gap-2 mb-3">
+      <div class="i-carbon:target-miss text-blue-300 text-xl"/>
+      <span class="font-bold text-blue-300">Point (Điểm)</span>
+    </div>
+    <div class="text-sm">
+      <div>Dùng <span class="font-bold">1 giá trị</span></div>
+      <div class="font-mono text-yellow-300 my-2">μ̂ ≈ x̄ = 153.82</div>
+      <div class="text-xs opacity-70 mt-2">
+        → Hạn chế: Không biết chính xác
+      </div>
+    </div>
+  </div>
+  <div class="border-2 border-solid border-green-800/30 bg-green-800/10 rounded-lg p-4">
+    <div class="flex items-center gap-2 mb-3">
+      <div class="i-carbon:chart-line text-green-300 text-xl"/>
+      <span class="font-bold text-green-300">Interval (Khoảng)</span>
+    </div>
+    <div class="text-sm">
+      <div>Dùng <span class="font-bold">khoảng + độ tin cậy</span></div>
+      <div class="font-mono text-green-300 my-2">95% CI: [152.58; 155.06]</div>
+      <div class="text-xs opacity-70 mt-2">
+        → Tin 95% giá trị thật nằm trong khoảng
+      </div>
+    </div>
+  </div>
+</div>
+
+</v-click>
+
+---
+layout: default
+glowSeed: 121
+---
+
+# KHOẢNG TIN CẬY LÀ GÌ?
+### Confidence Interval — Giải thích đơn giản
+
+<v-click>
+
+<div class="border-l-4 border-blue-500 bg-blue-900/20 p-4 rounded-lg mb-3">
+  <div class="font-bold text-blue-300 text-lg mb-2">🎯 Point Estimate (Ước lượng điểm)</div>
+  <div class="text-sm">
+    Chỉ cho 1 số: <span class="font-mono">μ̂ = 153.82 cm</span>
+    <br><span class="text-red-300">→ Không biết chính xác giá trị thật nằm ở đâu!</span>
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="border-l-4 border-green-500 bg-green-900/20 p-4 rounded-lg">
+  <div class="font-bold text-green-300 text-lg mb-2">📊 Interval Estimate (Ước lượng khoảng)</div>
+  <div class="text-sm">
+    Dùng <span class="font-bold">1 khoảng</span> thay vì 1 con số
+    <br><span class="font-mono text-yellow-300 text-lg">95% CI = [152.58 ; 155.06]</span>
+    <br><br>
+    <div class="p-2 bg-green-900/30 rounded">
+      <span class="text-green-300 font-bold">Ý nghĩa:</span> Tin 95% rằng giá trị thật μ nằm trong khoảng này!
+    </div>
+  </div>
+</div>
+
+</v-click>
+
+---
+layout: default
+glowSeed: 122
+---
+
+# CẤU TRÚC KHOẢNG TIN CẬY
+### CI = Point Estimate ± Margin of Error
+
+<v-click>
+
+<div class="text-center my-6">
+  <div class="font-mono text-3xl text-green-300 font-bold">
+    CI = x̄ ± t × (s/√n)
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="grid grid-cols-4 gap-3 mt-5">
+  <div class="border-2 border-solid border-blue-800/30 bg-blue-800/10 rounded-lg p-3 text-center">
+    <div class="font-bold text-blue-300 mb-1">x̄</div>
+    <div class="text-xs opacity-70">Trung bình mẫu</div>
+    <div class="font-mono text-sm mt-1 text-green-300">153.82</div>
+  </div>
+  <div class="border-2 border-solid border-amber-800/30 bg-amber-800/10 rounded-lg p-3 text-center">
+    <div class="font-bold text-amber-300 mb-1">t</div>
+    <div class="text-xs opacity-70">Giá trị t</div>
+    <div class="font-mono text-sm mt-1">2.01</div>
+  </div>
+  <div class="border-2 border-solid border-cyan-800/30 bg-cyan-800/10 rounded-lg p-3 text-center">
+    <div class="font-bold text-cyan-300 mb-1">s/√n</div>
+    <div class="text-xs opacity-70">Sai số chuẩn</div>
+    <div class="font-mono text-sm mt-1">0.62</div>
+  </div>
+  <div class="border-2 border-solid border-green-800/30 bg-green-800/10 rounded-lg p-3 text-center">
+    <div class="font-bold text-green-300 mb-1">Kết quả</div>
+    <div class="text-xs opacity-70">95% CI</div>
+    <div class="font-mono text-sm mt-1">[152.58; 155.06]</div>
+  </div>
+</div>
+
+</v-click>
+
+---
+layout: default
+glowSeed: 123
+---
+
+# ÁP DỤNG CHO KHỐI 8
+### Tính chi tiết 95% Confidence Interval
+
+<div class="grid grid-cols-2 gap-4 mt-3">
+
+<v-click>
+
+<div class="border-2 border-solid border-blue-800/30 bg-blue-800/10 rounded-lg p-4">
+  <div class="text-blue-300 font-bold mb-3">Dữ liệu đầu vào</div>
+  <div class="text-sm space-y-2">
+    <div class="flex justify-between"><span class="opacity-70">x̄:</span><span class="font-mono">153.82 cm</span></div>
+    <div class="flex justify-between"><span class="opacity-70">s:</span><span class="font-mono">4.36 cm</span></div>
+    <div class="flex justify-between"><span class="opacity-70">n:</span><span class="font-mono">50</span></div>
+    <div class="flex justify-between"><span class="opacity-70">df:</span><span class="font-mono">49</span></div>
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="border-2 border-solid border-amber-800/30 bg-amber-800/10 rounded-lg p-4">
+  <div class="text-amber-300 font-bold mb-3">Tính toán</div>
+  <div class="text-sm space-y-2">
+    <div>t₀.₀₂₅,₄₉ = <span class="font-mono">2.01</span></div>
+    <div>Sai số = 2.01 × (4.36/√50)</div>
+    <div class="p-2 bg-amber-900/30 rounded font-mono text-sm">
+      = <span class="text-green-300 font-bold">1.24 cm</span>
+    </div>
+  </div>
+</div>
+
+</v-click>
+
+</div>
+
+<v-click>
+
+<div class="mt-4 p-4 bg-gradient-to-r from-green-900/30 to-blue-900/30 border border-green-700/50 rounded-lg text-center">
+  <div class="font-bold text-green-300 text-xl">95% CI = [152.58 ; 155.06]</div>
+  <div class="text-sm opacity-90 mt-1">Tin 95% rằng chiều cao TB thật sự của Khối 8 nằm giữa 152.58cm và 155.06cm</div>
+</div>
+
+</v-click>
+
+---
+layout: default
+glowSeed: 124
+---
+
+# ÁP DỤNG CHO KHỐI 9
+### Tính chi tiết 95% Confidence Interval
+
+<div class="grid grid-cols-2 gap-4 mt-3">
+
+<v-click>
+
+<div class="border-2 border-solid border-green-800/30 bg-green-800/10 rounded-lg p-4">
+  <div class="text-green-300 font-bold mb-3">Dữ liệu đầu vào</div>
+  <div class="text-sm space-y-2">
+    <div class="flex justify-between"><span class="opacity-70">x̄:</span><span class="font-mono">157.84 cm</span></div>
+    <div class="flex justify-between"><span class="opacity-70">s:</span><span class="font-mono">5.91 cm</span></div>
+    <div class="flex justify-between"><span class="opacity-70">n:</span><span class="font-mono">50</span></div>
+    <div class="flex justify-between"><span class="opacity-70">df:</span><span class="font-mono">49</span></div>
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="border-2 border-solid border-amber-800/30 bg-amber-800/10 rounded-lg p-4">
+  <div class="text-amber-300 font-bold mb-3">Tính toán</div>
+  <div class="text-sm space-y-2">
+    <div>t₀.₀₂₅,₄₉ = <span class="font-mono">2.01</span></div>
+    <div>Sai số = 2.01 × (5.91/√50)</div>
+    <div class="p-2 bg-amber-900/30 rounded font-mono text-sm">
+      = <span class="text-green-300 font-bold">1.68 cm</span>
+    </div>
+  </div>
+</div>
+
+</v-click>
+
+</div>
+
+<v-click>
+
+<div class="mt-4 p-4 bg-gradient-to-r from-green-900/30 to-blue-900/30 border border-green-700/50 rounded-lg text-center">
+  <div class="font-bold text-green-300 text-xl">95% CI = [156.16 ; 159.52]</div>
+  <div class="text-sm opacity-90 mt-1">Tin 95% rằng chiều cao TB thật sự của Khối 9 nằm giữa 156.16cm và 159.52cm</div>
+</div>
+
+</v-click>
+
+---
+layout: default
+glowSeed: 125
+---
+
+# HÌNH ẢNH MINH HỌA
+### Visualization of Confidence Interval
+
+<div class="flex justify-center items-center h-[50vh]">
+  <img src="/images_mas291/confidence_interval.png" class="max-h-full w-auto rounded-lg shadow-2xl" alt="Confidence Interval" />
+</div>
+
+---
+layout: default
+glowSeed: 126
+---
+
+# 🌉 CẦU NỐI ĐẾN PHẦN 6
+### So sánh 2 Khoảng tin cậy → Câu hỏi mới
+
+<v-click>
+
+<div class="grid grid-cols-2 gap-4 mb-4">
+  <div class="border-2 border-solid border-blue-800/40 bg-blue-800/10 rounded-lg p-4">
+    <div class="font-bold text-blue-300 mb-2">Khối 8</div>
+    <div class="font-mono text-xl text-center">95% CI = [152.58; 155.06]</div>
+  </div>
+  <div class="border-2 border-solid border-green-800/40 bg-green-800/10 rounded-lg p-4">
+    <div class="font-bold text-green-300 mb-2">Khối 9</div>
+    <div class="font-mono text-xl text-center">95% CI = [156.16; 159.52]</div>
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="border-l-4 border-cyan-500 bg-cyan-900/20 p-4 rounded-lg">
+  <div class="font-bold text-cyan-300 text-lg mb-2">🔍 NHẬN XÉT</div>
+  <div class="text-sm">
+    <div>2 khoảng này <span class="text-red-300 font-bold">KHÔNG giao nhau!</span></div>
+    <div>→ Khối 9 cao hơn Khối 8 rõ rệt</div>
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="border-l-4 border-amber-500 bg-amber-900/20 p-4 rounded-lg">
+  <div class="font-bold text-amber-300 text-lg mb-2">❓ CÂU HỎI MỚI</div>
+  <div class="text-sm">
+    Khối 9 cao hơn Khối 8: <span class="font-mono">157.84 vs 153.82</span> (chênh 4cm)
+    <br><br>
+    Sự khác biệt này là <span class="text-green-300 font-bold">THẬT SỰ</span> hay chỉ do <span class="text-red-300 font-bold">NGẪU NHIÊN</span>?
+    <br><br>
+    <span class="text-purple-300 font-bold">→ PHẦN 6: Kiểm định giả thuyết sẽ trả lời!</span>
+  </div>
+</div>
+
+</v-click>
+
+---
+class: py-8
+glowSeed: 130
+---
+
+# PHẦN 6: KIỂM ĐỊNH GIẢ THUYẾT
+### Sự khác biệt thật hay ngẫu nhiên?
+
+<v-click>
+
+<div class="border-l-4 border-yellow-500 bg-yellow-900/20 p-4 rounded-lg mb-4">
+  <div class="font-bold text-yellow-300 text-lg mb-2">🤔 VẤN ĐỆ</div>
+  <div class="text-sm">
+    Khối 9 cao hơn Khối 8: <span class="font-mono">157.84 vs 153.82</span> (chênh 4cm)
+    <br><br>
+    <div class="text-red-300 font-bold">Câu hỏi:</div> Sự khác biệt 4cm này có <span class="text-green-300">ý nghĩa thống kê</span> không?
+    <br>Hoặc chỉ do <span class="text-amber-300">ngẫu nhiên</span> khi chọn mẫu?
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="border-l-4 border-green-500 bg-green-900/20 p-4 rounded-lg">
+  <div class="font-bold text-green-300 text-lg mb-2">💡 GIẢI PHÁP: Hypothesis Testing</div>
+  <div class="text-sm">
+    <div class="grid grid-cols-2 gap-3 mt-2">
+      <div class="p-2 bg-blue-900/30 rounded">
+        <span class="text-blue-300 font-bold">H₀ (Null):</span>
+        <br>Không có sự khác biệt (chance)
+      </div>
+      <div class="p-2 bg-green-900/30 rounded">
+        <span class="text-green-300 font-bold">H₁ (Alternative):</span>
+        <br>Có sự khác biệt thật (real)
+      </div>
+    </div>
+  </div>
+</div>
+
+</v-click>
+
+---
+layout: default
+glowSeed: 131
+---
+
+# KIỂM ĐỊNH: GIẢ THUYẾT H₀ vs H₁
+### Null vs Alternative Hypothesis
+
+<div class="grid grid-cols-2 gap-4 mt-4">
+
+<v-click>
+
+<div class="border-2 border-solid border-blue-800/40 bg-blue-800/10 rounded-lg p-4">
+  <div class="flex items-center gap-2 mb-3">
+    <div class="i-carbon:document text-blue-300 text-2xl" />
+    <span class="font-bold text-blue-300 text-lg">H₀ (Null)</span>
+  </div>
+  <div class="text-sm space-y-2">
+    <div>"Không có sự khác biệt"</div>
+    <div class="p-2 bg-blue-900/30 rounded text-xs">
+      μ₁ = μ₂ (hai khối bằng nhau)
+    </div>
+    <div class="text-xs opacity-70">
+      Sự chênh lệch 4cm chỉ do ngẫu nhiên
+    </div>
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="border-2 border-solid border-green-800/40 bg-green-800/10 rounded-lg p-4">
+  <div class="flex items-center gap-2 mb-3">
+    <div class="i-carbon:idea text-green-300 text-2xl" />
+    <span class="font-bold text-green-300 text-lg">H₁ (Alternative)</span>
+  </div>
+  <div class="text-sm space-y-2">
+    <div>"Có sự khác biệt thật"</div>
+    <div class="p-2 bg-green-900/30 rounded text-xs">
+      μ₁ ≠ μ₂ (hai khối khác nhau)
+    </div>
+    <div class="text-xs opacity-70">
+      Sự chênh lệch 4cm có ý nghĩa thống kê
+    </div>
+  </div>
+</div>
+
+</v-click>
+
+</div>
+
+<v-click>
+
+<div class="mt-4 p-3 bg-gradient-to-r from-amber-900/30 to-purple-900/30 border border-amber-700/50 rounded-lg text-center">
+  <div class="text-sm">
+    <span class="font-bold text-amber-300">Mục tiêu:</span> Dùng dữ liệu để quyết định <span class="text-red-300">Bác bỏ H₀</span> hoặc <span class="text-green-300">Chấp nhận H₀</span>
+  </div>
+</div>
+
+</v-click>
+
+---
+layout: default
+glowSeed: 132
+---
+
+# KIỂM ĐỊNH: T-TEST CHO 2 MẪU
+### So sánh Khối 8 vs Khối 9
+
+<div class="grid grid-cols-2 gap-4 mt-3">
+
+<v-click>
+
+<div class="border-2 border-solid border-white/5 rounded-lg p-4">
+  <div class="flex items-center gap-2 mb-3">
+    <div class="i-carbon:question text-blue-300 text-xl" />
+    <span class="font-bold">Câu hỏi</span>
+  </div>
+  <div class="text-sm">
+    Khối 8 có thấp hơn Khối 9 không?
+    <br><span class="text-xs opacity-70">(alpha = 0.05)</span>
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="border-2 border-solid border-white/5 rounded-lg p-4">
+  <div class="flex items-center gap-2 mb-3">
+    <div class="i-carbon:document text-green-300 text-xl" />
+    <span class="font-bold">Giả thuyết</span>
+  </div>
+  <div class="text-sm font-mono text-xs">
+    <div>H₀: μ₁ = μ₂</div>
+    <div>H₁: μ₁ < μ₂</div>
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="border-2 border-solid border-white/5 rounded-lg p-4">
+  <div class="flex items-center gap-2 mb-3">
+    <div class="i-carbon:calculator text-amber-300 text-xl" />
+    <span class="font-bold">Tính toán</span>
+  </div>
+  <div class="text-xs space-y-1">
+    <div>K8: x̄ = 153.82, s = 4.36</div>
+    <div>K9: x̄ = 157.84, s = 5.91</div>
+    <div class="p-2 bg-amber-900/20 rounded mt-2">
+      <span class="text-amber-300 font-bold">t = -3.87</span>
+    </div>
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="border-2 border-solid border-white/5 rounded-lg p-4">
+  <div class="flex items-center gap-2 mb-3">
+    <div class="i-carbon:checkmark-filled text-green-300 text-xl" />
+    <span class="font-bold">Kết luận</span>
+  </div>
+  <div class="text-xs space-y-1">
+    <div>Critical value: -1.66</div>
+    <div>-3.87 < -1.66</div>
+    <div class="p-2 bg-green-900/30 rounded mt-2 text-green-300 font-bold">
+      → Bác bỏ H₀!
+    </div>
+    <div class="opacity-80">Khối 8 THẤP HƠN Khối 9</div>
+  </div>
+</div>
+
+</v-click>
+
+</div>
+
+---
+layout: default
+glowSeed: 133
+---
+
+# HÌNH ẢNH MINH HỌA
+### Visualization of Hypothesis Testing
+
+<div class="mt-2 mb-2 flex justify-center">
+  <img src="/images_mas291/hypothesis_testing.png" class="max-h-[48vh] w-auto rounded-lg shadow-2xl" alt="Hypothesis Testing" />
+</div>
+
+---
+layout: default
+glowSeed: 134
+---
+
+# KẾT LUẬN & Ý NGHĨA
+### Hypothesis Testing nói gì?
+
+<v-click>
+
+<div class="border-l-4 border-green-500 bg-green-900/20 p-4 rounded-lg mb-3">
+  <div class="font-bold text-green-300 text-lg mb-2">✅ KẾT LUẬN</div>
+  <div class="text-sm">
+    <div>p-value < 0.05 → <span class="text-red-300 font-bold">Bác bỏ H₀</span></div>
+    <div class="mt-2 p-2 bg-green-900/40 rounded">
+      <span class="text-green-300 font-bold">Khối 8 THẬT SỰ thấp hơn Khối 9!</span>
+    </div>
+    <div class="text-xs opacity-70 mt-2">Sự khác biệt 4cm có ý nghĩa thống kê — không phải ngẫu nhiên</div>
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="border-l-4 border-purple-500 bg-purple-900/20 p-4 rounded-lg">
+  <div class="font-bold text-purple-300 text-lg mb-2">🎯 ỨNG DỤNG THỰC TẾ</div>
+  <div class="text-sm">
+    <div>• Thực đơn Khối 9 cần <span class="text-green-300 font-bold">nhiều hơn</span> Khối 8</div>
+    <div>• Bàn ghế Khối 9 cần thiết kế cho chiều cao lớn hơn</div>
+    <div>• Cân nhách khi so sánh với chuẩn quốc gia</div>
+  </div>
+</div>
+
+</v-click>
+
+---
+layout: default
+glowSeed: 135
+---
+
+# 🌉 CẦU NỐI ĐẾN PHẦN 7
+### Đã biết Khối 9 cao hơn — Còn mối quan hệ giữa Chiều cao & Cân nặng?
+
+<v-click>
+
+<div class="border-l-4 border-blue-500 bg-blue-900/20 p-4 rounded-lg mb-3">
+  <div class="font-bold text-blue-300 text-lg mb-2">✅ ĐÃ BIẾT</div>
+  <div class="text-sm">
+    <div>• Khối 9 cao hơn Khối 8 (có ý nghĩa thống kê)</div>
+    <div>• Sự khác biệt là THẬT, không phải ngẫu nhiên</div>
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="border-l-4 border-amber-500 bg-amber-900/20 p-4 rounded-lg">
+  <div class="font-bold text-amber-300 text-lg mb-2">❓ CÂU HỎI MỚI</div>
+  <div class="text-sm">
+    Chiều cao và Cân nặng có <span class="text-green-300 font-bold">mối quan hệ</span> không?
+    <br><br>
+    <div class="grid grid-cols-2 gap-2 text-xs">
+      <div class="p-2 bg-blue-900/30 rounded">Cao → Nặng?</div>
+      <div class="p-2 bg-purple-900/30 rounded">Hay không liên quan?</div>
+    </div>
+    <br>
+    <span class="text-purple-300 font-bold">→ PHẦN 7: Hồi quy tuyến tính</span>
+  </div>
+</div>
+
+</v-click>
+
+---
+class: py-8
+glowSeed: 140
+---
+
+# PHẦN 7: HỒI QUY TUYẾN TÍNH
+### Chiều cao (X) → Cân nặng (Y)?
+
+<v-click>
+
+<div class="border-l-4 border-blue-500 bg-blue-900/20 p-4 rounded-lg mb-4">
+  <div class="font-bold text-blue-300 text-lg mb-2">🤔 VẤN ĐỆ</div>
+  <div class="text-sm">
+    Có phải học sinh <span class="text-green-300 font-bold">cao → nặng</span>?
+    <br>Hay chiều cao & cân nặng <span class="text-red-300">không liên quan</span>?
+    <br><br>
+    <span class="text-amber-300 font-bold">Câu hỏi:</span> Dùng chiều cao để dự đoán cân nặng được không?
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="border-l-4 border-green-500 bg-green-900/20 p-4 rounded-lg">
+  <div class="font-bold text-green-300 text-lg mb-2">💡 GIẢI PHÁP: Linear Regression</div>
+  <div class="text-sm">
+    <div class="grid grid-cols-2 gap-3 mt-2">
+      <div class="p-2 bg-blue-900/30 rounded text-center">
+        <span class="text-blue-300 font-bold">Correlation</span>
+        <br><span class="text-xs">Đo lường mối quan hệ</span>
+      </div>
+      <div class="p-2 bg-purple-900/30 rounded text-center">
+        <span class="text-purple-300 font-bold">Regression</span>
+        <br><span class="text-xs">Dự đoán giá trị</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</v-click>
+
+---
+layout: default
+glowSeed: 141
+---
+
+# SCATTER PLOT: Chiều cao vs Cân nặng
+### Visualization of the relationship
+
+<div class="mt-2 mb-2 flex justify-center">
+  <img src="/images_mas291/scatter_regression.png" class="max-h-[48vh] w-auto rounded-lg shadow-2xl" alt="Scatter Plot Regression" />
+</div>
+
+---
+layout: default
+glowSeed: 142
+---
+
+# HỒI QUY: PHƯƠNG TRÌNH & HỆ SỐ
+### Y = α + βX
+
+<div class="grid grid-cols-2 gap-4 mt-3">
+
+<v-click>
+
+<div class="border-2 border-solid border-purple-800/30 bg-purple-800/10 rounded-lg p-4">
+  <div class="flex items-center gap-2 mb-3">
+    <div class="i-carbon:function text-purple-300 text-xl" />
+    <span class="font-bold text-purple-300">Phương trình</span>
+  </div>
+  <div class="bg-gradient-to-r from-purple-900/40 to-blue-900/40 rounded-lg p-3 border border-purple-500/30 text-center">
+    <div class="text-sm opacity-60 mb-1">Y = Cân Nặng, X = Chiều Cao</div>
+    <div class="text-2xl font-bold font-mono text-purple-300">
+      Y = 0.712X - 60.41
+    </div>
+  </div>
+  <div class="mt-2 text-xs">
+    <span class="text-green-300">Ý nghĩa:</span> Cao +1cm → Nặng +0.71kg
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="border-2 border-solid border-cyan-800/30 bg-cyan-800/10 rounded-lg p-4">
+  <div class="flex items-center gap-2 mb-3">
+    <div class="i-carbon:chart-evaluation text-cyan-300 text-xl" />
+    <span class="font-bold text-cyan-300">Hệ số tương quan</span>
+  </div>
+  <div class="text-center mb-2">
+    <div class="text-4xl font-bold text-cyan-300">R = 0.678</div>
+  </div>
+  <div class="text-xs space-y-1">
+    <div class="flex items-center gap-1">
+      <span class="i-carbon:checkmark-filled text-green-400 text-xs" />
+      <span>Dương: Cùng chiều tăng</span>
+    </div>
+    <div class="flex items-center gap-1">
+      <span class="i-carbon:checkmark-filled text-green-400 text-xs" />
+      <span>0.678: Tương quan trung bình</span>
+    </div>
+    <div class="flex items-center gap-1">
+      <span class="i-carbon:checkmark-filled text-green-400 text-xs" />
+      <span>R² = 0.46: 46% biến thiên</span>
+    </div>
+  </div>
+</div>
+
+</v-click>
+
+</div>
+
+---
+layout: default
+glowSeed: 143
+---
+
+# DIỄN GIẢI CHI TIẾT
+### Các hệ số có ý nghĩa gì?
+
+<div class="grid grid-cols-3 gap-3 mt-3">
+
+<v-click>
+
+<div class="border-2 border-solid border-blue-800/30 bg-blue-800/10 rounded-lg p-3">
+  <div class="text-blue-300 font-bold text-sm mb-2">Hệ số góc (β₁)</div>
+  <div class="font-mono text-xl mb-2 text-green-300">0.712</div>
+  <div class="text-xs opacity-80">Độ thay đổi của Y khi X +1</div>
+  <div class="mt-1 p-1 bg-blue-900/20 rounded text-xs">
+    Cao +1cm → Nặng +0.71kg
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="border-2 border-solid border-green-800/30 bg-green-800/10 rounded-lg p-3">
+  <div class="text-green-300 font-bold text-sm mb-2">Hệ số chặn (β₀)</div>
+  <div class="font-mono text-xl mb-2">-60.41</div>
+  <div class="text-xs opacity-80">Giá trị Y khi X = 0</div>
+  <div class="mt-1 p-1 bg-green-900/20 rounded text-xs">
+    Không có ý nghĩa thực tế
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="border-2 border-solid border-amber-800/30 bg-amber-800/10 rounded-lg p-3">
+  <div class="text-amber-300 font-bold text-sm mb-2">R² (Độ phù hợp)</div>
+  <div class="font-mono text-xl mb-2">0.460</div>
+  <div class="text-xs opacity-80">46% biến thiên được giải thích</div>
+  <div class="mt-1 p-1 bg-amber-900/20 rounded text-xs">
+    54% do yếu tố khác
+  </div>
+</div>
+
+</v-click>
+
+</div>
+
+<v-click>
+
+<div class="mt-3 border-2 border-solid border-purple-800/30 bg-purple-800/10 rounded-lg p-3">
+  <div class="font-bold text-purple-300 text-sm mb-2">Dự báo với mô hình:</div>
+  <div class="text-sm grid grid-cols-3 gap-2">
+    <div class="bg-black/30 rounded p-2 text-center">
+      <div class="opacity-60 text-xs">150cm</div>
+      <div class="font-mono text-purple-300">46.4 kg</div>
+    </div>
+    <div class="bg-black/30 rounded p-2 text-center">
+      <div class="opacity-60 text-xs">155cm</div>
+      <div class="font-mono text-purple-300">49.9 kg</div>
+    </div>
+    <div class="bg-black/30 rounded p-2 text-center">
+      <div class="opacity-60 text-xs">160cm</div>
+      <div class="font-mono text-purple-300">53.5 kg</div>
+    </div>
+  </div>
+</div>
+
+</v-click>
+
+---
+layout: default
+glowSeed: 144
+---
+
+# Ý NGHĨA THỰC TẾ
+### Insights từ mô hình hồi quy
+
+<div class="grid grid-cols-2 gap-3 mt-3">
+
+<v-click>
+
+<div class="border-2 border-solid border-green-800/40 bg-green-800/10 rounded-lg p-3">
+  <div class="flex items-center gap-2 mb-2">
+    <div class="i-carbon:trending-up text-green-300 text-xl" />
+    <span class="font-bold text-green-300">Tăng trưởng</span>
+  </div>
+  <div class="text-sm">
+    Cao +1cm → Nặng +0.71kg
+    <br><span class="text-xs opacity-70">Mối quan hệ đúng như mong đợi</span>
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="border-2 border-solid border-blue-800/40 bg-blue-800/10 rounded-lg p-3">
+  <div class="flex items-center gap-2 mb-2">
+    <div class="i-carbon:chart-scatter text-blue-300 text-xl" />
+    <span class="font-bold text-blue-300">Độ mạnh</span>
+  </div>
+  <div class="text-sm">
+    R = 0.678 (Trung bình)
+    <br><span class="text-xs opacity-70">Chiều cao giải thích 46% cân nặng</span>
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="border-2 border-solid border-purple-800/40 bg-purple-800/10 rounded-lg p-3">
+  <div class="flex items-center gap-2 mb-2">
+    <div class="i-carbon:warning text-purple-300 text-xl" />
+    <span class="font-bold text-purple-300">Hạn chế</span>
+  </div>
+  <div class="text-sm">
+    54% do yếu tố khác
+    <br><span class="text-xs opacity-70">Giới tính, ăn uống, vận động...</span>
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="border-2 border-solid border-amber-800/40 bg-amber-800/10 rounded-lg p-3">
+  <div class="flex items-center gap-2 mb-2">
+    <div class="i-carbon:target text-amber-300 text-xl" />
+    <span class="font-bold text-amber-300">Ứng dụng</span>
+  </div>
+  <div class="text-sm">
+    Dự đoán cân nặng bất thường
+    <br><span class="text-xs opacity-70">Phát hiện suy dinh dưỡng/thừa cân</span>
+  </div>
+</div>
+
+</v-click>
+
+</div>
+
+---
+class: py-8
+glowSeed: 150
+---
+
+# PHẦN 8: TỔNG KẾT
+### Hành trình từ Dữ liệu → Kết luận
+
+<v-click>
+
+<div class="border-l-4 border-cyan-500 bg-cyan-900/20 p-4 rounded-lg mb-4">
+  <div class="font-bold text-cyan-300 text-lg mb-2">🗺️ HÀNH TRÌNH PHÂN TÍCH</div>
+  <div class="text-sm">
+    <div class="flex items-center gap-2">
+      <span class="text-green-300">①</span> Dữ liệu (200 HS)
+      <span class="i-carbon:arrow-right text-amber-300 mx-1" />
+      <span class="text-blue-300">②</span> Thống kê mô tả
+      <span class="i-carbon:arrow-right text-amber-300 mx-1" />
+      <span class="text-purple-300">③</span> Ước lượng
+      <span class="i-carbon:arrow-right text-amber-300 mx-1" />
+      <span class="text-pink-300">④</span> Kiểm định
+      <span class="i-carbon:arrow-right text-amber-300 mx-1" />
+      <span class="text-lime-300">⑤</span> Hồi quy
+    </div>
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="grid grid-cols-2 gap-4">
+  <div class="border-2 border-solid border-green-800/40 bg-green-800/10 rounded-lg p-4">
+    <div class="i-carbon:data-row text-green-300 text-3xl mb-2" />
+    <div class="font-bold text-green-300 mb-1">Thống kê mô tả</div>
+    <div class="text-xs opacity-70">
+      Height: 152.5 ± 6.9 cm<br>
+      Weight: 48.2 ± 7.3 kg
+    </div>
+  </div>
+  <div class="border-2 border-solid border-blue-800/40 bg-blue-800/10 rounded-lg p-4">
+    <div class="i-carbon:chart-line text-blue-300 text-3xl mb-2" />
+    <div class="font-bold text-blue-300 mb-1">Ước lượng</div>
+    <div class="text-xs opacity-70">
+      95% CI Khối 8: [152.58; 155.06]<br>
+      95% CI Khối 9: [156.16; 159.52]
+    </div>
+  </div>
+  <div class="border-2 border-solid border-red-800/40 bg-red-800/10 rounded-lg p-4">
+    <div class="i-carbon:test-tool text-red-300 text-3xl mb-2" />
+    <div class="font-bold text-red-300 mb-1">Kiểm định</div>
+    <div class="text-xs opacity-70">
+      Khối 8 vs Khối 9<br>
+      <span class="text-red-300">→ Bác bỏ H₀ (K8 < K9)</span>
+    </div>
+  </div>
+  <div class="border-2 border-solid border-purple-800/40 bg-purple-800/10 rounded-lg p-4">
+    <div class="i-carbon:chart-scatter text-purple-300 text-3xl mb-2" />
+    <div class="font-bold text-purple-300 mb-1">Hồi quy</div>
+    <div class="text-xs opacity-70">
+      Y = 0.712X - 60.41<br>
+      R = 0.678
+    </div>
+  </div>
+</div>
+
+</v-click>
+
+---
+layout: default
+glowSeed: 151
+---
+
+# ỨNG DỤNG THỰC TẾ
+### Những con số này dùng để làm gì?
+
+<div class="grid grid-cols-2 gap-4 mt-3">
+
+<v-click>
+
+<div class="border-2 border-solid border-green-800/40 bg-green-800/10 rounded-lg p-4">
+  <div class="flex items-center gap-2 mb-2">
+    <div class="i-carbon:chair text-green-300 text-xl" />
+    <span class="font-bold text-green-300">Thiết kế bàn ghế</span>
+  </div>
+  <div class="text-sm">
+    Phạm vi: <span class="font-mono">125-170 cm</span>
+    <br><span class="text-xs opacity-70">→ Cần nhiều size để phù hợp</span>
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="border-2 border-solid border-amber-800/40 bg-amber-800/10 rounded-lg p-4">
+  <div class="flex items-center gap-2 mb-2">
+    <div class="i-carbon:restaurant text-amber-300 text-xl" />
+    <span class="font-bold text-amber-300">Chương trình ăn trưa</span>
+  </div>
+  <div class="text-sm">
+    Khối 9 ăn nhiều hơn Khối 6
+    <br><span class="text-xs opacity-70">→ Khẩu phần theo khối</span>
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="border-2 border-solid border-blue-800/40 bg-blue-800/10 rounded-lg p-4">
+  <div class="flex items-center gap-2 mb-2">
+    <div class="i-carbon:health-cross text-blue-300 text-xl" />
+    <span class="font-bold text-blue-300">Theo dõi sức khỏe</span>
+  </div>
+  <div class="text-sm">
+    Dự đoán cân nặng bất thường
+    <br><span class="text-xs opacity-70">→ Phát hiện suy dinh dưỡng</span>
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="border-2 border-solid border-purple-800/40 bg-purple-800/10 rounded-lg p-4">
+  <div class="flex items-center gap-2 mb-2">
+    <div class="i-carbon:compare text-purple-300 text-xl" />
+    <span class="font-bold text-purple-300">So sánh chuẩn quốc gia</span>
+  </div>
+  <div class="text-sm">
+    Khối 8 ≈ chuẩn 155cm
+    <br><span class="text-xs opacity-70">→ Phát triển tương đương</span>
+  </div>
+</div>
+
+</v-click>
+
+</div>
+
+---
+layout: default
+glowSeed: 152
+---
+
+# HẠN CHẾ & ĐỀ XUẤT
+### Nghiên cứu này có gì chưa hoàn thiện?
+
+<div class="grid grid-cols-2 gap-4 mt-3">
+
+<v-click>
+
+<div class="border-2 border-solid border-red-800/40 bg-red-800/10 rounded-lg p-4">
+  <div class="flex items-center gap-2 mb-2">
+    <div class="i-carbon:warning-alt text-red-300 text-xl" />
+    <span class="font-bold text-red-300">Hạn chế</span>
+  </div>
+  <div class="text-sm space-y-1">
+    <div>• Chỉ 1 trường → Không đại diện toàn vùng</div>
+    <div>• Không có dữ liệu theo thời gian</div>
+    <div>• Không phân tích theo giới tính</div>
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="border-2 border-solid border-green-800/40 bg-green-800/10 rounded-lg p-4">
+  <div class="flex items-center gap-2 mb-2">
+    <div class="i-carbon:idea text-green-300 text-xl" />
+    <span class="font-bold text-green-300">Đề xuất</span>
+  </div>
+  <div class="text-sm space-y-1">
+    <div>• Mở rộng khảo sát nhiều trường</div>
+    <div>• Nghiên cứu longitudinal (theo thời gian)</div>
+    <div>• Thêm biến giới tính vào mô hình</div>
+  </div>
+</div>
+
+</v-click>
+
+</div>
+
+<v-click>
+
+<div class="mt-4 p-3 bg-gradient-to-r from-blue-900/30 to-purple-900/30 border border-blue-700/50 rounded-lg text-center">
+  <div class="text-sm">
+    <span class="font-bold text-cyan-300">Kết luận:</span>
+    Thống kê không chỉ là số — nó kể câu chuyện về sức khỏe học sinh!
+  </div>
+</div>
+
+</v-click>
+
+---
+layout: end
+glowSeed: 160
+---
+
+# CẢM ƠN!
+
+<div class="mt-8">
+  <div class="text-2xl opacity-80">Questions & Discussion</div>
+</div>
+
+<div class="mt-12 max-w-xl mx-auto flex flex-wrap justify-center gap-4 text-sm opacity-60 text-center">
+  <div>Nguyễn Ngọc Phúc</div>
+  <div>•</div>
+  <div>Bùi Đồng Vỹ</div>
+  <div>•</div>
+  <div>Nguyễn Phú</div>
+  <div>•</div>
+  <div>Đinh Trường</div>
+  <div>•</div>
+  <div>Nguyễn Thành An</div>
+  <div>•</div>
+  <div>Nhật Huy</div>
+  <div>•</div>
+  <div>Phạm An</div>
+</div>
+
+<div class="mt-8 text-center opacity-50 text-sm">
+  MAS291 - Xác Suất Thống Kê | FPT University
+</div>
