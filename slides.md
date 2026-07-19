@@ -1,5 +1,5 @@
 ---
-src: ./pages/iot-payment-en.md
+src: ./pages/hrtms.md
 hide: false
 highlighter: shiki
 css: unocss
