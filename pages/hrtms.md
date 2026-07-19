@@ -45,7 +45,7 @@ info: |
 </div>
 
 <!--
-Good morning, respected instructors and classmates. We are Team HRTMS. Over the next 45 minutes we will walk you through not just what we built, but how we engineered the requirements — the full process, from the first business problem to a fully specified, traceable, standards-compliant SRS. Our subject is the Horse Racing Tournament Management System.
+Chào mừng các thầy cô và các bạn. Chúng tôi là Team HRTMS. Trong 45 phút tới, chúng tôi sẽ trình bày không chỉ những gì chúng tôi đã xây dựng, mà còn là cách chúng tôi kỹ thuật hóa các yêu cầu — toàn bộ quy trình, từ vấn đề kinh doanh đầu tiên đến một SRS hoàn chỉnh, có thể truy vết và tuân thủ các tiêu chuẩn. Đề tài của chúng tôi là Hệ thống Quản lý Giải Đua Ngựa.
 -->
 
 ---
@@ -59,33 +59,33 @@ glowSeed: 11
 
 <div class="flex items-center gap-4 rounded-xl border border-blue-400/20 bg-blue-400/8 p-4">
   <div class="i-carbon:flow text-2xl text-blue-300 shrink-0" />
-  <div><span class="font-bold text-blue-200">Section 1 — The Requirements-Engineering Process</span><div class="text-sm opacity-75">methodology, lifecycle, standards, team workflow, timeline</div></div>
+  <div><span class="font-bold text-blue-200">Phần 1 — Quy trình Requirements Engineering</span><div class="text-sm opacity-75">phương pháp luận, vòng đời, tiêu chuẩn, quy trình làm việc nhóm, lịch trình</div></div>
 </div>
 
 <div class="flex items-center gap-4 rounded-xl border border-cyan-400/20 bg-cyan-400/8 p-4">
   <div class="i-carbon:binoculars text-2xl text-cyan-300 shrink-0" />
-  <div><span class="font-bold text-cyan-200">Section 2 — Vision &amp; Scope Document</span><div class="text-sm opacity-75">Assignment 1, walked section-by-section</div></div>
+  <div><span class="font-bold text-cyan-200">Phần 2 — Tài liệu Vision &amp; Scope</span><div class="text-sm opacity-75">Assignment 1, được trình bày từng phần</div></div>
 </div>
 
 <div class="flex items-center gap-4 rounded-xl border border-emerald-400/20 bg-emerald-400/8 p-4">
   <div class="i-carbon:document text-2xl text-emerald-300 shrink-0" />
-  <div><span class="font-bold text-emerald-200">Section 3 — SRS Document</span><div class="text-sm opacity-75">Assignment 2, walked section-by-section</div></div>
+  <div><span class="font-bold text-emerald-200">Phần 3 — Tài liệu SRS</span><div class="text-sm opacity-75">Assignment 2, được trình bày từng phần</div></div>
 </div>
 
 <div class="flex items-center gap-4 rounded-xl border border-amber-400/20 bg-amber-400/8 p-4">
   <div class="i-carbon:checkmark-outline text-2xl text-amber-300 shrink-0" />
-  <div><span class="font-bold text-amber-200">Section 4 — Validation, Traceability &amp; Reflection</span><div class="text-sm opacity-75">how we proved quality</div></div>
+  <div><span class="font-bold text-amber-200">Phần 4 — Validation, Traceability &amp; Reflection</span><div class="text-sm opacity-75">cách chúng tôi chứng minh chất lượng</div></div>
 </div>
 
 <div class="flex items-center gap-4 rounded-xl border border-fuchsia-400/20 bg-fuchsia-400/8 p-4">
   <div class="i-carbon:chat text-2xl text-fuchsia-300 shrink-0" />
-  <div><span class="font-bold text-fuchsia-200">Section 5 — Q&amp;A</span></div>
+  <div><span class="font-bold text-fuchsia-200">Phần 5 — Q&amp;A</span></div>
 </div>
 
 </div>
 
 <!--
-We'll start with the process — how we approached the work and which standards guided us. Then we open Assignment 1 and walk it section by section. Then the same for the SRS. Finally we show our validation and traceability, and reflect on what we learned. Please save questions for the end.
+Chúng tôi sẽ bắt đầu với quy trình — cách chúng tôi tiếp cận công việc và những tiêu chuẩn nào hướng dẫn chúng tôi. Sau đó chúng tôi mở Assignment 1 và trình bày từng phần. Sau đó tương tự cho SRS. Cuối cùng chúng tôi trình bày validation và traceability, và reflechion về những gì chúng tôi đã học. Vui lòng giữ câu hỏi cho đến cuối.
 -->
 
 ---
@@ -94,32 +94,32 @@ class: text-center
 glowSeed: 17
 ---
 
-<div class="text-sm opacity-60 tracking-widest">SECTION 1</div>
-<h1 class="text-4xl font-extrabold mt-2 bg-gradient-to-r from-blue-300 to-cyan-300 bg-clip-text text-transparent">The Requirements-Engineering Process</h1>
-<div class="mt-3 text-base opacity-70 max-w-2xl mx-auto">Did the team follow a disciplined RE process — not just produce a document?</div>
+<div class="text-sm opacity-60 tracking-widest">PHẦN 1</div>
+<h1 class="text-4xl font-extrabold mt-2 bg-gradient-to-r from-blue-300 to-cyan-300 bg-clip-text text-transparent">Quy trình Requirements Engineering</h1>
+<div class="mt-3 text-base opacity-70 max-w-2xl mx-auto">Nhóm có tuân theo một quy trình RE kỷ luật — không chỉ sản xuất một tài liệu?</div>
 
 ---
 class: py-7
 glowSeed: 23
 ---
 
-# Our RE Lifecycle — 5 Phases
+# Vòng đời RE của Chúng tôi — 5 Giai đoạn
 
 <div class="grid grid-cols-5 gap-2 mt-6 text-xs">
 
 <div class="rounded-lg border border-blue-500/30 bg-blue-500/10 p-3 text-center">
   <div class="font-bold text-blue-200 text-sm">1 · ELICIT</div>
-  <div class="opacity-80 mt-1">business needs from stakeholders</div>
+  <div class="opacity-80 mt-1">thu thập nhu cầu kinh doanh từ stakeholders</div>
   <div class="mt-2 text-[10px] text-blue-300/80 border-t border-white/10 pt-1">Vision §1 Background</div>
 </div>
 <div class="rounded-lg border border-cyan-500/30 bg-cyan-500/10 p-3 text-center">
   <div class="font-bold text-cyan-200 text-sm">2 · ANALYZE</div>
-  <div class="opacity-80 mt-1">model the problem</div>
+  <div class="opacity-80 mt-1">mô hình hóa vấn đề</div>
   <div class="mt-2 text-[10px] text-cyan-300/80 border-t border-white/10 pt-1">Vision §2,3 Scope</div>
 </div>
 <div class="rounded-lg border border-emerald-500/30 bg-emerald-500/10 p-3 text-center">
   <div class="font-bold text-emerald-200 text-sm">3 · SPECIFY</div>
-  <div class="opacity-80 mt-1">write the requirements</div>
+  <div class="opacity-80 mt-1">viết các requirements</div>
   <div class="mt-2 text-[10px] text-emerald-300/80 border-t border-white/10 pt-1">SRS §1–6 REQ-FUNC/NFR</div>
 </div>
 <div class="rounded-lg border border-amber-500/30 bg-amber-500/10 p-3 text-center">
@@ -129,7 +129,7 @@ glowSeed: 23
 </div>
 <div class="rounded-lg border border-fuchsia-500/30 bg-fuchsia-500/10 p-3 text-center">
   <div class="font-bold text-fuchsia-200 text-sm">5 · MANAGE</div>
-  <div class="opacity-80 mt-1">version + trace</div>
+  <div class="opacity-80 mt-1">phiên bản + trace</div>
   <div class="mt-2 text-[10px] text-fuchsia-300/80 border-t border-white/10 pt-1">IDs + BR-XX traceability</div>
 </div>
 
@@ -139,10 +139,10 @@ glowSeed: 23
   <span>→</span><span>→</span><span>→</span><span>→</span>
 </div>
 
-<div class="renote mt-3"><b>RE</b> — The canonical ISO/IEC/IEEE 29148 lifecycle. Assignment 1 = Elicitation + early Analysis; Assignment 2 = detailed Analysis + Specification; both carry Validation &amp; Management artifacts.</div>
+<div class="renote mt-3"><b>RE</b> — Vòng đời chuẩn ISO/IEC/IEEE 29148. Assignment 1 = Elicitation + early Analysis; Assignment 2 = detailed Analysis + Specification; cả hai đều mang artifacts của Validation &amp; Management.</div>
 
 <!--
-Before any feature, we agreed on a process: elicit, analyze, specify, validate, manage. We did NOT jump straight to an SRS. We started upstream with the business problem — a precise specification is worthless if it specifies the wrong thing. That is why Assignment 1, the Vision and Scope, came first.
+Trước bất kỳ feature nào, chúng tôi đã đồng ý một quy trình: elicit, analyze, specify, validate, manage. Chúng tôi KHÔNG bỏ thẳng vào một SRS. Chúng tôi bắt đầu từ thượng nguồn với vấn đề kinh doanh — một specification chính xác là vô giá trị nếu nó quy định sai thứ. Đó là lý do Assignment 1, Vision and Scope, đến trước.
 -->
 
 ---
@@ -150,26 +150,26 @@ class: py-7
 glowSeed: 31
 ---
 
-# Standards &amp; Frameworks We Applied
+# Tiêu chuẩn &amp; Framework Chúng tôi Áp dụng
 
 <div class="text-sm mt-4">
 
-| Standard / Framework | Where applied | Why |
+| Tiêu chuẩn / Framework | Áp dụng ở đâu | Tại sao |
 |----------------------|---------------|-----|
-| **Karl Wiegers — Vision &amp; Scope** | Assignment 1 structure | Lightweight artifact for *business* requirements before a full SRS |
-| **IEEE Std 830-1998** | SRS section structure | Classic SRS anatomy (Intro → Overall Description → Specific Reqs) |
-| **ISO/IEC/IEEE 29148:2018** | Overall process | Modern successor to IEEE 830 — lifecycle RE processes |
-| **ISO/IEC 25010:2011** | SRS §6 Quality Attributes | Complete, non-overlapping quality model — no missing '-ility' |
-| **OWASP Top 10:2021** | SRS §6.3 Security | Concrete, prioritized web-security baseline |
-| **WCAG 2.1** | SRS §5.1 / §6.1 Usability | Accessibility obligations |
-| **IFHA International Agreement 2024** | Business rules (BR-XX) | Domain correctness — real racing regulations |
+| **Karl Wiegers — Vision &amp; Scope** | Cấu trúc Assignment 1 | Artifact nhẹ cho *business* requirements trước một SRS đầy đủ |
+| **IEEE Std 830-1998** | Cấu trúc phần SRS | Giải phẫu SRS cổ điển (Intro → Overall Description → Specific Reqs) |
+| **ISO/IEC/IEEE 29148:2018** | Quy trình tổng thể | Kế nhiệm hiện đại của IEEE 830 — quy trình RE lifecycle |
+| **ISO/IEC 25010:2011** | SRS §6 Quality Attributes | Mô hình chất lượng hoàn chỉnh, không chồng lấn — không thiếu '-ility' |
+| **OWASP Top 10:2021** | SRS §6.3 Security | Baseline bảo mật web cụ thể, có ưu tiên |
+| **WCAG 2.1** | SRS §5.1 / §6.1 Usability | Nghĩa vụ accessibility |
+| **IFHA International Agreement 2024** | Business rules (BR-XX) | Đúng domain — quy trình đua ngựa thực tế |
 
 </div>
 
-<div class="renote mt-3"><b>RE</b> — Each standard fills a known gap. ISO 25010 guarantees NFR *completeness*; IEEE 830 guarantees a reader can *navigate* the SRS predictably.</div>
+<div class="renote mt-3"><b>RE</b> — Mỗi tiêu chuẩn điền vào một khoảng trống đã biết. ISO 25010 đảm bảo *tính đầy đủ* NFR; IEEE 830 đảm bảo người đọc có thể *điều hướng* SRS một cách có thể dự đoán.</div>
 
 <!--
-We grounded every decision in a recognized standard. The most important for completeness is ISO 25010 — a checklist of quality attributes that stops us forgetting robustness or availability. For domain correctness we used the IFHA International Agreement — the real international horse-racing rulebook — so our business rules aren't invented, they're grounded in actual racing regulation.
+Chúng tôi nền tảng mọi quyết định trên một tiêu chuẩn được công nhận. Quan trọng nhất cho tính đầy đủ là ISO 25010 — một checklist của các quality attributes ngăn chúng tôi quên robustness hoặc availability. Để đúng domain, chúng tôi sử dụng IFHA International Agreement — sách luật đua ngựa quốc tế thực tế — nên business rules của chúng tôi không bị bịa ra, chúng được nền tảng trong quy trình đua thực tế.
 -->
 
 ---
@@ -177,11 +177,11 @@ class: py-7
 glowSeed: 39
 ---
 
-# Team Workflow &amp; Division of Labor
+# Quy trình Làm việc Nhóm &amp; Phân công Lao động
 
 <div class="text-xs mt-4">
 
-| # | Member | ID | Owned in Vision &amp; Scope | Owned in SRS |
+| # | Thành viên | ID | Phụ trách trong Vision &amp; Scope | Phụ trách trong SRS |
 |---|--------|----|----------------------------|--------------|
 | 1 | Nguyễn Ngọc Phúc | SE203055 | Team leader — coordination, merging, quality review | Team leader — coordination, merging, quality review |
 | 2 | Dương Thị Khánh Ngọc | SE193095 | §1.1–1.5 Background → Vision | §1 Introduction |
@@ -193,19 +193,19 @@ glowSeed: 39
 
 <div class="grid grid-cols-2 gap-3 mt-3 text-xs">
   <div class="rounded-lg border border-white/10 bg-white/5 p-3">
-    <div class="font-bold text-blue-300 mb-1">Working method</div>
-    <div class="opacity-85">Parallel authoring → peer cross-review → leader merge → team inspection → <b>baseline</b>.</div>
+    <div class="font-bold text-blue-300 mb-1">Phương pháp làm việc</div>
+    <div class="opacity-85">Song tác tác → peer cross-review → leader merge → team inspection → <b>baseline</b>.</div>
   </div>
   <div class="rounded-lg border border-white/10 bg-white/5 p-3">
-    <div class="font-bold text-emerald-300 mb-1">Single naming convention</div>
-    <div class="opacity-85"><code>BO- SM- RI- FE- UC- REQ-FUNC- REQ-NFR- BR-</code> enforced across all sections.</div>
+    <div class="font-bold text-emerald-300 mb-1">Quy ước đặt tên duy nhất</div>
+    <div class="opacity-85"><code>BO- SM- RI- FE- UC- REQ-FUNC- REQ-NFR- BR-</code> được thực thi trên tất cả các phần.</div>
   </div>
 </div>
 
-<div class="renote mt-2"><b>RE</b> — A small-scale replica of real RE governance: parallel work for speed, a mandatory review-and-inspection gate before baselining — exactly what the Revision History records.</div>
+<div class="renote mt-2"><b>RE</b> — Một bản sao quy mô nhỏ của quản trị RE thực: công việc song song để tăng tốc, một cổng review-and-inspection bắt buộc trước khi baselining — chính xác những gì Revision History ghi lại.</div>
 
 <!--
-Five members, five clear ownership areas, in both documents. The pattern mirrors real RE teams: parallel authoring for speed, but a hard review-and-inspection gate before baselining. Our team leader didn't write content — he merged and verified, the proper role of a requirements lead.
+Năm thành viên, năm khu vực phụ trách rõ ràng, trong cả hai tài liệu. Mô hình phản ánh các team RE thực: song tác để tăng tốc, nhưng một cổng review-and-inspection cứng trước khi baselining. Team leader của chúng tôi không viết nội dung — ông ấy merge và verify, vai trò phù hợp của một requirements lead.
 -->
 
 ---
@@ -213,13 +213,13 @@ class: py-7
 glowSeed: 47
 ---
 
-# Project Timeline &amp; Document Evolution
+# Lịch trình Dự án &amp; Tiến hóa Tài liệu
 
 <div class="flex flex-col gap-3 mt-6 max-w-3xl mx-auto">
 
 <div class="flex items-center gap-4 rounded-lg border border-white/10 bg-white/5 p-3">
   <div class="i-carbon:calendar text-2xl text-slate-300 shrink-0" />
-  <div class="text-sm"><b>Jun 01, 2026</b> — Vision &amp; Scope initial draft <span class="opacity-60">· v0.1 draft</span></div>
+  <div class="text-sm"><b>Jun 01, 2026</b> — Vision &amp; Scope bản thảo ban đầu <span class="opacity-60">· v0.1 draft</span></div>
 </div>
 <div class="flex items-center gap-4 rounded-lg border border-cyan-400/20 bg-cyan-400/8 p-3">
   <div class="i-carbon:review text-2xl text-cyan-300 shrink-0" />
@@ -236,10 +236,10 @@ glowSeed: 47
 
 </div>
 
-<div class="renote mt-3"><b>RE</b> — The dates prove the correct dependency: business requirements (Vision) were elicited, analyzed and frozen <i>before</i> specifying the SRS. Building on a stable baseline is textbook 29148.</div>
+<div class="renote mt-3"><b>RE</b> — Các ngày chứng minh dependency đúng: business requirements (Vision) được elicit, analyze và freeze <i>trước</i> khi specify SRS. Xây dựng trên một baseline ổn định là giáo trình 29148.</div>
 
 <!--
-Look at the dates. The Vision and Scope was drafted, reviewed, inspected, then baselined on June 3rd — before we started detailed SRS work. That ordering is the whole point. You cannot write a precise specification on top of a moving business goal. We froze the goal first.
+Hãy nhìn vào các ngày. Vision and Scope được soạn thảo, reviewed, inspected, rồi baselined vào ngày 3 tháng 6 — trước khi chúng tôi bắt đầu công việc SRS chi tiết. Thứ tự đó là toàn bộ điểm. Bạn không thể viết một specification chính xác trên một mục tiêu kinh doanh di động. Chúng tôi freeze mục tiêu trước.
 -->
 
 ---
@@ -247,30 +247,30 @@ class: py-7
 glowSeed: 53
 ---
 
-# Toolchain &amp; Modeling Techniques
+# Bộ công cụ &amp; Kỹ thuật Mô hình hóa
 
 <div class="text-xs mt-4">
 
-| RE Activity | Technique we used | Output |
+| Hoạt động RE | Kỹ thuật chúng tôi sử dụng | Output |
 |-------------|-------------------|--------|
 | Stakeholder elicitation | Stakeholder profiling + domain study (IFHA) | §3.1 Stakeholder table (7 roles) |
 | Problem framing | Elevator-pitch vision template (Wiegers) | §1.5 Vision Statement |
 | Goal setting | SMART objectives + scales/metrics | §1.3 BO-1..4, §1.4 SM-1..4 |
 | Risk management | Probability × Impact scoring | §1.6 RI-1..5 |
 | Scope control | Feature list + 3-release roadmap + exclusions | §2.1–2.3 |
-| System boundary | **Context diagrams** (one per activity) | SRS §2.1 (5 diagrams) |
+| System boundary | **Context diagrams** (một diagram cho mỗi activity) | SRS §2.1 (5 diagrams) |
 | Behavioral analysis | **Use-case driven** (COS template) | SRS §3 (UC-1..8) |
 | Data analysis | **ER modeling** + data dictionary | SRS §4.1–4.2 |
-| Dynamic analysis | **State-machine** of the entry lifecycle | SRS Appendix A |
+| Dynamic analysis | **State-machine** của entry lifecycle | SRS Appendix A |
 | UI envisioning | Low-fidelity **wireframes** | SRS §4.3 (4 wireframes) |
 | Traceability | Unique IDs + cross-references (BR/REQ) | Throughout |
 
 </div>
 
-<div class="renote mt-3"><b>RE</b> — Four modeling views: context (boundary), use cases (behavior), ER (data), state machine (dynamics). Each view catches what the others miss — that is the multi-model analysis approach in 29148.</div>
+<div class="renote mt-3"><b>RE</b> — Bốn view mô hình: context (boundary), use cases (behavior), ER (data), state machine (dynamics). Mỗi view bắt những gì các view khác bỏ sót — đó là cách tiếp cận phân tích multi-model trong 29148.</div>
 
 <!--
-We didn't rely on one modeling technique. Context diagrams define the boundary, use cases the behavior, the ER diagram the data, the state machine the dynamics. Each view catches what the others miss. Together they make the requirements complete and consistent — exactly what instructors and auditors look for.
+Chúng tôi không dựa vào một kỹ thuật mô hình. Context diagrams định nghĩa boundary, use cases behavior, ER diagram data, state machine dynamics. Mỗi view bắt những gì các view khác bỏ sót. Cùng nhau chúng làm requirements đầy đủ và nhất quán — chính xác những gì instructors và auditors tìm kiếm.
 -->
 
 ---
@@ -279,16 +279,16 @@ class: text-center
 glowSeed: 61
 ---
 
-<div class="text-sm opacity-60 tracking-widest">SECTION 2</div>
-<h1 class="text-4xl font-extrabold mt-2 bg-gradient-to-r from-cyan-300 to-teal-300 bg-clip-text text-transparent">Vision &amp; Scope Document</h1>
-<div class="mt-3 text-base opacity-70 max-w-2xl mx-auto">Assignment 1 — walked in the exact order it is written.<br/>For every section: the content, its purpose in the RE process, and how we produced it.</div>
+<div class="text-sm opacity-60 tracking-widest">PHẦN 2</div>
+<h1 class="text-4xl font-extrabold mt-2 bg-gradient-to-r from-cyan-300 to-teal-300 bg-clip-text text-transparent">Tài liệu Vision &amp; Scope</h1>
+<div class="mt-3 text-base opacity-70 max-w-2xl mx-auto">Assignment 1 — được trình bày theo đúng thứ tự được viết.<br/>Đối với mỗi phần: nội dung, mục đích của nó trong quy trình RE, và cách chúng tôi sản xuất.</div>
 
 ---
 class: py-8
 glowSeed: 67
 ---
 
-# Document Identity &amp; Status
+# Định danh &amp; Trạng thái Tài liệu
 
 <div class="grid grid-cols-2 gap-5 mt-6">
 
@@ -315,10 +315,10 @@ glowSeed: 67
 
 </div>
 
-<div class="renote mt-4"><b>RE</b> — A Vision &amp; Scope doc is the lightweight upstream artifact (Karl Wiegers) capturing the <b>business problem, the solution vision, and the boundaries</b> — before a full SRS. Its job: get everyone agreeing on <i>what problem</i> before arguing about <i>how</i>. The v0.1 → v1.0 jump on explicit review is documentary evidence of our validation phase.</div>
+<div class="renote mt-4"><b>RE</b> — Một tài liệu Vision &amp; Scope là artifact thượng nguồn nhẹ (Karl Wiegers) nắm bắt <b>vấn đề kinh doanh, tầm nhìn giải pháp, và các boundary</b> — trước một SRS đầy đủ. Công việc của nó: khiến mọi người đồng ý về <i>vấn đề gì</i> trước khi tranh luận về <i>như thế nào</i>. Bước nhảy v0.1 → v1.0 trên review rõ ràng là bằng chứng documentary của giai đoạn validation.</div>
 
 <!--
-This is our Vision and Scope document. Its purpose is to get everyone — sponsors, users, the build team — agreeing on the problem and the boundaries before specifying details. It is deliberately lighter than an SRS. Don't skip the revision history — it is evidence. We wrote a draft, the team reviewed and inspected it, then we baselined 1.0. From that point any change is controlled. This is how professional teams prevent requirements drift.
+Đây là tài liệu Vision and Scope của chúng tôi. Mục đích của nó là khiến mọi người — sponsors, users, team build — đồng ý về vấn đề và boundary trước khi specify chi tiết. Nó có chủ ý nhẹ hơn một SRS. Đừng bỏ qua revision history — đó là bằng chứng. Chúng tôi viết một bản thảo, team review và inspect nó, rồi chúng tôi baseline 1.0. Từ thời điểm đó bất kỳ thay đổi nào được kiểm soát. Đó là cách các team chuyên nghiệp ngăn requirements drift.
 -->
 
 ---
@@ -326,7 +326,7 @@ class: py-7
 glowSeed: 71
 ---
 
-# §1. Business Requirements — Overview
+# §1. Business Requirements — Tổng quan
 
 <div class="grid grid-cols-2 gap-3 mt-6 text-sm">
 
@@ -340,10 +340,10 @@ glowSeed: 71
 
 </div>
 
-<div class="renote mt-4"><b>RE</b> — Section 1 is the heart of <b>elicitation</b>: What is the problem? Why solve it? What does success look like? Every downstream SRS requirement must trace back to something here — otherwise it is gold-plating.</div>
+<div class="renote mt-4"><b>RE</b> — Phần 1 là tim của <b>elicitation</b>: Vấn đề là gì? Tại sao giải quyết? Thành công trông như thế nào? Mọi SRS requirement downstream phải trace lại một cái gì đó ở đây — nếu không nó là gold-plating.</div>
 
 <!--
-Section 1 is where elicitation lives. Seven sub-sections, taken in turn. The rule we followed: if a feature in the SRS can't trace back to a need here, it shouldn't be in the SRS.
+Phần 1 là nơi elicitation sống. Bảy sub-section, được lấy lần lượt. Quy tắc chúng tôi theo: nếu một feature trong SRS không thể trace lại một nhu cầu ở đây, nó không nên ở trong SRS.
 -->
 
 ---
@@ -351,34 +351,34 @@ class: py-7
 glowSeed: 73
 ---
 
-# §1.1 Background — The Problem Statement
+# §1.1 Background — Problem Statement
 
 <div class="grid grid-cols-2 gap-5 mt-5">
 
 <div class="rounded-xl border border-amber-400/20 bg-amber-400/8 p-5">
-  <div class="flex items-center gap-2 mb-2 text-amber-200"><div class="i-carbon:warning-alt text-xl" /><b>Current practice</b></div>
+  <div class="flex items-center gap-2 mb-2 text-amber-200"><div class="i-carbon:warning-alt text-xl" /><b>Thực tế hiện nay</b></div>
   <div class="text-sm opacity-90 space-y-1">
-    <div>• Horse racing: hugely popular (HK, UK, Australia, SE Asia) but operationally complex.</div>
-    <div>• One tournament involves <b>8+ stakeholder groups</b>.</div>
-    <div>• Manual records + spreadsheets + phone/email = <b>fragmented</b>.</div>
+    <div>• Đua ngựa: rất phổ biến (HK, UK, Australia, SE Asia) nhưng phức tạp về vận hành.</div>
+    <div>• Một giải đấu liên quan <b>8+ nhóm stakeholder</b>.</div>
+    <div>• Hồ sơ thủ công + spreadsheets + phone/email = <b>phân mảnh</b>.</div>
   </div>
 </div>
 
 <div class="rounded-xl border border-red-400/20 bg-red-400/8 p-5">
-  <div class="flex items-center gap-2 mb-3 text-red-200"><div class="i-carbon:metric text-xl" /><b>Measured pain (quantified)</b></div>
+  <div class="flex items-center gap-2 mb-3 text-red-200"><div class="i-carbon:metric text-xl" /><b>Nỗi đau đã đo lường (được lượng hóa)</b></div>
   <div class="grid grid-cols-3 gap-2 text-center">
-    <div class="bg-black/30 rounded-lg p-3"><div class="text-3xl font-extrabold text-red-300">4–6h</div><div class="text-[11px] opacity-70 mt-1">admin / day in season</div></div>
-    <div class="bg-black/30 rounded-lg p-3"><div class="text-3xl font-extrabold text-red-300">8–12%</div><div class="text-[11px] opacity-70 mt-1">entry/result errors</div></div>
-    <div class="bg-black/30 rounded-lg p-3"><div class="text-3xl font-extrabold text-red-300">~15%</div><div class="text-[11px] opacity-70 mt-1">events hit conflicts</div></div>
+    <div class="bg-black/30 rounded-lg p-3"><div class="text-3xl font-extrabold text-red-300">4–6h</div><div class="text-[11px] opacity-70 mt-1">admin / ngày trong mùa</div></div>
+    <div class="bg-black/30 rounded-lg p-3"><div class="text-3xl font-extrabold text-red-300">8–12%</div><div class="text-[11px] opacity-70 mt-1">lỗi entry/result</div></div>
+    <div class="bg-black/30 rounded-lg p-3"><div class="text-3xl font-extrabold text-red-300">~15%</div><div class="text-[11px] opacity-70 mt-1">sự kiện bị xung đột</div></div>
   </div>
 </div>
 
 </div>
 
-<div class="renote mt-4"><b>RE</b> — The Background performs <b>problem framing</b> and critically <b>quantifies</b> the pain. These baselines are what make the later objectives (BO-1, BO-2) <i>measurable</i>. Without a baseline you cannot define improvement.</div>
+<div class="renote mt-4"><b>RE</b> — Background thực hiện <b>problem framing</b> và quan trọng <b>lượng hóa</b> nỗi đau. Các baseline này là những gì làm cho các objectives sau (BO-1, BO-2) <i>được đo lường</i>. Không có baseline, bạn không thể định nghĩa improvement.</div>
 
 <!--
-We didn't just say 'it's messy.' We measured it: 4 to 6 hours a day of admin, an 8 to 12 percent error rate, conflicts in 15 percent of events. These numbers become the baseline against which we'll prove success later. A goal without a baseline isn't a goal — it's a wish.
+Chúng tôi không chỉ nói 'nó lộn xộn.' Chúng tôi đo lường nó: 4 đến 6 giờ một ngày admin, tỷ lệ lỗi 8 đến 12 phần trăm, xung đột trong 15 phần trăm sự kiện. Những con số này trở thành baseline để chứng minh thành công sau. Một mục tiêu không có baseline không phải là mục tiêu — đó là ước muốn.
 -->
 
 ---
@@ -392,27 +392,27 @@ glowSeed: 79
 
 <div class="flex items-center gap-3 rounded-lg border border-white/10 bg-white/5 p-3">
   <div class="i-carbon:application-web text-xl text-blue-300 shrink-0" />
-  <span>Build a <b>single web + mobile platform</b> for the whole tournament lifecycle — one shared workspace replacing fragmented tools.</span>
+  <span>Xây dựng một <b>nền tảng web + mobile duy nhất</b> cho toàn bộ lifecycle giải đấu — một không gian làm việc chung thay thế các công cụ phân mảnh.</span>
 </div>
 <div class="flex items-center gap-3 rounded-lg border border-white/10 bg-white/5 p-3">
   <div class="i-carbon:user-multiple text-xl text-cyan-300 shrink-0" />
-  <span><b>Target segment:</b> clubs running <b>20–200 races/season</b>, <b>50–500 horses</b>, <b>30–150 jockeys</b>.</span>
+  <span><b>Phân khúc mục tiêu:</b> các câu lạc bộ chạy <b>20–200 races/mùa</b>, <b>50–500 horses</b>, <b>30–150 jockeys</b>.</span>
 </div>
 <div class="flex items-center gap-3 rounded-lg border border-white/10 bg-white/5 p-3">
   <div class="i-carbon:trend-up text-xl text-emerald-300 shrink-0" />
-  <span><b>Drivers:</b> digital transformation in sport + tightening regulation on transparency.</span>
+  <span><b>Động lực:</b> chuyển đổi số trong thể thao + thắt chặt quy định về tính minh bạch.</span>
 </div>
 <div class="flex items-center gap-3 rounded-lg border border-white/10 bg-white/5 p-3">
   <div class="i-carbon:connect text-xl text-fuchsia-300 shrink-0" />
-  <span><b>Future value:</b> integration with national databases + live broadcasting.</span>
+  <span><b>Giá trị tương lai:</b> tích hợp với cơ sở dữ liệu quốc gia + phát trực tiếp.</span>
 </div>
 
 </div>
 
-<div class="renote mt-4"><b>RE</b> — Naming a concrete target segment (club-size ranges) is an elicitation discipline — it forces design for a real customer profile, not an imaginary 'everyone'. The future-integration note plants seeds for later dependencies (DE-1, DE-2).</div>
+<div class="renote mt-4"><b>RE</b> — Đặt tên một phân khúc mục tiêu cụ thể (kích thước câu lạc bộ) là kỷ luật elicitation — nó buộc design cho một profile khách hàng thực, không phải 'mọi người' tưởng tượng. Ghi chú tích hợp tương lai gieo hạt giống cho các dependencies sau (DE-1, DE-2).</div>
 
 <!--
-The opportunity section answers 'why now and for whom.' We named a specific segment — mid-sized clubs with 20 to 200 races — because designing for a real customer profile keeps requirements grounded. We flagged future integrations early, so they become planned dependencies rather than surprises.
+Phần opportunity trả lời 'tại sao bây giờ và cho ai.' Chúng tôi đặt tên một phân khúc cụ thể — các câu lạc bộ quy mô trung bình với 20 đến 200 cuộc đua — vì design cho một profile khách hàng thực giữ requirements được nền tảng. Chúng tôi gắn cờ các tích hợp tương lai sớm, nên chúng trở thành dependencies được hoạch định thay vì bất ngờ.
 -->
 
 ---
@@ -425,17 +425,17 @@ glowSeed: 83
 <div class="text-xs mt-4">
 <table>
 <tr><th>ID</th><th>Objective (time-boxed)</th><th>Past</th><th>Goal</th><th>Stretch</th></tr>
-<tr><td class="font-bold text-cyan-300">BO-1</td><td>Cut admin time <b>50%</b> within 6 months</td><td>4–6 hrs</td><td class="text-emerald-300 font-bold">2–3 hrs</td><td>&lt;2 hrs</td></tr>
-<tr><td class="font-bold text-cyan-300">BO-2</td><td>Conflicts &amp; entry errors <b>below 2%</b> within 3 months</td><td>8–12%</td><td class="text-emerald-300 font-bold">&lt;5%</td><td>&lt;2%</td></tr>
-<tr><td class="font-bold text-cyan-300">BO-3</td><td>Raise stakeholder satisfaction <b>30%</b> within 12 months</td><td>6.2/10</td><td class="text-emerald-300 font-bold">8.0/10</td><td>9.0/10</td></tr>
-<tr><td class="font-bold text-cyan-300">BO-4</td><td><b>80% adoption</b> among approached orgs in year 1</td><td>—</td><td class="text-emerald-300 font-bold">80%</td><td>95%</td></tr>
+<tr><td class="font-bold text-cyan-300">BO-1</td><td>Cắt admin time <b>50%</b> trong vòng 6 tháng</td><td>4–6 hrs</td><td class="text-emerald-300 font-bold">2–3 hrs</td><td>&lt;2 hrs</td></tr>
+<tr><td class="font-bold text-cyan-300">BO-2</td><td>Xung đột &amp; lỗi entry <b>dưới 2%</b> trong vòng 3 tháng</td><td>8–12%</td><td class="text-emerald-300 font-bold">&lt;5%</td><td>&lt;2%</td></tr>
+<tr><td class="font-bold text-cyan-300">BO-3</td><td>Tăng sự hài lòng của stakeholder <b>30%</b> trong vòng 12 tháng</td><td>6.2/10</td><td class="text-emerald-300 font-bold">8.0/10</td><td>9.0/10</td></tr>
+<tr><td class="font-bold text-cyan-300">BO-4</td><td><b>80% adoption</b> trong số các tổ chức được tiếp cận trong năm 1</td><td>—</td><td class="text-emerald-300 font-bold">80%</td><td>95%</td></tr>
 </table>
 </div>
 
-<div class="renote mt-4"><b>RE</b> — Each objective is <b>SMART</b> and carries a measurement scale (past→goal→stretch). The <b>stretch</b> separates 'we met the contract' from 'we delighted the customer' — aspiration without compromising the committed goal.</div>
+<div class="renote mt-4"><b>RE</b>— Mỗi objective là <b>SMART</b> và mang một thang đo (past→goal→stretch). <b>Stretch</b> tách 'chúng tôi đã đáp ứng hợp đồng' khỏi 'chúng tôi đã làm hài lòng khách hàng' — tham vọng mà không compromising mục tiêu đã cam kết.</div>
 
 <!--
-Four objectives, all SMART, all time-boxed, each with a measurement scale. BO-1 and BO-2 directly attack the baselines from the Background. Notice each has a stretch goal — that's how we separate 'we met the commitment' from 'we genuinely delighted the user.' The committed goal is the contract; the stretch is the ambition.
+Bốn objectives, đều SMART, đều time-boxed, mỗi cái với một thang đo. BO-1 và BO-2 trực tiếp tấn công các baseline từ Background. Chú ý mỗi cái có một stretch goal — đó là cách chúng tôi tách 'chúng tôi đã đáp ứng cam kết' khỏi 'chúng tôi thực sự làm hài lòng user.' Mục tiêu cam kết là hợp đồng; stretch là tham vọng.
 -->
 
 ---
@@ -449,27 +449,27 @@ glowSeed: 89
 
 <div class="rounded-xl border border-emerald-400/20 bg-emerald-400/8 p-5">
   <div class="font-bold text-emerald-200 mb-2">SM-1 · Adoption</div>
-  <div class="opacity-90">90% of entries via HRTMS within 3 months → manual entries down <b>≥70%</b>.</div>
+  <div class="opacity-90">90% entries qua HRTMS trong vòng 3 tháng → manual entries giảm <b>≥70%</b>.</div>
 </div>
 <div class="rounded-xl border border-emerald-400/20 bg-emerald-400/8 p-5">
   <div class="font-bold text-emerald-200 mb-2">SM-2 · Speed</div>
-  <div class="opacity-90">Result publishing time <b>45 min → under 5 min</b> within 6 months.</div>
+  <div class="opacity-90">Thời gian publish kết quả <b>45 min → dưới 5 min</b> trong vòng 6 tháng.</div>
 </div>
 <div class="rounded-xl border border-emerald-400/20 bg-emerald-400/8 p-5">
   <div class="font-bold text-emerald-200 mb-2">SM-3 · Accuracy</div>
-  <div class="opacity-90"><b>Zero</b> discrepancies between published and official records (first season).</div>
+  <div class="opacity-90"><b>Zero</b> discrepancies giữa published và official records (mùa đầu tiên).</div>
 </div>
 <div class="rounded-xl border border-emerald-400/20 bg-emerald-400/8 p-5">
   <div class="font-bold text-emerald-200 mb-2">SM-4 · Communication</div>
-  <div class="opacity-90">Stakeholder response time <b>+60%</b> within 6 months.</div>
+  <div class="opacity-90">Thời gian phản hồi của stakeholder <b>+60%</b> trong vòng 6 tháng.</div>
 </div>
 
 </div>
 
-<div class="renote mt-3"><b>RE</b> — Objectives state intent; Success Metrics state <i>how intent is measured</i>. SM-3 ('zero discrepancies') is an <b>acceptance criterion in disguise</b> — so strict it migrates into the quality attributes and the Provisional→Approved workflow in the SRS.</div>
+<div class="renote mt-3"><b>RE</b> — Objectives nêu ý định; Success Metrics nêu <i>cách ý định được đo lường</i>. SM-3 ('zero discrepancies') là một <b>acceptance criterion ngụy trang</b> — quá nghiêm ngặt nó di chuyển vào quality attributes và workflow Provisional→Approved trong SRS.</div>
 
 <!--
-Metrics are how we prove the objectives happened. SM-2 instruments BO-1's efficiency goal. But SM-3 is special — 'zero discrepancies' is so strict it stops being a metric and becomes a hard requirement. You'll see it again in the SRS as the Provisional-to-Approved sign-off workflow. Good metrics migrate into requirements.
+Metrics là cách chúng tôi chứng minh objectives happened. SM-2 đo lường goal hiệu quả của BO-1. Nhưng SM-3 đặc biệt — 'zero discrepancies' quá nghiêm ngặt nên nó ngừng là metric và trở thành một requirement cứng. Bạn sẽ thấy nó lại trong SRS như workflow sign-off Provisional-to-Approved. Metrics tốt di chuyển thành requirements.
 -->
 
 ---
@@ -483,7 +483,7 @@ glowSeed: 97
 <div class="max-w-3xl mx-auto mt-4 text-left">
 
 <div class="rounded-xl border-l-4 border-cyan-400 bg-cyan-400/8 p-5 text-base leading-relaxed opacity-95">
-For <span class="text-cyan-200 font-semibold">horse racing tournament organizers</span> who <span class="text-cyan-200 font-semibold">need to efficiently manage all aspects of racing events</span>, the <span class="text-emerald-200 font-semibold">HRTMS</span> is a <span class="text-blue-200 font-semibold">web-based and mobile-enabled platform</span> that provides comprehensive tournament planning, race scheduling, horse &amp; jockey management, real-time result tracking, and stakeholder communication. <span class="opacity-70">Unlike</span> the current fragmented approach of spreadsheets and manual processes, HRTMS offers a <span class="text-amber-200 font-semibold">centralized, real-time system</span> that reduces administrative overhead, minimizes errors, and enhances transparency.
+For <span class="text-cyan-200 font-semibold">nhà tổ chức giải đua ngựa</span> who <span class="text-cyan-200 font-semibold">cần quản lý hiệu quả tất cả các khía cạnh của sự kiện đua ngựa</span>, the <span class="text-emerald-200 font-semibold">HRTMS</span> is a <span class="text-blue-200 font-semibold">nền tảng web-based và mobile-enabled</span> that provides quy hoạch giải đấu toàn diện, lập lịch cuộc đua, quản lý ngựa &amp; jockey, theo dõi kết quả thời gian thực, và giao tiếp stakeholder. <span class="opacity-70">Unlike</span> cách tiếp cận phân mảnh hiện nay của spreadsheets và quy trình thủ công, HRTMS offers a <span class="text-amber-200 font-semibold">hệ thống tập trung, thời gian thực</span> that reduces overhead quản trị, minimizes lỗi, và enhances tính minh bạch.
 </div>
 
 <div class="mt-4 grid grid-cols-5 gap-2 text-center text-[11px]">
@@ -497,7 +497,7 @@ For <span class="text-cyan-200 font-semibold">horse racing tournament organizers
 </div>
 
 <!--
-If you remember one slide, remember this one. It follows the classic Geoffrey Moore / Wiegers elevator-pitch template: for whom, what need, what product, what category, what benefit, unlike what, why better. Filling every slot forced us to agree — in one sentence — on who we serve and why we're different. The two magic words are 'centralized' and 'real-time.'
+Nếu bạn nhớ một slide, hãy nhớ slide này. Nó theo template elevator-pitch Geoffrey Moore / Wiegers cổ điển: cho ai, nhu cầu gì, sản phẩm gì, danh mục gì, lợi ích gì, không giống gì, tại sao tốt hơn. Điền vào mỗi khe buộc chúng tôi đồng ý — trong một câu — về ai chúng tôi phục vụ và tại sao chúng tôi khác biệt. Hai từ ma thuật là 'tập trung' và 'thời gian thực.'
 -->
 
 ---
@@ -509,21 +509,21 @@ glowSeed: 101
 
 <div class="text-xs mt-4">
 <table>
-<tr><th>ID</th><th>Risk</th><th>P</th><th>I</th><th>Score</th><th>Mitigation (planted here, realized in SRS)</th></tr>
-<tr><td class="font-bold text-amber-300">RI-1</td><td>New compliance rules force rework</td><td>0.4</td><td>8</td><td>3.2</td><td>Modular config; rules externalized (BR-XX)</td></tr>
-<tr><td class="font-bold text-amber-300">RI-2</td><td>Clubs resist change (training fear)</td><td>0.5</td><td>6</td><td class="bg-amber-900/30 font-bold">3.0</td><td>USE-1 &lt;5-min tasks; ≤10-min training videos</td></tr>
-<tr><td class="font-bold text-amber-300">RI-3</td><td>National DB integration harder than expected</td><td>0.4</td><td>7</td><td>2.8</td><td>Manual-entry fallback in UC-2</td></tr>
+<tr><th>ID</th><th>Risk</th><th>P</th><th>I</th><th>Score</th><th>Mitigation (được gieo ở đây, hiện thực trong SRS)</th></tr>
+<tr><td class="font-bold text-amber-300">RI-1</td><td>Quy tắc compliance mới buộc rework</td><td>0.4</td><td>8</td><td>3.2</td><td>Cấu hình modular; rules được externalized (BR-XX)</td></tr>
+<tr><td class="font-bold text-amber-300">RI-2</td><td>Câu lạc bộ resist thay đổi (sợ training)</td><td>0.5</td><td>6</td><td class="bg-amber-900/30 font-bold">3.0</td><td>USE-1 &lt;5-min tasks; ≤10-min training videos</td></tr>
+<tr><td class="font-bold text-amber-300">RI-3</td><td>Tích hợp DB quốc gia khó hơn dự kiến</td><td>0.4</td><td>7</td><td>2.8</td><td>Manual-entry fallback trong UC-2</td></tr>
 <tr><td class="font-bold text-amber-300">RI-4</td><td>Data breach → legal/reputation</td><td>0.2</td><td>10</td><td>2.0</td><td>SEC-1/2/3 + TLS 1.2 (SRS §6.3)</td></tr>
-<tr><td class="font-bold text-amber-300">RI-5</td><td>Poor connectivity at venues</td><td>0.3</td><td>5</td><td>1.5</td><td>ROB-1 offline cache (SRS §6.6)</td></tr>
+<tr><td class="font-bold text-amber-300">RI-5</td><td>Kết nối kém tại các địa điểm</td><td>0.3</td><td>5</td><td>1.5</td><td>ROB-1 offline cache (SRS §6.6)</td></tr>
 </table>
 </div>
 
-<div class="text-xs opacity-70 mt-2">Risk = Probability × Impact. Highest expected risk is <b class="text-amber-300">RI-2</b> — a human risk, not a technical one.</div>
+<div class="text-xs opacity-70 mt-2">Risk = Probability × Impact. Risk dự kiến cao nhất là <b class="text-amber-300">RI-2</b> — một risk con người, không technical.</div>
 
-<div class="renote mt-2"><b>RE</b> — Risks are elicited <i>early</i> so they can be <i>designed out</i>. Each risk is linked to a future requirement that mitigates it — <b>forward traceability</b> from risk → requirement.</div>
+<div class="renote mt-2"><b>RE</b> — Risks được elicit <i>sớm</i> để chúng có thể được <b>thiết kế out</b>. Mỗi risk được link đến một requirement sau mitigates nó — <b>traceability tiến</b> từ risk → requirement.</div>
 
 <!--
-We scored every risk as probability times impact. The highest expected risk is RI-2, resistance to change — not technical at all, human. The key discipline: we didn't just list risks, we pre-committed a mitigation for each. RI-5 is mitigated later by offline caching; RI-4 by the whole security section. Risks identified early become requirements designed in.
+Chúng tôi chấm mỗi risk như probability nhân impact. Risk dự kiến cao nhất là RI-2, resistence to change — hoàn toàn không technical, con người. Kỷ luật quan trọng: chúng tôi không chỉ list risks, chúng pre-committed một mitigation cho mỗi cái. RI-5 được mitigate sau bởi offline caching; RI-4 bởi toàn bộ phần security. Risks được nhận diện sớm trở thành requirements được thiết kế vào.
 -->
 
 ---
@@ -536,28 +536,28 @@ glowSeed: 103
 <div class="grid grid-cols-2 gap-5 mt-6 text-sm">
 
 <div class="rounded-xl border border-blue-400/20 bg-blue-400/8 p-5">
-  <div class="font-bold text-blue-200 mb-3">Assumptions <span class="opacity-60 font-normal">(believed true, not guaranteed)</span></div>
+  <div class="font-bold text-blue-200 mb-3">Assumptions <span class="opacity-60 font-normal">(được tin là đúng, không đảm bảo)</span></div>
   <div class="flex flex-col gap-2 opacity-90">
-    <div><b class="text-blue-300">AS-1:</b> ≥10 Mbps internet at deployed venues.</div>
-    <div><b class="text-blue-300">AS-2:</b> Each org names ≥1 trained administrator.</div>
-    <div><b class="text-blue-300">AS-3:</b> All jockeys &amp; horses carry unique national IDs.</div>
+    <div><b class="text-blue-300">AS-1:</b> Internet ≥10 Mbps tại các địa điểm deployed.</div>
+    <div><b class="text-blue-300">AS-2:</b> Mỗi org đặt tên ≥1 administrator được đào tạo.</div>
+    <div><b class="text-blue-300">AS-3:</b> Tất cả jockeys &amp; horses mang national IDs duy nhất.</div>
   </div>
 </div>
 
 <div class="rounded-xl border border-fuchsia-400/20 bg-fuchsia-400/8 p-5">
-  <div class="font-bold text-fuchsia-200 mb-3">Dependencies <span class="opacity-60 font-normal">(rely on external parties)</span></div>
+  <div class="font-bold text-fuchsia-200 mb-3">Dependencies <span class="opacity-60 font-normal">(phụ thuộc bên ngoài)</span></div>
   <div class="flex flex-col gap-2 opacity-90">
-    <div><b class="text-fuchsia-300">DE-1:</b> Access to the <b>national horse registration database</b>.</div>
-    <div><b class="text-fuchsia-300">DE-2:</b> Integration with <b>approved payment gateways</b>.</div>
+    <div><b class="text-fuchsia-300">DE-1:</b> Access to <b>cơ sở dữ liệu đăng ký ngựa quốc gia</b>.</div>
+    <div><b class="text-fuchsia-300">DE-2:</b> Tích hợp với <b>các cổng thanh toán được chấp thuận</b>.</div>
   </div>
 </div>
 
 </div>
 
-<div class="renote mt-4"><b>RE</b> — Assumptions &amp; Dependencies draw the <b>boundary of control</b>. If an assumption proves false, it is a risk that just materialized (AS ↔ RI). DE-1, DE-2 become the <b>external interfaces</b> in the SRS — nothing is hand-waved.</div>
+<div class="renote mt-4"><b>RE</b> — Assumptions &amp; Dependencies vẽ <b>boundary of control</b>. Nếu một assumption chứng minh sai, nó là một risk vừa materialize (AS ↔ RI). DE-1, DE-2 trở thành <b>external interfaces</b> trong SRS — không có gì được hand-waved.</div>
 
 <!--
-Assumptions and dependencies draw the line around what we control. DE-1 — the national horse registry — is the big one; our whole trust model depends on it. If that assumption breaks, it's risk RI-3 come true. Both dependencies reappear as concrete software interfaces in the SRS.
+Assumptions và dependencies vẽ đường xung quanh những gì chúng tôi kiểm soát. DE-1 — national horse registry — là cái lớn; toàn bộ trust model của chúng tôi phụ thuộc vào nó. Nếu assumption đó vỡ, đó là risk RI-3 đến life. Cả hai dependencies reappear như các interfaces phần mềm cụ thể trong SRS.
 -->
 
 ---
@@ -565,34 +565,34 @@ class: py-7
 glowSeed: 107
 ---
 
-# §2. Scope and Limitations — Overview
+# §2. Scope and Limitations — Tổng quan
 
 <div class="grid grid-cols-3 gap-4 mt-8 text-sm">
 
 <div class="rounded-xl border border-emerald-400/20 bg-emerald-400/8 p-5 text-center">
   <div class="i-carbon:add-alt text-3xl text-emerald-300 mb-2" />
   <div class="font-bold text-emerald-200">2.1 · Inside</div>
-  <div class="opacity-80 text-xs mt-1">What we <b>will</b> build (9 major features)</div>
+  <div class="opacity-80 text-xs mt-1">Những gì chúng tôi <b>sẽ</b> build (9 major features)</div>
 </div>
 
 <div class="rounded-xl border border-cyan-400/20 bg-cyan-400/8 p-5 text-center">
   <div class="i-carbon:calendar-tools text-3xl text-cyan-300 mb-2" />
   <div class="font-bold text-cyan-200">2.2 · When</div>
-  <div class="opacity-80 text-xs mt-1">A 3-release roadmap</div>
+  <div class="opacity-80 text-xs mt-1">Lộ trình 3-release</div>
 </div>
 
 <div class="rounded-xl border border-red-400/20 bg-red-400/8 p-5 text-center">
   <div class="i-carbon:close-outline text-3xl text-red-300 mb-2" />
   <div class="font-bold text-red-200">2.3 · Outside</div>
-  <div class="opacity-80 text-xs mt-1">What we explicitly <b>won't</b> build</div>
+  <div class="opacity-80 text-xs mt-1">Những gì chúng tôi rõ ràng <b>không</b> build</div>
 </div>
 
 </div>
 
-<div class="renote mt-5"><b>RE</b> — 'Scope' is the most abused word in RE. Section 2 makes it operationally precise by separating <b>in-scope features, phasing, and explicit exclusions</b>. Saying 'no' is a scope decision — writing it down prevents scope creep.</div>
+<div class="renote mt-5"><b>RE</b> — 'Scope' là từ bị lạm dụng nhất trong RE. Phần 2 làm cho nó operational chính xác bằng cách tách <b>in-scope features, phasing, và explicit exclusions</b>. Nói 'no' là một decision scope — viết nó ra ngăn scope creep.</div>
 
 <!--
-Section 2 is where we draw the fence: what's inside, when each piece comes, and — just as importantly — what's explicitly outside. The 'no' list is what protects us from scope creep during the build.
+Phần 2 là nơi chúng tôi vẽ hàng rào: cái gì inside, khi từng phần đến, và — quan trọng không kém — cái gì rõ ràng outside. List 'no' là những gì bảo vệ chúng tôi khỏi scope creep trong build.
 -->
 
 ---
@@ -617,10 +617,10 @@ glowSeed: 109
 </table>
 </div>
 
-<div class="renote mt-3"><b>RE</b> — A flat feature list with <b>stable IDs (FE-x)</b> is the backbone of traceability. IDs never change even if descriptions evolve — that permanence is what lets a test trace to a requirement trace to a feature trace to an objective.</div>
+<div class="renote mt-3"><b>RE</b> — Danh sách feature phẳng với <b>stable IDs (FE-x)</b> là xương sống của traceability. IDs không bao giờ thay đổi ngay cả khi descriptions evolve — tính permanence đó là những gì cho phép một test trace đến một requirement trace đến một feature trace đến một objective.</div>
 
 <!--
-Nine features, each with a permanent ID. Those IDs are the spine of the whole project — every use case, every requirement, every test references them. They never change, even if the wording does. That permanence is what makes traceability possible.
+Chín features, mỗi cái với một ID permanen. Những IDs đó là xương sống của toàn bộ dự án — mọi use case, mọi requirement, mọi test references chúng. Chúng không bao giờ thay đổi, ngay cả khi wording thay đổi. Tính permanence đó là những gì làm cho traceability có thể.
 -->
 
 ---
@@ -645,10 +645,10 @@ glowSeed: 113
 </table>
 </div>
 
-<div class="renote mt-3"><b>RE</b> — <b>Incremental, timeboxed delivery</b>: walk before you run. R1 = centralized but manual; R2 = automation; R3 = intelligence + external integration. Betting &amp; veterinary are deferred — their risk isn't justified until the operational core is proven.</div>
+<div class="renote mt-3"><b>RE</b> — <b>Giao hàng tăng dần, timeboxed</b>: đi trước khi chạy. R1 = tập trung nhưng thủ công; R2 = automation; R3 = intelligence + tích hợp bên ngoài. Betting &amp; veterinary được hoãn — risk của chúng không được biện minh cho đến khi operational core được chứng minh.</div>
 
 <!--
-Read left to right: R1 is centralized but manual, R2 adds automation, R3 adds intelligence. We deliberately deferred betting and veterinary tracking — their risk isn't worth it until the operational core works. You build the spine before the limbs.
+Đọc từ trái sang phải: R1 tập trung nhưng thủ công, R2 thêm automation, R3 thêm intelligence. Chúng tôi cố ý hoãn betting và veterinary tracking — risk của chúng không đáng giá cho đến khi operational core hoạt động. Bạn xây dựng xương sống trước các chi.
 -->
 
 ---
@@ -658,22 +658,22 @@ glowSeed: 127
 
 # §2.3 Limitations &amp; Exclusions (LI-1 … LI-5)
 
-<div class="flex items-center justify-center mb-2 text-red-200 text-sm"><div class="i-carbon:close-outline mr-2" />What HRTMS deliberately does <b>NOT</b> do</div>
+<div class="flex items-center justify-center mb-2 text-red-200 text-sm"><div class="i-carbon:close-outline mr-2" />Những gì HRTMS cố ý <b>KHÔNG</b> làm</div>
 
 <div class="grid grid-cols-1 gap-2 max-w-3xl mx-auto text-sm">
 
 <div class="flex items-center gap-3 rounded-lg border border-red-400/20 bg-red-400/8 p-3"><span class="font-bold text-red-300 w-12">LI-1</span><span>Flat &amp; jump racing only — <b>no</b> dressage / show jumping.</span></div>
 <div class="flex items-center gap-3 rounded-lg border border-red-400/20 bg-red-400/8 p-3"><span class="font-bold text-red-300 w-12">LI-2</span><span><b>No</b> live video streaming — integrates external broadcasters.</span></div>
-<div class="flex items-center gap-3 rounded-lg border border-red-400/20 bg-red-400/8 p-3"><span class="font-bold text-red-300 w-12">LI-3</span><span><b>No</b> automated photo-finish judging — human-confirmed results only.</span></div>
-<div class="flex items-center gap-3 rounded-lg border border-red-400/20 bg-red-400/8 p-3"><span class="font-bold text-red-300 w-12">LI-4</span><span>Betting (FE-7) excluded from R1 → deferred to R2.</span></div>
-<div class="flex items-center gap-3 rounded-lg border border-red-400/20 bg-red-400/8 p-3"><span class="font-bold text-red-300 w-12">LI-5</span><span>English only in R1 → multi-language in R3.</span></div>
+<div class="flex items-center gap-3 rounded-lg border border-red-400/20 bg-red-400/8 p-3"><span class="font-bold text-red-300 w-12">LI-3</span><span><b>No</b> automated photo-finish judging — chỉ human-confirmed results.</span></div>
+<div class="flex items-center gap-3 rounded-lg border border-red-400/20 bg-red-400/8 p-3"><span class="font-bold text-red-300 w-12">LI-4</span><span>Betting (FE-7) excluded từ R1 → deferred đến R2.</span></div>
+<div class="flex items-center gap-3 rounded-lg border border-red-400/20 bg-red-400/8 p-3"><span class="font-bold text-red-300 w-12">LI-5</span><span>English only trong R1 → multi-language trong R3.</span></div>
 
 </div>
 
-<div class="renote mt-3"><b>RE</b> — Explicit exclusions are a <b>defensive</b> requirements-management technique. LI-2, LI-3 say 'we will integrate, not build' — preventing the team being pulled into a video platform or an AI judge, which are entirely different products.</div>
+<div class="renote mt-3"><b>RE</b> — Explicit exclusions là một kỹ thuật quản trị requirements <b>phòng thủ</b>. LI-2, LI-3 nói 'chúng tôi sẽ tích hợp, không build' — ngăn team bị kéo vào một video platform hoặc một AI judge, là những sản phẩm hoàn toàn khác.</div>
 
 <!--
-Every 'no' here is deliberate. We're not building a streaming service or an AI photo-finish judge — those are different products with different risk profiles. By writing the exclusions down we protect the team from scope creep. A stakeholder can't quietly add 'just one more thing' if the boundary is documented and baselined.
+Mỗi 'no' ở đây là cố ý. Chúng tôi không xây dựng một streaming service hoặc một AI photo-finish judge — đó là những sản phẩm khác với các profile risk khác. Bằng cách viết exclusions ra, chúng tôi bảo vệ team khỏi scope creep. Một stakeholder không thể âm thầm thêm 'chỉ một cái nữa' nếu boundary được documented và baselined.
 -->
 
 ---
@@ -681,32 +681,32 @@ class: py-7
 glowSeed: 131
 ---
 
-# §3. Business Context — Overview
+# §3. Business Context — Tổng quan
 
 <div class="grid grid-cols-3 gap-4 mt-8 text-sm">
 
 <div class="rounded-xl border border-fuchsia-400/20 bg-fuchsia-400/8 p-5">
   <div class="i-carbon:user-profile text-3xl text-fuchsia-300 mb-2" />
   <div class="font-bold text-fuchsia-200">3.1 · Who</div>
-  <div class="opacity-80 text-xs mt-1">Stakeholder Profiles — who cares &amp; what they want</div>
+  <div class="opacity-80 text-xs mt-1">Stakeholder Profiles — ai quan tâm &amp; họ muốn gì</div>
 </div>
 <div class="rounded-xl border border-amber-400/20 bg-amber-400/8 p-5">
   <div class="i-carbon:scale text-3xl text-amber-300 mb-2" />
   <div class="font-bold text-amber-200">3.2 · Trade-offs</div>
-  <div class="opacity-80 text-xs mt-1">Project Priorities — when we trade off, what wins</div>
+  <div class="opacity-80 text-xs mt-1">Project Priorities — khi trade-off, cái gì thắng</div>
 </div>
 <div class="rounded-xl border border-emerald-400/20 bg-emerald-400/8 p-5">
   <div class="i-carbon:cloud-services text-3xl text-emerald-300 mb-2" />
   <div class="font-bold text-emerald-200">3.3 · Where</div>
-  <div class="opacity-80 text-xs mt-1">Deployment — how it physically runs</div>
+  <div class="opacity-80 text-xs mt-1">Deployment — nó chạy vật lý như thế nào</div>
 </div>
 
 </div>
 
-<div class="renote mt-5"><b>RE</b> — <b>Contextual elicitation</b>: the project doesn't exist in a vacuum. Stakeholders (3.1) feed user-class analysis; priorities (3.2) feed every trade-off decision; deployment (3.3) drives the non-functional requirements.</div>
+<div class="renote mt-5"><b>RE</b> — <b>Elicitation theo ngữ cảnh</b>: dự án không tồn tại trong chân không. Stakeholders (3.1) nuôi user-class analysis; priorities (3.2) nuôi mọi decision trade-off; deployment (3.3) drives non-functional requirements.</div>
 
 <!--
-Section 3 puts the project in its real environment — the people, the trade-off rules, and the physical deployment. Each feeds directly into a later part of the SRS.
+Phần 3 đặt dự án trong môi trường thực của nó — người, quy tắc trade-off, và deployment vật lý. Mỗi cái feed trực tiếp vào một phần sau của SRS.
 -->
 
 ---
@@ -718,21 +718,21 @@ glowSeed: 137
 
 <div class="text-[11px] mt-3">
 <table>
-<tr><th>Stakeholder</th><th>Value Sought</th><th>Attitude</th><th>Key Constraint</th></tr>
-<tr><td>Organizers</td><td>Streamlined ops, oversight</td><td>Highly supportive</td><td>Comply with national rules</td></tr>
-<tr><td>Horse Owners</td><td>Transparency, prize info</td><td>Supportive (need training)</td><td>Limited tech, need mobile</td></tr>
-<tr><td>Jockeys</td><td>Clear scheduling</td><td>Generally positive</td><td>Mobile, on-the-go</td></tr>
-<tr><td>Trainers</td><td>Efficient horse mgmt</td><td>Receptive</td><td>Many horses/owners</td></tr>
-<tr><td>Regulators</td><td>Compliance, accuracy</td><td>Supportive (mandated)</td><td>Strict audit trail</td></tr>
-<tr><td>Course Managers</td><td>Resource planning</td><td>Supportive if easy</td><td>Budget limits</td></tr>
-<tr><td>Veterinarians</td><td>Streamlined health checks</td><td>Supportive</td><td>On-site access</td></tr>
+<tr><th>Stakeholder</th><th>Giá trị được tìm kiếm</th><th>Thái độ</th><th>Ràng buộc chính</th></tr>
+<tr><td>Organizers</td><td>Vận hành streamline, oversight</td><td>Hỗ trợ mạnh mẽ</td><td>Comply với quy tắc quốc gia</td></tr>
+<tr><td>Horse Owners</td><td>Tính minh bạch, thông tin giải thưởng</td><td>Hỗ trợ (cần training)</td><td>Công nghệ hạn chế, cần mobile</td></tr>
+<tr><td>Jockeys</td><td>Lập lịch rõ ràng</td><td>Về chung chung tích cực</td><td>Mobile, on-the-go</td></tr>
+<tr><td>Trainers</td><td>Quản lý ngựa hiệu quả</td><td>Chấp nhận</td><td>Nhiều horses/owners</td></tr>
+<tr><td>Regulators</td><td>Compliance, accuracy</td><td>Hỗ trợ (bắt buộc)</td><td>Audit trail nghiêm ngặt</td></tr>
+<tr><td>Course Managers</td><td>Lập kế hoạch nguồn lực</td><td>Hỗ trợ nếu dễ</td><td>Giới hạn ngân sách</td></tr>
+<tr><td>Veterinarians</td><td>Kiểm tra sức khỏe streamline</td><td>Hỗ trợ</td><td>Access on-site</td></tr>
 </table>
 </div>
 
-<div class="renote mt-2"><b>RE</b> — Stakeholder profiling is the <b>first output of elicitation</b>. It generates the user classes (SRS §2.2) and RBAC roles (SRS §6.3). Capturing <b>attitude</b> matters: a supportive vs resistant stakeholder needs very different engagement (feeds risk RI-2).</div>
+<div class="renote mt-2"><b>RE</b> — Stakeholder profiling là <b>output đầu tiên của elicitation</b>. Nó sinh ra user classes (SRS §2.2) và RBAC roles (SRS §6.3). Việc nắm bắt <b>thái độ</b> quan trọng: một stakeholder hỗ trợ vs resistant cần engagement rất khác (feeds risk RI-2).</div>
 
 <!--
-Seven stakeholder groups, each profiled on three axes: what they want, how they feel, and what constrains them. This table isn't background color — it literally generates the user roles and access-control rules later. Regulators are mandated supporters, owners may need hand-holding. Different stakeholders, different strategies.
+Bảy nhóm stakeholder, mỗi cái được profile trên ba trục: cái gì họ muốn, họ cảm thấy thế nào, và cái gì constrain họ. Table này không phải là màu nền — nó nghĩa là sinh ra các user roles và rules access-control sau. Regulators là người ủng hộ bắt buộc, owners có thể cần hand-holding. Khác stakeholders, khác chiến lược.
 -->
 
 ---
@@ -744,24 +744,24 @@ glowSeed: 139
 
 <div class="text-[11px] mt-4">
 <table>
-<tr><th>Dimension</th><th>Constraint (fixed)</th><th>Driver (priority)</th><th>Degree of Freedom (flexible)</th></tr>
-<tr><td class="font-bold">Features</td><td>All R1 features must work</td><td>FE-1/2/3/5 top priority</td><td class="text-emerald-300">FE-6 &amp; FE-8 can scale down</td></tr>
-<tr><td class="font-bold">Quality</td><td>100% result accuracy</td><td>95% acceptance tests pass</td><td class="text-emerald-300">UI polish → R2</td></tr>
-<tr><td class="font-bold">Schedule</td><td>Ship before next season</td><td>Core race mgmt drives timeline</td><td class="text-emerald-300">≤2-week overrun OK</td></tr>
-<tr><td class="font-bold">Cost</td><td>≤10% budget overrun</td><td>Dev cost ≤ approved budget</td><td class="text-emerald-300">Cloud scales with usage</td></tr>
+<tr><th>Dimension</th><th>Constraint (cố định)</th><th>Driver (ưu tiên)</th><th>Degree of Freedom (linh hoạt)</th></tr>
+<tr><td class="font-bold">Features</td><td>Tất cả R1 features phải hoạt động</td><td>FE-1/2/3/5 ưu tiên hàng đầu</td><td class="text-emerald-300">FE-6 &amp; FE-8 có thể scale down</td></tr>
+<tr><td class="font-bold">Quality</td><td>100% accuracy kết quả</td><td>95% acceptance tests pass</td><td class="text-emerald-300">UI polish → R2</td></tr>
+<tr><td class="font-bold">Schedule</td><td>Ship trước mùa sau</td><td>Core race mgmt drives timeline</td><td class="text-emerald-300">≤2-week overrun OK</td></tr>
+<tr><td class="font-bold">Cost</td><td>≤10% budget overrun</td><td>Chi phí dev ≤ approved budget</td><td class="text-emerald-300">Cloud scales với usage</td></tr>
 </table>
 </div>
 
 <div class="mt-4 grid grid-cols-3 gap-3 text-center text-xs">
-  <div class="rounded-lg border border-red-400/20 bg-red-400/8 p-2"><b class="text-red-300">Constraint</b><br/>immovable</div>
-  <div class="rounded-lg border border-amber-400/20 bg-amber-400/8 p-2"><b class="text-amber-300">Driver</b><br/>the priority</div>
-  <div class="rounded-lg border border-emerald-400/20 bg-emerald-400/8 p-2"><b class="text-emerald-300">Freedom</b><br/>expendable</div>
+  <div class="rounded-lg border border-red-400/20 bg-red-400/8 p-2"><b class="text-red-300">Constraint</b><br/>bất di bất dịch</div>
+  <div class="rounded-lg border border-amber-400/20 bg-amber-400/8 p-2"><b class="text-amber-300">Driver</b><br/>ưu tiên</div>
+  <div class="rounded-lg border border-emerald-400/20 bg-emerald-400/8 p-2"><b class="text-emerald-300">Freedom</b><br/>có thể hy sinh</div>
 </div>
 
-<div class="renote mt-3"><b>RE</b> — The <b>driver/constraint/freedom</b> model (Wiegers) pre-decides every trade-off. Under pressure the team consults this table and <b>sacrifices a degree of freedom, never a constraint or driver</b>. Result accuracy is immovable; UI polish is expendable.</div>
+<div class="renote mt-3"><b>RE</b> — Mô hình <b>driver/constraint/freedom</b> (Wiegers) pre-decides mọi trade-off. Dưới áp lực, team consult table này và <b>hy sinh một degree of freedom, không bao giờ constraint hoặc driver</b>. Accuracy kết quả là bất di bất dịch; UI polish là có thể hy sinh.</div>
 
 <!--
-This is our pre-made trade-off rulebook. Three columns: what's fixed, what's the priority, and what we're allowed to flex. When the build gets hard and someone says 'we have to cut something,' the answer is here. We cut a degree of freedom like UI polish; we never cut a constraint like result accuracy.
+Đây là sách quy tắc trade-off được làm trước của chúng tôi. Ba cột: cái gì cố định, cái gì là ưu tiên, và cái gì chúng tôi được phép flex. Khi build trở nên khó và ai đó nói 'chúng tôi phải cắt một cái gì đó,' câu trả lời ở đây. Chúng tôi cắt một degree of freedom như UI polish; chúng tôi không bao giờ cắt một constraint như accuracy kết quả.
 -->
 
 ---
@@ -774,28 +774,28 @@ glowSeed: 149
 <div class="grid grid-cols-2 gap-4 mt-6 text-sm">
 
 <div class="rounded-xl border border-blue-400/20 bg-blue-400/8 p-5">
-  <div class="flex items-center gap-2 mb-2 text-blue-200"><div class="i-carbon:cloud text-xl" /><b>Infrastructure</b></div>
+  <div class="flex items-center gap-2 mb-2 text-blue-200"><div class="i-carbon:cloud text-xl" /><b>Hạ tầng</b></div>
   <div class="opacity-90 space-y-1">
-    <div>• <b>Cloud web app</b> — browsers + mobile.</div>
-    <div>• <b>On-site terminals</b> at racecourses for real-time race-day entry.</div>
-    <div>• <b>Offline capture + auto-sync</b> (mitigates <b class="text-amber-300">RI-5</b>).</div>
+    <div>• <b>Web app trên cloud</b> — browsers + mobile.</div>
+    <div>• <b>Terminals on-site</b> tại các đường đua cho entry race-day thời gian thực.</div>
+    <div>• <b>Bắt giữ offline + auto-sync</b> (mitigates <b class="text-amber-300">RI-5</b>).</div>
   </div>
 </div>
 <div class="rounded-xl border border-emerald-400/20 bg-emerald-400/8 p-5">
   <div class="flex items-center gap-2 mb-2 text-emerald-200"><div class="i-carbon:user-certification text-xl" /><b>Adoption</b></div>
   <div class="opacity-90 space-y-1">
-    <div>• <b>Training videos</b> ≤10 min per role (mitigates <b class="text-amber-300">RI-2</b>).</div>
-    <div>• <b>Pilot</b> with 3–5 clubs, then broader rollout.</div>
-    <div>• Phased deployment risk reduction.</div>
+    <div>• <b>Videos training</b> ≤10 min cho mỗi role (mitigates <b class="text-amber-300">RI-2</b>).</div>
+    <div>• <b>Pilot</b> với 3–5 clubs, sau đó rollout rộng hơn.</div>
+    <div>• Giảm risk deployment theo giai đoạn.</div>
   </div>
 </div>
 
 </div>
 
-<div class="renote mt-3"><b>RE</b> — Deployment is where several NFRs originate. Offline-first design is the <b>engineering realization</b> of RI-5; the pilot rollout is <b>phased deployment risk reduction</b> that attacks adoption risk RI-2.</div>
+<div class="renote mt-3"><b>RE</b> — Deployment là nơi một số NFRs bắt nguồn. Design offline-first là <b>hiện thực hóa kỹ thuật</b> của RI-5; pilot rollout là <b>giảm risk deployment theo giai đoạn</b> tấn công adoption risk RI-2.</div>
 
 <!--
-Deployment is where risks become engineering. Poor connectivity, RI-5, becomes offline-first design. Adoption risk, RI-2, becomes a pilot with 3 to 5 clubs before scaling. Nothing here is decoration — every line traces back to a risk or objective.
+Deployment là nơi risks trở thành kỹ thuật. Kết nối kém, RI-5, trở thành design offline-first. Adoption risk, RI-2, trở thành một pilot với 3 đến 5 clubs trước khi scale. Không có gì ở đây là trang trí — mọi dòng trace lại một risk hoặc objective.
 -->
 
 ---
@@ -808,19 +808,19 @@ glowSeed: 151
 
 <div class="grid grid-cols-2 gap-3 max-w-3xl mt-6 text-sm">
 
-<div class="rounded-lg border border-emerald-400/20 bg-emerald-400/8 p-4 flex items-center gap-3"><div class="i-carbon:checkmark-filled text-emerald-300 text-xl" /><span><b>Elicited</b> the problem, quantified it, framed the opportunity.</span></div>
-<div class="rounded-lg border border-emerald-400/20 bg-emerald-400/8 p-4 flex items-center gap-3"><div class="i-carbon:checkmark-filled text-emerald-300 text-xl" /><span><b>Set measurable goals</b> (SMART objectives + metrics).</span></div>
-<div class="rounded-lg border border-emerald-400/20 bg-emerald-400/8 p-4 flex items-center gap-3"><div class="i-carbon:checkmark-filled text-emerald-300 text-xl" /><span><b>Drew the boundary</b> — features, phasing, exclusions.</span></div>
+<div class="rounded-lg border border-emerald-400/20 bg-emerald-400/8 p-4 flex items-center gap-3"><div class="i-carbon:checkmark-filled text-emerald-300 text-xl" /><span><b>Elicited</b> vấn đề, lượng hóa, frame opportunity.</span></div>
+<div class="rounded-lg border border-emerald-400/20 bg-emerald-400/8 p-4 flex items-center gap-3"><div class="i-carbon:checkmark-filled text-emerald-300 text-xl" /><span><b>Đặt goals có thể đo lường</b> (SMART objectives + metrics).</span></div>
+<div class="rounded-lg border border-emerald-400/20 bg-emerald-400/8 p-4 flex items-center gap-3"><div class="i-carbon:checkmark-filled text-emerald-300 text-xl" /><span><b>Vẽ boundary</b> — features, phasing, exclusions.</span></div>
 <div class="rounded-lg border border-emerald-400/20 bg-emerald-400/8 p-4 flex items-center gap-3"><div class="i-carbon:checkmark-filled text-emerald-300 text-xl" /><span><b>Profiled stakeholders</b> &amp; pre-decided trade-offs.</span></div>
-<div class="rounded-lg border border-emerald-400/20 bg-emerald-400/8 p-4 flex items-center gap-3"><div class="i-carbon:checkmark-filled text-emerald-300 text-xl" /><span><b>Identified risks early</b> &amp; linked each to a mitigation.</span></div>
-<div class="rounded-lg border border-emerald-400/20 bg-emerald-400/8 p-4 flex items-center gap-3"><div class="i-carbon:checkmark-filled text-emerald-300 text-xl" /><span><b>Baselined</b> business requirements (v1.0) — a stable foundation.</span></div>
+<div class="rounded-lg border border-emerald-400/20 bg-emerald-400/8 p-4 flex items-center gap-3"><div class="i-carbon:checkmark-filled text-emerald-300 text-xl" /><span><b>Nhận diện risks sớm</b> &amp; link mỗi cái đến một mitigation.</span></div>
+<div class="rounded-lg border border-emerald-400/20 bg-emerald-400/8 p-4 flex items-center gap-3"><div class="i-carbon:checkmark-filled text-emerald-300 text-xl" /><span><b>Baselined</b> business requirements (v1.0) — một nền tảng ổn định.</span></div>
 
 </div>
 
-<div class="mt-5 text-emerald-300 font-bold text-lg">→ A stable foundation, ready to specify against.</div>
+<div class="mt-5 text-emerald-300 font-bold text-lg">→ Một nền tảng ổn định, sẵn sàng specify.</div>
 
 <!--
-That completes Assignment 1. In process terms: solid elicitation, measurable goals, a clear boundary, baselined. We now have a stable foundation — the precondition for writing a precise SRS. That is exactly what Assignment 2 does.
+Đó hoàn thành Assignment 1. Theo terms process: elicitation vững chắc, goals có thể đo lường, boundary rõ ràng, baselined. Bây giờ chúng tôi có một nền tảng ổn định — precondition để viết một SRS chính xác. Đó chính xác là những gì Assignment 2 làm.
 -->
 
 ---
@@ -829,16 +829,16 @@ class: text-center
 glowSeed: 157
 ---
 
-<div class="text-sm opacity-60 tracking-widest">SECTION 3</div>
-<h1 class="text-4xl font-extrabold mt-2 bg-gradient-to-r from-emerald-300 to-green-300 bg-clip-text text-transparent">SRS Document</h1>
-<div class="mt-3 text-base opacity-70 max-w-2xl mx-auto">Assignment 2 — built on the baselined Vision, walked in the exact IEEE-830 order it is written.</div>
+<div class="text-sm opacity-60 tracking-widest">PHẦN 3</div>
+<h1 class="text-4xl font-extrabold mt-2 bg-gradient-to-r from-emerald-300 to-green-300 bg-clip-text text-transparent">Tài liệu SRS</h1>
+<div class="mt-3 text-base opacity-70 max-w-2xl mx-auto">Assignment 2 — được xây dựng trên Vision đã baselined, được trình bày theo đúng thứ tự IEEE-830 được viết.</div>
 
 ---
 class: py-8
 glowSeed: 163
 ---
 
-# SRS — Document Identity &amp; Approach
+# SRS — Định danh Tài liệu &amp; Tiếp cận
 
 <div class="grid grid-cols-2 gap-5 mt-6">
 
@@ -856,17 +856,17 @@ glowSeed: 163
   <div class="font-bold text-blue-200 text-lg mb-3">Structure follows standards</div>
   <div class="flex flex-col gap-2 text-sm opacity-90">
     <div class="flex items-center gap-2"><div class="i-carbon:document-blank text-blue-300" /> <b>IEEE Std 830-1998</b> — Intro → Overall Description → Specific Requirements</div>
-    <div class="flex items-center gap-2"><div class="i-carbon:flow text-emerald-300" /> Superseded guidance from <b>ISO/IEC/IEEE 29148:2018</b></div>
-    <div class="flex items-center gap-2"><div class="i-carbon:cube-view text-amber-300" /> Quality model from <b>ISO/IEC 25010:2011</b></div>
+    <div class="flex items-center gap-2"><div class="i-carbon:flow text-emerald-300" /> Guidance kế tiếp từ <b>ISO/IEC/IEEE 29148:2018</b></div>
+    <div class="flex items-center gap-2"><div class="i-carbon:cube-view text-amber-300" /> Quality model từ <b>ISO/IEC 25010:2011</b></div>
   </div>
 </div>
 
 </div>
 
-<div class="renote mt-4"><b>RE</b> — Using a <b>standard SRS template</b> guarantees completeness and navigability: a reviewer who has read one IEEE-830 SRS can find their way around any other. Keeping the <b>audience explicit</b> matters because requirements are written <i>for</i> someone.</div>
+<div class="renote mt-4"><b>RE</b> — Sử dụng <b>template SRS chuẩn</b> đảm bảo tính đầy đủ và khả năng điều hướng: một reviewer đã đọc một SRS IEEE-830 có thể tìm đường quanh bất kỳ SRS nào khác. Giữ <b>audience rõ ràng</b> quan trọng vì requirements được viết <i>cho</i> ai đó.</div>
 
 <!--
-The SRS specifies Release 1.0 in engineering detail. We followed IEEE 830 because it's predictable — anyone who's seen one such document can navigate ours. We stated the audience up front: managers, developers, testers, regulators, because each reads it differently.
+SRS specify Release 1.0 in chi tiết kỹ thuật. Chúng tôi theo IEEE 830 vì nó có thể dự đoán — bất kỳ ai đã thấy một tài liệu như vậy có thể điều hướng xung quanh tài liệu của chúng tôi. Chúng tôi nêu audience up front: managers, developers, testers, regulators, vì mỗi cái đọc nó khác nhau.
 -->
 
 ---
@@ -874,7 +874,7 @@ class: py-7
 glowSeed: 167
 ---
 
-# §1. Introduction — Overview
+# §1. Introduction — Tổng quan
 
 <div class="grid grid-cols-2 gap-3 mt-8 text-sm">
 
@@ -885,10 +885,10 @@ glowSeed: 167
 
 </div>
 
-<div class="renote mt-6"><b>RE</b> — Section 1 of an IEEE-830 SRS is <b>meta-information about the document</b>: what it's for, how to read it, what it covers, what it builds on. Skipping it is a classic student mistake — it is what makes a spec <i>self-describing</i>.</div>
+<div class="renote mt-6"><b>RE</b> — Phần 1 của một SRS IEEE-830 là <b>meta-information về tài liệu</b>: nó dùng để làm gì, cách đọc nó, nó cover gì, nó xây dựng trên cái gì. Bỏ qua nó là một lỗi sinh viên cổ điển — đó là những gì làm cho một spec <i>tự mô tả</i>.</div>
 
 <!--
-Section 1 is meta-information about the document itself. Four sub-sections. Skipping it is a classic student mistake — it's what makes a specification self-describing.
+Phần 1 là meta-information về chính tài liệu. Bốn sub-section. Bỏ qua nó là một lỗi sinh viên cổ điển — đó là những gì làm cho một specification tự mô tả.
 -->
 
 ---
@@ -903,9 +903,9 @@ glowSeed: 173
 <div class="rounded-xl border border-emerald-400/20 bg-emerald-400/8 p-5">
   <div class="font-bold text-emerald-200 mb-3">§1.1 Purpose</div>
   <div class="text-sm opacity-90 space-y-2">
-    <div>Specifies the <b>functional &amp; non-functional requirements for Release 1.0</b>.</div>
+    <div>Specifies các <b>functional &amp; non-functional requirements cho Release 1.0</b>.</div>
     <div><b>Intended audience:</b> project managers, developers, QA engineers, domain regulators.</div>
-    <div>Serves to <b>verify compliance</b> and <b>guide technical implementation</b>.</div>
+    <div>Serves để <b>verify compliance</b> và <b>guide technical implementation</b>.</div>
   </div>
 </div>
 
@@ -921,10 +921,10 @@ glowSeed: 173
 
 </div>
 
-<div class="renote mt-3"><b>RE</b> — A consistent, unique ID scheme is the <b>infrastructure of traceability</b>. It lets a tester cite <code>REQ-FUNC-014</code>, a developer grep for it, a change request reference it — without ambiguity.</div>
+<div class="renote mt-3"><b>RE</b> — Một scheme ID duy nhất, nhất quán là <b>hạ tầng của traceability</b>. Nó cho phép một tester cite <code>REQ-FUNC-014</code>, một developer grep cho nó, một change request reference nó — không có ambiguity.</div>
 
 <!--
-The purpose declares scope and audience in two lines. The convention section: every requirement has a unique, typed ID. This isn't pedantry — it's the address system of the whole project. A bug report cites a REQ-FUNC, a test verifies it, a change request modifies it. Without stable IDs, traceability collapses.
+Purpose declares scope và audience trong hai dòng. Section convention: mỗi requirement có một ID duy nhất, được gõ. Đây không phải là pedantry — đó là hệ thống địa chỉ của toàn bộ dự án. Một bug report cites một REQ-FUNC, một test verifies nó, một change request modifies nó. Không có stable IDs, traceability sụp đổ.
 -->
 
 ---
@@ -937,16 +937,16 @@ glowSeed: 179
 <div class="grid grid-cols-2 gap-5 mt-5">
 
 <div class="rounded-xl border border-emerald-400/20 bg-emerald-400/8 p-5">
-  <div class="font-bold text-emerald-200 mb-2">§1.3 What Release 1.0 includes</div>
+  <div class="font-bold text-emerald-200 mb-2">§1.3 Cái mà Release 1.0 bao gồm</div>
   <div class="text-xs opacity-90 space-y-1">
     <div>✅ Tournament &amp; race scheduling</div>
-    <div>✅ Horse &amp; jockey registrations (with verification)</div>
+    <div>✅ Horse &amp; jockey registrations (với verification)</div>
     <div>✅ Race entries &amp; declarations</div>
     <div>✅ Result recording, validation, official publication</div>
     <div>✅ Real-time stakeholder notifications</div>
     <div>✅ Veterinary pre-race health compliance</div>
   </div>
-  <div class="mt-2 text-xs rounded bg-red-900/20 border border-red-400/20 p-2"><b class="text-red-300">Out of R1:</b> betting (FE-7) &amp; automated photo-finish — deferred for legislative/technical complexity.</div>
+  <div class="mt-2 text-xs rounded bg-red-900/20 border border-red-400/20 p-2"><b class="text-red-300">Out of R1:</b> betting (FE-7) &amp; automated photo-finish — deferred cho complexity legislativas/technical.</div>
 </div>
 
 <div class="rounded-xl border border-white/10 bg-white/5 p-5">
@@ -964,10 +964,10 @@ glowSeed: 179
 
 </div>
 
-<div class="renote mt-3"><b>RE</b> — Reference #1 (our Vision) establishes the <b>traceability chain</b> SRS → business requirements. Restating boundaries at the start of the SRS prevents a reader assuming a deferred feature is in scope — boundaries stated twice are boundaries respected.</div>
+<div class="renote mt-3"><b>RE</b> — Reference #1 (Vision của chúng tôi) thiết lập <b>chuỗi traceability</b> SRS → business requirements. Restating boundaries ở đầu SRS ngăn một reader assume một feature deferred là in scope — boundaries được nêu hai lần là boundaries được tôn trọng.</div>
 
 <!--
-We re-state the R1 scope in SRS terms and repeat the exclusions. If a reader skims and assumes betting is included, this section corrects them immediately. The references: IFHA is domain, IEEE and ISO are methodological, and reference one — our own Vision — is the upstream link in our traceability chain.
+Chúng tôi re-state R1 scope trong terms SRS và repeat exclusions. Nếu một reader skim và assume betting được included, section này correct họ ngay lập tức. References: IFHA là domain, IEEE và ISO là methodological, và reference một — Vision của chính chúng tôi — là link upstream trong chuỗi traceability của chúng tôi.
 -->
 
 ---
@@ -975,7 +975,7 @@ class: py-7
 glowSeed: 181
 ---
 
-# §2. Overall Description — Overview
+# §2. Overall Description — Tổng quan
 
 <div class="grid grid-cols-5 gap-2 mt-8 text-xs">
 
@@ -987,10 +987,10 @@ glowSeed: 181
 
 </div>
 
-<div class="renote mt-6"><b>RE</b> — Section 2 is the <b>'black-box' view</b> — what the system is, who uses it, where it runs — <i>before</i> Section 3 says what it does in detail. This top-down ordering (whole system first, features second) is core to IEEE 830.</div>
+<div class="renote mt-6"><b>RE</b> — Phần 2 là view <b>'black-box'</b> — cái gì hệ thống là, ai sử dụng nó, nơi nó chạy — <i>trước</i> Phần 3 nói nó làm gì chi tiết. Thứ tự top-down này (hệ thống toàn bộ trước, features sau) là core của IEEE 830.</div>
 
 <!--
-Section 2 paints the whole system before drilling into specifics. Product perspective, user classes, environment, constraints, assumptions. Five sub-sections that describe the box before we open it.
+Phần 2 vẽ toàn bộ hệ thống trước khi drill vào specifics. Product perspective, user classes, environment, constraints, assumptions. Năm sub-section mô tả hộp trước khi chúng tôi mở nó.
 -->
 
 ---
@@ -1004,23 +1004,23 @@ glowSeed: 191
 
 <div class="flex items-center gap-3 rounded-lg border border-white/10 bg-white/5 p-3">
   <div class="i-carbon:application text-xl text-blue-300 shrink-0" />
-  <span>HRTMS is an <b>online platform</b> replacing paper, manual scheduling, scattered spreadsheets — <b>one shared workspace</b>.</span>
+  <span>HRTMS là một <b>nền tảng online</b> thay thế giấy, lập lịch thủ công, spreadsheets phân tán — <b>một không gian làm việc chung</b>.</span>
 </div>
 <div class="flex items-center gap-3 rounded-lg border border-white/10 bg-white/5 p-3">
   <div class="i-carbon:connect text-xl text-fuchsia-300 shrink-0" />
-  <span>Connects to <b>outside partners</b> (national horse registry, jockey licensing authority, banking &amp; notification providers) — staff never re-key data.</span>
+  <span>Kết nối đến <b>partners bên ngoài</b> (national horse registry, jockey licensing authority, banking &amp; notification providers) — staff không bao giờ re-key data.</span>
 </div>
 <div class="flex items-center gap-3 rounded-lg border border-cyan-400/20 bg-cyan-400/8 p-3">
   <div class="i-carbon:layers text-xl text-cyan-300 shrink-0" />
-  <span><b>Design choice:</b> instead of one giant diagram, we use <b>5 focused context diagrams</b>, one per real business activity.</span>
+  <span><b>Lựa chọn design:</b> thay vì một diagram khổng lồ, chúng tôi sử dụng <b>5 context diagrams tập trung</b>, một cho mỗi business activity thực.</span>
 </div>
 
 </div>
 
-<div class="renote mt-3"><b>RE</b> — A <b>context diagram</b> defines the <b>system boundary</b>: what's inside (the system) vs outside (actors &amp; external systems), and what flows between them. We split into five because a monolithic diagram for a system this size is unreadable.</div>
+<div class="renote mt-3"><b>RE</b> — Một <b>context diagram</b> định nghĩa <b>system boundary</b>: cái gì inside (hệ thống) vs outside (actors &amp; external systems), và cái gì flow giữa chúng. Chúng tôi tách thành năm vì một diagram đơn thể cho một hệ thống kích cỡ này là không đọc được.</div>
 
 <!--
-Product perspective is where we define the boundary. Rather than one overwhelming diagram, we drew five, each around a real business activity. Each is readable and maps to a cluster of use cases. Let's walk them.
+Product perspective là nơi chúng tôi định nghĩa boundary. Thay vì một diagram quá sức, chúng tôi vẽ năm, mỗi cái quanh một business activity thực. Mỗi cái đọc được và maps đến một cluster của use cases. Hãy walk chúng.
 -->
 
 ---
@@ -1040,13 +1040,13 @@ glowSeed: 193
   <div class="rounded-lg border border-blue-400/20 bg-blue-400/8 p-3"><b class="text-blue-200">System Administrator (UC-11):</b> sets up users, roles, permissions; ensures safe backups.</div>
   <div class="rounded-lg border border-amber-400/20 bg-amber-400/8 p-3"><b class="text-amber-200">Compliance Officer (UC-12):</b> reviews action history, requests reports, issues rulings/policy.</div>
   <div class="rounded-lg border border-white/10 bg-white/5 p-3">Staff sign in via <b>central login (SSO)</b> + <b>phone confirmation code (2FA)</b> before sensitive screens.</div>
-  <div class="renote"><b>RE</b> — The <b>trust infrastructure</b>, foundational. SSO + 2FA on sensitive screens is the design response to security risk <b>RI-4</b>.</div>
+  <div class="renote"><b>RE</b> — <b>Hạ tầng trust</b>, foundational. SSO + 2FA trên sensitive screens là design response đến security risk <b>RI-4</b>.</div>
 </div>
 
 </div>
 
 <!--
-Diagram one is the trust layer. Before anyone records a result or registers a horse, we establish who they are and what they may do. Two-factor auth on sensitive screens means a stolen password alone can't approve a result — that's RI-4 designed away.
+Diagram một là layer trust. Trước khi ai đó record một result hoặc register một ngựa, chúng tôi thiết lập họ là ai và họ có thể làm gì. Two-factor auth trên sensitive screens nghĩa là một stolen password một mình không thể approve một result — đó là RI-4 được designed away.
 -->
 
 ---
@@ -1063,16 +1063,16 @@ glowSeed: 197
 </div>
 
 <div class="flex flex-col gap-2 text-xs">
-  <div class="rounded-lg border border-emerald-400/20 bg-emerald-400/8 p-3"><b class="text-emerald-200">Organizer</b> defines each race (distance, age limits, prize money).</div>
+  <div class="rounded-lg border border-emerald-400/20 bg-emerald-400/8 p-3"><b class="text-emerald-200">Organizer</b> defines mỗi race (distance, age limits, prize money).</div>
   <div class="rounded-lg border border-cyan-400/20 bg-cyan-400/8 p-3"><b class="text-cyan-200">Racecourse Manager</b> confirms free tracks &amp; time slots.</div>
-  <div class="rounded-lg border border-white/10 bg-white/5 p-3">System <b>warns about timing overlaps (BR-05)</b> &amp; checks venue details → publishes the <b>official race calendar</b>; public can view; everyone notified.</div>
-  <div class="renote"><b>RE</b> — Where <b>BO-2</b> (conflicts &lt;2%) is engineered. Context diagram = info flow; use cases = behavior; <b>BR-05</b> = the constraint that catches overlaps. Three views of one anti-conflict mechanism.</div>
+  <div class="rounded-lg border border-white/10 bg-white/5 p-3">System <b>warns về timing overlaps (BR-05)</b> &amp; checks venue details → publishes <b>official race calendar</b>; public có thể view; mọi người được notified.</div>
+  <div class="renote"><b>RE</b> — Nơi <b>BO-2</b> (conflicts &lt;2%) được kỹ thuật hóa. Context diagram = info flow; use cases = behavior; <b>BR-05</b> = constraint bắt overlaps. Ba views của một anti-conflict mechanism.</div>
 </div>
 
 </div>
 
 <!--
-Diagram two is where the season takes shape — and where BO-2 gets engineered. The system catches timing overlaps automatically via BR-05, so a clash a human would miss is blocked at the data layer.
+Diagram hai là nơi season take shape — và nơi BO-2 gets engineered. System bắt timing overlaps tự động qua BR-05, nên một clash mà một con người sẽ miss bị blocked ở data layer.
 -->
 
 ---
@@ -1091,14 +1091,14 @@ glowSeed: 199
 <div class="flex flex-col gap-2 text-xs">
   <div class="rounded-lg border border-fuchsia-400/20 bg-fuchsia-400/8 p-3"><b class="text-fuchsia-200">Owners</b> register horses; <b class="text-fuchsia-200">jockeys</b> provide licence + weight.</div>
   <div class="rounded-lg border border-blue-400/20 bg-blue-400/8 p-3">System <b>verifies against national horse registry &amp; licensing authority</b>.</div>
-  <div class="rounded-lg border border-red-400/20 bg-red-400/8 p-3"><b class="text-red-200">Veterinarian</b> records fitness. System enforces <b>vaccination &amp; health rules (BR-12, SAF-1)</b> — no unfit horse slips through.</div>
-  <div class="renote"><b>RE</b> — The <b>safety gate</b>: three independent checks (identity, license, vet fitness) must all pass. Encoding <b>SAF-1 as a system rule</b> makes animal welfare reliable and auditable.</div>
+  <div class="rounded-lg border border-red-400/20 bg-red-400/8 p-3"><b class="text-red-200">Veterinarian</b> records fitness. System enforces <b>vaccination &amp; health rules (BR-12, SAF-1)</b> — không có unfit horse slips through.</div>
+  <div class="renote"><b>RE</b> — <b>Cánh cửa an toàn</b>: ba independent checks (identity, license, vet fitness) phải tất cả pass. Encoding <b>SAF-1 như một system rule</b> làm animal welfare reliable và auditable.</div>
 </div>
 
 </div>
 
 <!--
-Diagram three is the safety gate. Identity, license, and vet fitness must all pass. By making 'no unfit horse may start' a hard system rule — SAF-1 — we turn animal welfare from a hope into a guarantee, and it's auditable.
+Diagram ba là cánh cửa an toàn. Identity, license, và vet fitness phải tất cả pass. Bằng cách làm 'no unfit horse may start' một hard system rule — SAF-1 — chúng tôi turn animal welfare từ một hope thành một guarantee, và nó auditable.
 -->
 
 ---
@@ -1116,15 +1116,15 @@ glowSeed: 211
 
 <div class="flex flex-col gap-2 text-xs">
   <div class="rounded-lg border border-emerald-400/20 bg-emerald-400/8 p-3"><b class="text-emerald-200">Trainer</b> enters a horse &amp; proposes a jockey (<b>BR-14, BR-19</b>); jockey accepts/declines.</div>
-  <div class="rounded-lg border border-amber-400/20 bg-amber-400/8 p-3">When over-subscribed, an <b>independent draw (BR-07)</b> decides entrants &amp; starting lanes — transparently.</div>
-  <div class="rounded-lg border border-white/10 bg-white/5 p-3">Trainer may <b>withdraw with a medical certificate (BR-20)</b>. Organizer locks the line-up → all receive the <b>confirmed race card</b>.</div>
-  <div class="renote"><b>RE</b> — The most <b>contentious</b> activity — who gets to run. Sport integrity depends on selection being <b>non-arbitrary</b>; <b>BR-07</b> mandates an independent, auditable draw.</div>
+  <div class="rounded-lg border border-amber-400/20 bg-amber-400/8 p-3">Khi over-subscribed, một <b>independent draw (BR-07)</b> decides entrants &amp; starting lanes — transparently.</div>
+  <div class="rounded-lg border border-white/10 bg-white/5 p-3">Trainer có thể <b>withdraw với một medical certificate (BR-20)</b>. Organizer locks line-up → tất cả nhận <b>confirmed race card</b>.</div>
+  <div class="renote"><b>RE</b> — Activity <b>nghẹt thở nhất</b> — ai được chạy. Sport integrity phụ thuộc vào selection là <b>non-arbitrary</b>; <b>BR-07</b> mandates một independent, auditable draw.</div>
 </div>
 
 </div>
 
 <!--
-Diagram four is the most politically sensitive — oversubscription. The answer can't be a human's whim; it has to be a transparent independent draw, BR-07. Drawing this boundary first guarantees the use case implements a fair mechanism.
+Diagram bốn là politically nhạy cảm nhất — oversubscription. Câu trả lời không thể là một whim của con người; nó phải là một independent draw transparent, BR-07. Vẽ boundary này trước guarantees use case implements một mechanism công bằng.
 -->
 
 ---
@@ -1141,16 +1141,16 @@ glowSeed: 223
 </div>
 
 <div class="flex flex-col gap-2 text-xs">
-  <div class="rounded-lg border border-emerald-400/20 bg-emerald-400/8 p-3">Times captured at track; <b class="text-emerald-200">Organizer</b> enters finishing order + post-race weights.</div>
+  <div class="rounded-lg border border-emerald-400/20 bg-emerald-400/8 p-3">Times được capture tại track; <b class="text-emerald-200">Organizer</b> enters finishing order + post-race weights.</div>
   <div class="rounded-lg border border-amber-400/20 bg-amber-400/8 p-3"><b class="text-amber-200">Compliance Officer</b> reviews anomalies, handles objections/DQ (<b>BR-24</b>), gives <b>official sign-off (BR-22)</b>.</div>
-  <div class="rounded-lg border border-white/10 bg-white/5 p-3">Once approved → <b>prize payouts (BR-32)</b>, <b>standings &amp; honour roll (BR-27)</b>, notifications, <b>public publication</b>.</div>
-  <div class="renote"><b>RE</b> — <b>Separation of duties</b>: Organizer <i>enters</i>, only Compliance Officer <i>approves</i>. That split delivers <b>SM-3</b> (zero discrepancies) — one approval fans out to four automated effects.</div>
+  <div class="rounded-lg border border-white/10 bg-white/5 p-3">Khi approved → <b>prize payouts (BR-32)</b>, <b>standings &amp; honour roll (BR-27)</b>, notifications, <b>public publication</b>.</div>
+  <div class="renote"><b>RE</b> — <b>Phân tách nhiệm vụ</b>: Organizer <i>enters</i>, chỉ Compliance Officer <i>approves</b>. Split đó delivers <b>SM-3</b> (zero discrepancies) — một approval fans out thành bốn effects tự động.</div>
 </div>
 
 </div>
 
 <!--
-Diagram five delivers metric SM-3 — zero discrepancies — through separation of duties. The Organizer enters results; only the Compliance Officer certifies them. And one sign-off triggers payouts, standings, notifications, and public publishing automatically. One human decision, four downstream effects.
+Diagram năm delivers metric SM-3 — zero discrepancies — qua separation of duties. Organizer enters results; chỉ Compliance Officer certifies chúng. Và một sign-off triggers payouts, standings, notifications, và public publishing tự động. Một decision con người, bốn effects downstream.
 -->
 
 ---
@@ -1163,9 +1163,9 @@ glowSeed: 227
 <div class="text-xs mt-3">
 <table>
 <tr><th>#</th><th>User Class</th><th>Usage</th><th>Notes</th></tr>
-<tr><td>1</td><td><b>Tournament Organizer</b> ⭐ <span class="text-amber-300">(favored)</span></td><td>High</td><td>UX optimized here</td></tr>
+<tr><td>1</td><td><b>Tournament Organizer</b> ⭐ <span class="text-amber-300">(favored)</span></td><td>High</td><td>UX optimized ở đây</td></tr>
 <tr><td>2</td><td>Horse Owner</td><td>Low–moderate</td><td>Limited tech, mobile</td></tr>
-<tr><td>3</td><td>Trainer</td><td>High daily</td><td>Many horses/owners</td></tr>
+<tr><td>3</td><td>Trainer</td><td>High daily</td><td>Nhiều horses/owners</td></tr>
 <tr><td>4</td><td>Jockey</td><td>Moderate, mobile</td><td>On-the-go</td></tr>
 <tr><td>5</td><td>Veterinarian</td><td>Intensive (race days)</td><td>On-site tablet</td></tr>
 <tr><td>6</td><td>Racecourse Manager</td><td>Moderate</td><td>Venue logistics</td></tr>
@@ -1176,10 +1176,10 @@ glowSeed: 227
 </table>
 </div>
 
-<div class="renote mt-2"><b>RE</b> — User classes are the <b>direct descendant</b> of stakeholder profiles (Vision §3.1) — now operationally precise. Marking the Organizer <b>'favored'</b> is a <b>prioritization decision</b> telling UX where to spend polish budget first.</div>
+<div class="renote mt-2"><b>RE</b> — User classes là <b>con cháu trực tiếp</b> của stakeholder profiles (Vision §3.1) — bây giờ operational chính xác. Đánh dấu Organizer <b>'favored'</b> là một <b>decision ưu tiên</b> telling UX nơi spend polish budget trước.</div>
 
 <!--
-Nine roles plus the bettor reserved for R2. These flow directly from the stakeholder table in Assignment 1 — but now with usage frequency. Marking the Organizer 'favored' is a real prioritization decision: when UX budget is tight, the heaviest user gets it first.
+Chín roles plus bettor reserved cho R2. Những cái này flow trực tiếp từ stakeholder table trong Assignment 1 — nhưng bây giờ với usage frequency. Đánh dấu Organizer 'favored' là một decision ưu tiên thực: khi UX budget tight, user nặng nhất gets nó trước.
 -->
 
 ---
@@ -1196,8 +1196,7 @@ glowSeed: 229
   <div class="opacity-90 space-y-1">
     <div><b>Client:</b> Chrome 90+, Safari 14+, Firefox 88+, Edge 90+ — Win/macOS/Android/iOS.</div>
     <div><b>Server:</b> Ubuntu 20.04+, PostgreSQL 13+, Docker.</div>
-    <div><b>Network:</b> ≥5 Mbps at racecourses.</div>
-  </div>
+    <div><b>Network:</b> ≥5 Mbps tại các racecourse.</div>  </div>
 </div>
 
 <div class="rounded-xl border border-amber-400/20 bg-amber-400/8 p-4">
@@ -1213,21 +1212,20 @@ glowSeed: 229
 <div class="rounded-xl border border-fuchsia-400/20 bg-fuchsia-400/8 p-4">
   <div class="font-bold text-fuchsia-200 mb-2">§2.5 Assumptions &amp; Dependencies</div>
   <div class="opacity-90 space-y-1">
-    <div><b>AS-1:</b> Authorities provide an agreed verification-query method.</div>
-    <div><b>AS-2:</b> Jockeys &amp; horses have pre-assigned national IDs.</div>
-    <div><b>DE-1:</b> A <b>notification service</b> is available.</div>
-    <div><b>DE-2:</b> <b>Payment gateway</b> services available for future betting.</div>
+    <div><b>AS-1:</b> Authorities cung cấp agreed verification-query method.</div>
+    <div><b>AS-2:</b> Jockeys &amp; horses có pre-assigned national IDs.</div>
+    <div><b>DE-1:</b> Một <b>notification service</b> available.</div>
+    <div><b>DE-2:</b> <b>Payment gateway</b> services available cho future betting.</div>
   </div>
 </div>
 
 </div>
 
-<div class="renote mt-3"><b>RE</b> — Pinning specific browser/server versions makes requirements <b>testable</b> (QA knows exactly what to cover). <b>CO-3 multi-tenancy</b> is the most consequential constraint — it dictates the data architecture and enables the SaaS model.</div>
+<div class="renote mt-3"><b>RE</b> — Pinning specific browser/server versions làm requirements <b>testable</b> (QA biết chính xác cái gì để cover). <b>CO-3 multi-tenancy</b> là constraint quan trọng nhất — nó dictates data architecture và enables SaaS model.</div>
 
 <!--
-We pinned concrete versions, not 'modern browsers' — that makes requirements testable. The big constraint is CO-3, multi-tenancy: it dictates the whole data architecture and enables the SaaS model. The assumptions now name concrete services instead of vague 'external providers.'
+Chúng tôi pinned các versions cụ thể, không phải 'modern browsers' — đó làm requirements testable. Constraint lớn là CO-3, multi-tenancy: nó dictates toàn bộ data architecture và enables SaaS model. Các assumptions bây giờ đặt tên các services cụ thể thay vì 'external providers' vague.
 -->
-
 ---
 class: py-7
 glowSeed: 233
@@ -1240,9 +1238,9 @@ glowSeed: 233
 <div class="rounded-xl border border-emerald-400/20 bg-emerald-400/8 p-5">
   <div class="font-bold text-emerald-200 mb-2">Behavioral specification</div>
   <div class="opacity-90 space-y-1">
-    <div>• <b>8 use cases (UC-1 … UC-8)</b>, each fully specified.</div>
+    <div>• <b>8 use cases (UC-1 … UC-8)</b>, mỗi cái được fully specified.</div>
     <div>• Template per <code>COS Use Cases.docx</code>.</div>
-    <div>• Each UC references features (FE-x) &amp; business rules (BR-xx) → <b>traceability</b>.</div>
+    <div>• Mỗi UC references features (FE-x) &amp; business rules (BR-xx) → <b>traceability</b>.</div>
   </div>
 </div>
 
@@ -1253,28 +1251,27 @@ glowSeed: 233
 
 </div>
 
-<div class="renote mt-3"><b>RE</b> — Use cases bridge <b>user goals</b> and <b>system behavior</b>. The three flow types exist because real systems spend as much code on unhappy paths as the happy one. Listing <b>business rules per UC</b> keeps the rule catalog linked to behavior — a rule change lights up every UC it touches.</div>
+<div class="renote mt-3"><b>RE</b> — Use cases bridge <b>user goals</b> và <b>system behavior</b>. Ba loại flow tồn tại vì real systems spend nhiều code trên unhappy paths như happy path. Listing <b>business rules per UC</b> giữ rule catalog linked đến behavior — một rule change lights up mỗi UC nó touches.</div>
 
 <!--
-Section 3 specifies behavior through use cases. The template has three flow types — normal, alternative, exception — because real systems spend as much code on the unhappy paths as the happy one. Every use case cites its business rules.
+Phần 3 specifies behavior qua use cases. Template có ba loại flow — normal, alternative, exception — vì real systems spend nhiều code trên unhappy paths như happy path. Mọi use case cites business rules của nó.
 -->
-
 ---
 class: py-6
 glowSeed: 239
 ---
 
-# UC-1 · Create Tournament
+# UC-1 � Create Tournament
 
 <div class="grid grid-cols-[1fr_1.3fr] gap-4 mt-2 text-xs">
 
 <div class="flex flex-col gap-2">
-  <div class="rounded-lg border border-white/10 bg-white/5 p-3"><b class="text-cyan-300">Actor:</b> Tournament Organizer · <b class="opacity-70">Sec:</b> Notification Service</div>
+  <div class="rounded-lg border border-white/10 bg-white/5 p-3"><b class="text-cyan-300">Actor:</b> Tournament Organizer � <b class="opacity-70">Sec:</b> Notification Service</div>
   <div class="rounded-lg border border-white/10 bg-white/5 p-3"><b class="text-emerald-300">Pre:</b> logged in, admin write perms</div>
   <div class="rounded-lg border border-white/10 bg-white/5 p-3"><b class="text-emerald-300">Post:</b> new tournament created, status = <b>"Planned"</b></div>
-  <div class="rounded-lg border border-cyan-400/20 bg-cyan-400/8 p-3"><b class="text-cyan-300">Alt:</b> conflict found → suggest alt dates · Save as Draft</div>
-  <div class="rounded-lg border border-amber-400/20 bg-amber-400/8 p-3"><b class="text-amber-300">Exc 1.0.E1:</b> invalid dates → blocked</div>
-  <div class="rounded-lg border border-white/10 bg-white/5 p-3"><b>Priority:</b> High · <b>Freq:</b> 10–15×/yr/club</div>
+  <div class="rounded-lg border border-cyan-400/20 bg-cyan-400/8 p-3"><b class="text-cyan-300">Alt:</b> conflict found ? suggest alt dates � Save as Draft</div>
+  <div class="rounded-lg border border-amber-400/20 bg-amber-400/8 p-3"><b class="text-amber-300">Exc 1.0.E1:</b> invalid dates ? blocked</div>
+  <div class="rounded-lg border border-white/10 bg-white/5 p-3"><b>Priority:</b> High � <b>Freq:</b> 10�15�/yr/club</div>
   <div class="rounded-lg border border-fuchsia-400/20 bg-fuchsia-400/8 p-3"><b class="text-fuchsia-300">Rules:</b> BR-01, BR-03, BR-32, BR-35</div>
 </div>
 
@@ -1282,40 +1279,39 @@ glowSeed: 239
   <div class="font-bold text-emerald-200 mb-2">Normal Flow</div>
   <div class="opacity-90 space-y-1">
     <div>1. Organizer requests new tournament.</div>
-    <div>2. System shows the Creation Form.</div>
+    <div>2. System shows Creation Form.</div>
     <div>3. Enter Name, Start/End Date, Location, Description.</div>
-    <div>4. Select race categories (Handicap, Maiden, Group 1…).</div>
+    <div>4. Select race categories (Handicap, Maiden, Group 1�).</div>
     <div>5. Define default prize-distribution structure.</div>
     <div>6. <b class="text-emerald-300">System validates</b> (date constraints + <b>BR-01</b> venue-conflict check).</div>
     <div>7. Save as "Planned", generate unique Tournament ID.</div>
-    <div>8. Broadcast email/SMS to Owners &amp; Trainers.</div>
+    <div>8. Broadcast email/SMS d?n Owners &amp; Trainers.</div>
   </div>
 </div>
 
 </div>
 
-<div class="renote mt-1"><b>RE</b> — Step 6 = <b>validation before persistence</b>. The system refuses to save a clashing tournament (BR-01) — <i>shifting quality left</i>, preventing bad data at entry. "Save as Draft" respects how users really work.</div>
+<div class="renote mt-1"><b>RE</b> � Step 6 = <b>validation before persistence</b>. System refuses to save m?t clashing tournament (BR-01) � <i>shifting quality left</i>, preventing bad data t?i entry. "Save as Draft" respects c�ch users th?c s? work.</div>
 
 <!--
-UC-1, step by step. The key step is six — validation before saving. A clashing tournament is refused at the source, not caught later. And the 'Save as Draft' alternative shows we respected real work habits: organizers don't always finish in one sitting.
+UC-1, step by step. Step key l� s�u � validation tru?c saving. M?t clashing tournament b? refused t?i ngu?n, kh�ng caught sau. V� alternative 'Save as Draft' shows ch�ng t�i respected real work habits: organizers kh�ng lu�n finish trong m?t sitting.
 -->
-
 ---
 class: py-6
 glowSeed: 241
 ---
 
-# UC-2 · Register Horse
+# UC-2 � Register Horse
 
 <div class="grid grid-cols-[1fr_1.3fr] gap-4 mt-2 text-xs">
 
 <div class="flex flex-col gap-2">
-  <div class="rounded-lg border border-white/10 bg-white/5 p-3"><b class="text-cyan-300">Actor:</b> Horse Owner / Trainer · <b class="opacity-70">Sec:</b> National Horse Registry DB, Veterinarian</div>
+  <div class="rounded-lg border border-white/10 bg-white/5 p-3"><b class="text-cyan-300">Actor:</b> Horse Owner / Trainer � <b class="opacity-70">Sec:</b> National Horse Registry DB, Veterinarian</div>
   <div class="rounded-lg border border-white/10 bg-white/5 p-3"><b class="text-emerald-300">Pre:</b> Owner/Trainer authenticated</div>
-  <div class="rounded-lg border border-white/10 bg-white/5 p-3"><b class="text-emerald-300">Post:</b> profile = <b>"Pending Verification"</b> until Registry validates</div>
-  <div class="rounded-lg border border-cyan-400/20 bg-cyan-400/8 p-3"><b class="text-cyan-300">Alt 2a:</b> Registry API offline → <b>manual entry, flagged for admin approval</b></div>
-  <div class="rounded-lg border border-amber-400/20 bg-amber-400/8 p-3"><b class="text-amber-300">Exc 2.0.E1:</b> registry # invalid/expired → refused</div>
-  <div class="rounded-lg border border-white/10 bg-white/5 p-3"><b>Priority:</b> High · <b>Freq:</b> 100–300×/season</div>
+  <div class="rounded-lg border border-white/10 bg-white/5 p-3"><b class="text-emerald-300">Post:</b> profile = <b>"Pending Verification"</b> cho d?n khi Registry validates</div>
+  <div class="rounded-lg border border-cyan-400/20 bg-cyan-400/8 p-3"><b class="text-cyan-300">Alt 2a:</b> Registry API offline ? <b>manual entry, flagged cho admin approval</b></div>
+  <div class="rounded-lg border border-amber-400/20 bg-amber-400/8 p-3"><b class="text-amber-300">Exc 2.0.E1:</b> registry # invalid/expired ? refused</div>
+  <div class="rounded-lg border border-white/10 bg-white/5 p-3"><b>Priority:</b> High � <b>Freq:</b> 100�300�/season</div>
   <div class="rounded-lg border border-fuchsia-400/20 bg-fuchsia-400/8 p-3"><b class="text-fuchsia-300">Rules:</b> BR-11, BR-13, BR-14, BR-35</div>
 </div>
 
@@ -1323,20 +1319,20 @@ glowSeed: 241
   <div class="font-bold text-emerald-200 mb-2">Normal Flow</div>
   <div class="opacity-90 space-y-1">
     <div>1. Enter National Registration Number.</div>
-    <div>2. <b class="text-emerald-300">System queries National Horse Registry</b> → pulls pedigree, age, breed.</div>
+    <div>2. <b class="text-emerald-300">System queries National Horse Registry</b> ? pulls pedigree, age, breed.</div>
     <div>3. Auto-populate name, sire, dam, DOB.</div>
     <div>4. Enter ownership split %, assign primary Trainer.</div>
     <div>5. Upload vaccination record + health certificates.</div>
-    <div>6. Save as "Pending Verification" → send validation request to Vet.</div>
+    <div>6. Save as "Pending Verification" ? send validation request d?n Vet.</div>
   </div>
 </div>
 
 </div>
 
-<div class="renote mt-1"><b>RE</b> — Alt 2a is <b>graceful degradation</b> for dependency <b>DE-1</b>. If the registry is down, work continues — but the record is <b>flagged</b> for human reconciliation. Robust systems handle external-dependency failure without blocking users <i>or</i> silently accepting unverified data.</div>
+<div class="renote mt-1"><b>RE</b> � Alt 2a l� <b>graceful degradation</b> cho dependency <b>DE-1</b>. N?u registry down, work continues � nhung record du?c <b>flagged</b> cho human reconciliation. Systems robust handle external-dependency failure kh�ng blocking users <i>ho?c</i> silently accepting unverified data.</div>
 
 <!--
-UC-2 registers a horse by verifying it against the national registry. The clever part is alternative 2a: if the registry is offline, we don't block the user — we accept the entry but flag it for manual review. Work continues, but nothing unverified slips through silently.
+UC-2 registers m?t horse b?ng c�ch verify n� v?i national registry. Ph?n clever l� alternative 2a: n?u registry offline, ch�ng t�i kh�ng block user � ch�ng t�i accept entry nhung flag n� cho manual review. Work continues, nhung kh�ng c� g� unverified slips through silently.
 -->
 
 ---
@@ -1344,122 +1340,120 @@ class: py-6
 glowSeed: 251
 ---
 
-# UC-3 · Register Jockey &nbsp;·&nbsp; UC-4 · Schedule Race
+# UC-3 � Register Jockey &nbsp;�&nbsp; UC-4 � Schedule Race
 
 <div class="grid grid-cols-2 gap-3 mt-2 text-xs">
 
 <div class="rounded-xl border border-emerald-400/20 bg-emerald-400/8 p-4">
-  <div class="font-bold text-emerald-200 mb-2">UC-3 · Register Jockey</div>
+  <div class="font-bold text-emerald-200 mb-2">UC-3 � Register Jockey</div>
   <div class="opacity-90 space-y-1">
-    <div><b class="text-cyan-300">Actor:</b> Jockey · <b class="opacity-70">Sec:</b> Licensing Authority</div>
+    <div><b class="text-cyan-300">Actor:</b> Jockey � <b class="opacity-70">Sec:</b> Licensing Authority</div>
     <div><b class="text-emerald-300">Post:</b> profile created, status "Active"</div>
     <div>1. Input name, contact, National License #.</div>
-    <div>2. <b>System checks Licensing API</b> → active license.</div>
+    <div>2. <b>System checks Licensing API</b> ? active license.</div>
     <div>3. Enter current weight + min riding weight.</div>
     <div>4. Create profile, status "Active".</div>
-    <div class="text-cyan-300">Alt 3a: license <b>suspended</b> → registered but hidden.</div>
-    <div class="text-amber-300">Exc: invalid license → blocked.</div>
-    <div class="text-fuchsia-300">Rules: BR-15, BR-18, BR-35 · Freq 50–100×/yr</div>
+    <div class="text-cyan-300">Alt 3a: license <b>suspended</b> ? registered nhung hidden.</div>
+    <div class="text-amber-300">Exc: invalid license ? blocked.</div>
+    <div class="text-fuchsia-300">Rules: BR-15, BR-18, BR-35 � Freq 50�100�/yr</div>
   </div>
 </div>
 
 <div class="rounded-xl border border-blue-400/20 bg-blue-400/8 p-4">
-  <div class="font-bold text-blue-200 mb-2">UC-4 · Schedule Race</div>
+  <div class="font-bold text-blue-200 mb-2">UC-4 � Schedule Race</div>
   <div class="opacity-90 space-y-1">
-    <div><b class="text-cyan-300">Actor:</b> Organizer · <b class="opacity-70">Sec:</b> Racecourse Manager</div>
+    <div><b class="text-cyan-300">Actor:</b> Organizer � <b class="opacity-70">Sec:</b> Racecourse Manager</div>
     <div><b class="text-emerald-300">Post:</b> race added, status "Open for Entries"</div>
     <div>1. Enter race #, distance, class, max runners.</div>
     <div>2. Set start date/time + entry deadline.</div>
     <div>3. Set prize-pool split.</div>
-    <div>4. <b class="text-emerald-300">System checks overlaps (≥30-min, BR-05).</b></div>
-    <div>5. Save as "Open for Entries" → alert trainers/owners.</div>
-    <div class="text-amber-300">Exc: time conflict → show conflicting races, block.</div>
-    <div class="text-fuchsia-300">Rules: BR-02, 04, 05, 07, 19 · Freq 100–500×/yr</div>
+    <div>4. <b class="text-emerald-300">System checks overlaps (=30-min, BR-05).</b></div>
+    <div>5. Save as "Open for Entries" ? alert trainers/owners.</div>
+    <div class="text-amber-300">Exc: time conflict ? show conflicting races, block.</div>
+    <div class="text-fuchsia-300">Rules: BR-02, 04, 05, 07, 19 � Freq 100�500�/yr</div>
   </div>
 </div>
 
 </div>
 
-<div class="renote mt-2"><b>RE</b> — UC-3 nuance: a suspended jockey is <b>still registered, just hidden</b> — preserves history &amp; audit trail, more correct than a hard delete. <b>BR-05</b> (the 30-min gap) operationalizes <b>BO-2</b> at the race level: surfacing the <i>specific</i> conflicting race turns a vague goal into an enforceable rule.</div>
+<div class="renote mt-2"><b>RE</b> � UC-3 nuance: m?t suspended jockey l� <b>still registered, just hidden</b> � preserves history &amp; audit trail, more correct hon m?t hard delete. <b>BR-05</b> (kho?ng 30-min) operationalizes <b>BO-2</b> ? race level: surfacing <i>specific</i> conflicting race turns m?t vague goal th�nh m?t enforceable rule.</div>
 
 <!--
-UC-3 mirrors UC-2's verify-then-status pattern. But notice suspended-license handling: we don't delete the jockey, we hide them — history stays for audit. UC-4 schedules races with a hard 30-minute gap, BR-05. The system won't save a clash, and tells you exactly which race conflicts.
+UC-3 mirrors UC-2's verify-then-status pattern. Nhung ch� � suspended-license handling: ch�ng t�i kh�ng delete jockey, ch�ng t�i hide h? � history stays cho audit. UC-4 schedules races v?i m?t hard 30-minute gap, BR-05. System s? kh�ng save m?t clash, v� tells b?n ch�nh x�c race n�o conflicts.
 -->
-
 ---
 class: py-6
 glowSeed: 257
 ---
 
-# UC-5 · Enter Horse in Race <span class="text-xs opacity-60">(highest volume · most rule-dense)</span>
+# UC-5 � Enter Horse in Race <span class="text-xs opacity-60">(highest volume � most rule-dense)</span>
 
 <div class="grid grid-cols-[1fr_1.3fr] gap-4 mt-2 text-xs">
 
 <div class="flex flex-col gap-2">
-  <div class="rounded-lg border border-white/10 bg-white/5 p-3"><b class="text-cyan-300">Actor:</b> Trainer · <b class="opacity-70">Sec:</b> Jockey, Veterinarian</div>
+  <div class="rounded-lg border border-white/10 bg-white/5 p-3"><b class="text-cyan-300">Actor:</b> Trainer � <b class="opacity-70">Sec:</b> Jockey, Veterinarian</div>
   <div class="rounded-lg border border-white/10 bg-white/5 p-3"><b class="text-emerald-300">Pre:</b> horse verified, active, <b>vet clearance &lt; 7 days</b></div>
   <div class="rounded-lg border border-white/10 bg-white/5 p-3"><b class="text-emerald-300">Post:</b> entry = <b>"Pending Jockey Confirmation"</b></div>
-  <div class="rounded-lg border border-cyan-400/20 bg-cyan-400/8 p-3"><b class="text-cyan-300">Alt 5a:</b> over-subscribed → <b>"Ballot List"</b> for automated selection (BR-07)</div>
-  <div class="rounded-lg border border-amber-400/20 bg-amber-400/8 p-3"><b class="text-amber-300">Exc 5.0.E1:</b> vet check expired (&gt;7d) → blocked, prompt clearance (BR-12)</div>
-  <div class="rounded-lg border border-white/10 bg-white/5 p-3"><b>Priority:</b> High · <b>Freq:</b> 500–2000×/yr</div>
+  <div class="rounded-lg border border-cyan-400/20 bg-cyan-400/8 p-3"><b class="text-cyan-300">Alt 5a:</b> over-subscribed ? <b>"Ballot List"</b> cho automated selection (BR-07)</div>
+  <div class="rounded-lg border border-amber-400/20 bg-amber-400/8 p-3"><b class="text-amber-300">Exc 5.0.E1:</b> vet check expired (&gt;7d) ? blocked, prompt clearance (BR-12)</div>
+  <div class="rounded-lg border border-white/10 bg-white/5 p-3"><b>Priority:</b> High � <b>Freq:</b> 500�2000�/yr</div>
   <div class="rounded-lg border border-fuchsia-400/20 bg-fuchsia-400/8 p-3"><b class="text-fuchsia-300">Rules:</b> BR-07, 08, 12, 14, 16, 17, 19 <span class="opacity-60">(7!)</span></div>
 </div>
 
 <div class="rounded-lg border border-emerald-400/20 bg-emerald-400/8 p-3">
   <div class="font-bold text-emerald-200 mb-2">Normal Flow</div>
   <div class="opacity-90 space-y-1">
-    <div>1. Trainer selects a horse from verified stables.</div>
+    <div>1. Trainer selects m?t horse t? verified stables.</div>
     <div>2. Auto eligibility checks (age, race history vs criteria).</div>
-    <div>3. Trainer selects a licensed Jockey.</div>
+    <div>3. Trainer selects m?t licensed Jockey.</div>
     <div>4. <b class="text-emerald-300">System validates Jockey not double-booked (BR-17).</b></div>
     <div>5. Trainer submits entry.</div>
-    <div>6. Flag "Pending Jockey Confirmation" → notify Jockey.</div>
+    <div>6. Flag "Pending Jockey Confirmation" ? notify Jockey.</div>
   </div>
 </div>
 
 </div>
 
-<div class="renote mt-1"><b>RE</b> — The highest-volume UC (up to 2000/yr) &amp; most rule-dense (7 rules). Two carry the load: <b>BR-17</b> prevents double-booking a jockey; the <b>7-day vet clearance (BR-12)</b> keeps health data fresh. The ballot (BR-07) makes oversubscription fair &amp; automated — business integrity lives here.</div>
+<div class="renote mt-1"><b>RE</b> � UC highest-volume (l�n d?n 2000/yr) &amp; most rule-dense (7 rules). Hai carry load: <b>BR-17</b> prevents double-booking m?t jockey; <b>7-day vet clearance (BR-12)</b> gi? health data fresh. Ballot (BR-07) l�m oversubscription fair &amp; automated � business integrity lives ? d�y.</div>
 
 <!--
-UC-5 is our busiest and most rule-heavy use case — up to 2000 entries a year. Seven business rules, but two carry the load: BR-17 stops a jockey being double-booked, and the 7-day vet rule keeps health checks fresh. Oversubscription is handled by an automated ballot, not a human choice. Integrity lives here.
+UC-5 l� UC b?n r?n nh?t v� rule-heavy nh?t � l�n d?n 2000 entries m?t nam. B?y business rules, nhung hai carry load: BR-17 stops m?t jockey being double-booked, v� 7-day vet rule gi? health checks fresh. Oversubscription du?c handle b?i m?t automated ballot, kh�ng ph?i m?t human choice. Integrity lives ? d�y.
 -->
-
 ---
 class: py-6
 glowSeed: 263
 ---
 
-# UC-6 · Record Race Results
+# UC-6 � Record Race Results
 
 <div class="grid grid-cols-[1fr_1.3fr] gap-4 mt-2 text-xs">
 
 <div class="flex flex-col gap-2">
-  <div class="rounded-lg border border-white/10 bg-white/5 p-3"><b class="text-cyan-300">Actor:</b> Organizer · <b class="opacity-70">Sec:</b> Regulatory Official, Racecourse Manager</div>
-  <div class="rounded-lg border border-white/10 bg-white/5 p-3"><b class="text-emerald-300">Pre:</b> race "Running" or completed</div>
-  <div class="rounded-lg border border-white/10 bg-white/5 p-3"><b class="text-emerald-300">Post:</b> results stored as <b>"Provisional"</b> pending sign-off</div>
-  <div class="rounded-lg border border-cyan-400/20 bg-cyan-400/8 p-3"><b class="text-cyan-300">Alt 6a:</b> Stewards Inquiry → set flag, halt auto updates</div>
-  <div class="rounded-lg border border-amber-400/20 bg-amber-400/8 p-3"><b class="text-amber-300">Exc 6.0.E1:</b> illogical times (negative/zero) → alert + refuse</div>
-  <div class="rounded-lg border border-white/10 bg-white/5 p-3"><b>Priority:</b> High · <b>Freq:</b> 100–500×/yr</div>
+  <div class="rounded-lg border border-white/10 bg-white/5 p-3"><b class="text-cyan-300">Actor:</b> Organizer � <b class="opacity-70">Sec:</b> Regulatory Official, Racecourse Manager</div>
+  <div class="rounded-lg border border-white/10 bg-white/5 p-3"><b class="text-emerald-300">Pre:</b> race "Running" ho?c completed</div>
+  <div class="rounded-lg border border-white/10 bg-white/5 p-3"><b class="text-emerald-300">Post:</b> results stored nhu <b>"Provisional"</b> pending sign-off</div>
+  <div class="rounded-lg border border-cyan-400/20 bg-cyan-400/8 p-3"><b class="text-cyan-300">Alt 6a:</b> Stewards Inquiry ? set flag, halt auto updates</div>
+  <div class="rounded-lg border border-amber-400/20 bg-amber-400/8 p-3"><b class="text-amber-300">Exc 6.0.E1:</b> illogical times (negative/zero) ? alert + refuse</div>
+  <div class="rounded-lg border border-white/10 bg-white/5 p-3"><b>Priority:</b> High � <b>Freq:</b> 100�500�/yr</div>
   <div class="rounded-lg border border-fuchsia-400/20 bg-fuchsia-400/8 p-3"><b class="text-fuchsia-300">Rules:</b> BR-21, 23, 24, 25, 26, 35</div>
 </div>
 
 <div class="rounded-lg border border-emerald-400/20 bg-emerald-400/8 p-3">
   <div class="font-bold text-emerald-200 mb-2">Normal Flow</div>
   <div class="opacity-90 space-y-1">
-    <div>1. Enter finishing order (1st, 2nd, 3rd…) + times.</div>
-    <div>2. Record DNF, DQ, or late scratchings.</div>
-    <div>3. <b class="text-emerald-300">System validates every starter has an assigned result.</b></div>
-    <div>4. Store as "Provisional" → notify Regulatory Official for approval.</div>
+    <div>1. Enter finishing order (1st, 2nd, 3rd�) + times.</div>
+    <div>2. Record DNF, DQ, ho?c late scratchings.</div>
+    <div>3. <b class="text-emerald-300">System validates every starter c� m?t assigned result.</b></div>
+    <div>4. Store nhu "Provisional" ? notify Regulatory Official cho approval.</div>
   </div>
 </div>
 
 </div>
 
-<div class="renote mt-1"><b>RE</b> — Step 3 prevents the classic "missing horse in the official record" error. The <b>Provisional</b> status enforces the separation-of-duties approval from Diagram 5 — results are never authoritative on entry, only on approval. That is what makes <b>SM-3</b> achievable.</div>
+<div class="renote mt-1"><b>RE</b> � Step 3 prevents classic error "missing horse trong official record". Status <b>Provisional</b> enforces separation-of-duties approval t? Diagram 5 � results kh�ng bao gi? authoritative tr�n entry, ch? tr�n approval. �� l� nh?ng g� l�m <b>SM-3</b> achievable.</div>
 
 <!--
-UC-6 records results, but never as final — always Provisional, awaiting regulatory sign-off. Step three forces every starter to have a result, so no horse is silently dropped. The authority comes from the approval, not the entry. That's how we hit zero discrepancies.
+UC-6 records results, nhung kh�ng bao gi? nhu final � lu�n Provisional, awaiting regulatory sign-off. Step ba forces every starter d? c� m?t result, n�n kh�ng c� horse du?c silently dropped. Authority d?n t? approval, kh�ng ph?i entry. �� l� c�ch ch�ng t�i hit zero discrepancies.
 -->
 
 ---
@@ -1467,56 +1461,55 @@ class: py-6
 glowSeed: 269
 ---
 
-# UC-7 · Manage Betting Pools <span class="text-xs text-amber-300">(Release 2)</span> &nbsp;·&nbsp; UC-8 · Conduct Health Check
+# UC-7 � Manage Betting Pools <span class="text-xs text-amber-300">(Release 2)</span> &nbsp;�&nbsp; UC-8 � Conduct Health Check
 
 <div class="grid grid-cols-2 gap-3 mt-2 text-xs">
 
 <div class="rounded-xl border border-amber-400/20 bg-amber-400/8 p-4">
-  <div class="font-bold text-amber-200 mb-2">UC-7 · Manage Betting Pools — R2</div>
+  <div class="font-bold text-amber-200 mb-2">UC-7 � Manage Betting Pools � R2</div>
   <div class="opacity-90 space-y-1">
-    <div><b class="text-cyan-300">Actor:</b> Organizer · <b class="opacity-70">Sec:</b> Payment Gateway, Regulatory Official</div>
+    <div><b class="text-cyan-300">Actor:</b> Organizer � <b class="opacity-70">Sec:</b> Payment Gateway, Regulatory Official</div>
     <div><b class="text-emerald-300">Post:</b> logs closed, wagers audited, payouts queued</div>
     <div>1. Open betting interface.</div>
     <div>2. Display active pool size, odds, distributions.</div>
-    <div>3. Wagers registered &amp; audited for compliance.</div>
-    <div>4. On official result → calculate dividends.</div>
-    <div>5. Dividends sent to payment queue.</div>
-    <div class="text-cyan-300">Alt 7a: race abandoned → <b>auto refunds (BR-31)</b>.</div>
-    <div class="text-amber-300">Exc: suspicious patterns → flag for review (BR-29).</div>
-    <div class="text-fuchsia-300">Rules: BR-28–31, 33 · <b>Priority Medium (R2)</b></div>
+    <div>3. Wagers registered &amp; audited cho compliance.</div>
+    <div>4. On official result ? calculate dividends.</div>
+    <div>5. Dividends sent d?n payment queue.</div>
+    <div class="text-cyan-300">Alt 7a: race abandoned ? <b>auto refunds (BR-31)</b>.</div>
+    <div class="text-amber-300">Exc: suspicious patterns ? flag cho review (BR-29).</div>
+    <div class="text-fuchsia-300">Rules: BR-28�31, 33 � <b>Priority Medium (R2)</b></div>
   </div>
 </div>
 
 <div class="rounded-xl border border-red-400/20 bg-red-400/8 p-4">
-  <div class="font-bold text-red-200 mb-2">UC-8 · Conduct Health Check</div>
+  <div class="font-bold text-red-200 mb-2">UC-8 � Conduct Health Check</div>
   <div class="opacity-90 space-y-1">
-    <div><b class="text-cyan-300">Actor:</b> Veterinarian · <b class="opacity-70">Sec:</b> Owner, Trainer, Organizer</div>
-    <div><b class="text-emerald-300">Pre:</b> horse registered for a race within next 7 days</div>
-    <div><b class="text-emerald-300">Post:</b> status = <b>"Fit" or "Unfit"</b></div>
-    <div>1. Vet selects horse from race check list.</div>
+    <div><b class="text-cyan-300">Actor:</b> Veterinarian � <b class="opacity-70">Sec:</b> Owner, Trainer, Organizer</div>
+    <div><b class="text-emerald-300">Pre:</b> horse registered cho m?t race trong next 7 days</div>
+    <div><b class="text-emerald-300">Post:</b> status = <b>"Fit" ho?c "Unfit"</b></div>
+    <div>1. Vet selects horse t? race check list.</div>
     <div>2. Inspects physical indicators (heart, gait, temp).</div>
     <div>3. Logs results, selects "Fit"/"Unfit".</div>
     <div>4. Update fitness clearance + record Vet's signature.</div>
-    <div class="text-cyan-300">Alt 8a: inconclusive → "Deferred", re-inspect race morning.</div>
-    <div class="text-amber-300">Exc 8.0.E1: "Unfit" → <b>system auto-scratches</b>, notifies Owner/Trainer.</div>
-    <div class="text-fuchsia-300">Rules: BR-12, 20, 35 · Freq 500–2000×/yr</div>
+    <div class="text-cyan-300">Alt 8a: inconclusive ? "Deferred", re-inspect race morning.</div>
+    <div class="text-amber-300">Exc 8.0.E1: "Unfit" ? <b>system auto-scratches</b>, notifies Owner/Trainer.</div>
+    <div class="text-fuchsia-300">Rules: BR-12, 20, 35 � Freq 500�2000�/yr</div>
   </div>
 </div>
 
 </div>
 
-<div class="renote mt-1"><b>RE</b> — UC-7 is <b>documented but deferred</b> — a deliberate elicitation choice preserving traceability to future scope. UC-8 is where <b>SAF-1 is enforced by the system</b>: marking a horse "Unfit" auto-scratches it — welfare as an automatic consequence, reliable under race-day pressure.</div>
+<div class="renote mt-1"><b>RE</b> � UC-7 l� <b>documented nhung deferred</b> � m?t elicitation choice c� ch? � preserving traceability d?n scope tuong lai. UC-8 l� noi <b>SAF-1 du?c enforced b?i system</b>: marking m?t horse "Unfit" auto-scratches n� � welfare nhu m?t automatic consequence, reliable du?i race-day pressure.</div>
 
 <!--
-UC-7 is betting, Release 2 — not built now, but specified so the R2 team inherits a complete, thought-through picture. We even designed its failure modes. UC-8 is the health check, where SAF-1 lives as a system action: mark a horse unfit and the system scratches it and notifies the owner automatically. You rely on the system, not a human memory.
+UC-7 l� betting, Release 2 � kh�ng built now, nhung specified n�n R2 team inherits m?t picture complete, thought-through. Ch�ng t�i th?m ch� designed failure modes c?a n�. UC-8 l� health check, noi SAF-1 lives nhu m?t system action: mark m?t horse unfit v� system scratches n� v� notifies owner t? d?ng. B?n rely v�o system, kh�ng ph?i human memory.
 -->
-
 ---
 class: py-7
 glowSeed: 271
 ---
 
-# §4. Data Requirements — Overview
+# �4. Data Requirements � T?ng quan
 
 <div class="grid grid-cols-5 gap-2 mt-8 text-xs">
 
@@ -1528,18 +1521,17 @@ glowSeed: 271
 
 </div>
 
-<div class="renote mt-6"><b>RE</b> — Behavior (§3) and data (§4) are specified <b>separately but consistently</b>. The data model must support every use case's reads/writes; cross-checking them is part of validation. Wireframes &amp; reports live under Data Requirements because they describe <b>information presentation</b>.</div>
+<div class="renote mt-6"><b>RE</b> � Behavior (�3) v� data (�4) du?c specified <b>separately nhung consistently</b>. Data model ph?i support m?i use case's reads/writes; cross-checking ch�ng l� ph?n c?a validation. Wireframes &amp; reports live du?i Data Requirements v� ch�ng describe <b>information presentation</b>.</div>
 
 <!--
-Section 4 specifies the information the system manages: the logical data model, a build-ready data dictionary, four wireframes, reports, and retention. Behavior and data are specified separately but consistently — and cross-checked.
+Ph?n 4 specifies information h? th?ng manages: logical data model, data dictionary build-ready, b?n wireframes, reports, v� retention. Behavior v� data du?c specified separately nhung consistently � v� cross-checked.
 -->
-
 ---
 class: header-compact
 glowSeed: 277
 ---
 
-# §4.1 Logical Data Model (ER Diagram)
+# �4.1 Logical Data Model (ER Diagram)
 
 <div class="grid grid-cols-[1.2fr_1fr] gap-4 mt-2">
 
@@ -1550,63 +1542,22 @@ glowSeed: 277
 <div class="text-[11px]">
 <table>
 <tr><th>Relationship</th><th>Type</th><th>Meaning</th></tr>
-<tr><td>Tournament —Has— Race</td><td class="text-cyan-300 font-bold">1:M</td><td>A tournament has many races</td></tr>
-<tr><td>Race —Consists of— Entry</td><td class="text-cyan-300 font-bold">1:M</td><td>A race has many entries</td></tr>
-<tr><td>Horse —Participates— Entry</td><td class="text-cyan-300 font-bold">1:M</td><td>A horse enters many races</td></tr>
-<tr><td>Entry —Outcome— Result</td><td class="text-amber-300 font-bold">1:0..1</td><td>At most one result</td></tr>
-<tr><td>Horse —Has— Health Record</td><td class="text-cyan-300 font-bold">1:M</td><td>Many health records</td></tr>
-<tr><td>Entry —Rides— Jockey</td><td class="text-cyan-300 font-bold">M:1</td><td>Many entries, one jockey</td></tr>
+<tr><td>Tournament �Has� Race</td><td class="text-cyan-300 font-bold">1:M</td><td>A tournament has many races</td></tr>
+<tr><td>Race �Consists of� Entry</td><td class="text-cyan-300 font-bold">1:M</td><td>A race has many entries</td></tr>
+<tr><td>Horse �Participates� Entry</td><td class="text-cyan-300 font-bold">1:M</td><td>A horse enters many races</td></tr>
+<tr><td>Entry �Outcome� Result</td><td class="text-amber-300 font-bold">1:0..1</td><td>At most one result</td></tr>
+<tr><td>Horse �Has� Health Record</td><td class="text-cyan-300 font-bold">1:M</td><td>Many health records</td></tr>
+<tr><td>Entry �Rides� Jockey</td><td class="text-cyan-300 font-bold">M:1</td><td>Many entries, one jockey</td></tr>
 </table>
 </div>
 
 </div>
 
-<div class="renote mt-2"><b>RE</b> — The <b>data view</b> complementing the behavioral view. <b>Entry</b> is the junction entity linking Horse, Jockey, Race, Result — the heart of the schema. The <b>1:0..1</b> on Entry→Result is meaningful: a withdrawn/balloted-out horse has an entry but no result. <i>Cardinality encodes a business rule.</i></div>
+<div class="renote mt-2"><b>RE</b> � <b>Data view</b> complementing behavioral view. <b>Entry</b> l� junction entity linking Horse, Jockey, Race, Result � tim c?a schema. <b>1:0..1</b> tr�n Entry?Result l� meaningful: m?t withdrawn/balloted-out horse c� m?t entry nhung kh�ng result. <i>Cardinality encodes m?t business rule.</i></div>
 
 <!--
-Here's the data backbone. Entry is the heart — the junction linking a horse, a jockey, a race, and a result. And notice the 1-to-zero-or-one on Entry to Result: a withdrawn horse has an entry but no result. That cardinality isn't a detail — it encodes a business rule.
+��y l� data backbone. Entry l� tim � junction linking m?t horse, m?t jockey, m?t race, v� m?t result. V� ch� � 1-to-zero-or-one tr�n Entry d?n Result: m?t withdrawn horse c� m?t entry nhung kh�ng result. Cardinality d� kh�ng ph?i l� detail � n� encodes m?t business rule.
 -->
-
----
-class: py-7
-glowSeed: 281
----
-
-# §4.2 Data Dictionary — TOURNAMENT &amp; RACE
-
-<div class="grid grid-cols-2 gap-4 mt-5 text-xs">
-
-<div class="rounded-xl border border-emerald-400/20 bg-emerald-400/8 p-4">
-  <div class="font-bold text-emerald-200 mb-2">TOURNAMENT</div>
-  <div class="opacity-90 space-y-1 font-mono text-[11px]">
-    <div><span class="text-amber-300">tournament_id</span> (PK, auto)</div>
-    <div><span class="text-amber-300">tournament_name</span> VARCHAR(100), <b>unique</b></div>
-    <div><span class="text-amber-300">start_date</span> · <span class="text-amber-300">end_date</span> · <span class="text-amber-300">venue_name</span></div>
-    <div><span class="text-amber-300">status</span> ENUM(<i>Planned / Open / In Progress / Completed / Archived</i>)</div>
-    <div><span class="text-amber-300">prize_pool</span> DECIMAL(12,2) default 0.00</div>
-  </div>
-</div>
-
-<div class="rounded-xl border border-cyan-400/20 bg-cyan-400/8 p-4">
-  <div class="font-bold text-cyan-200 mb-2">RACE</div>
-  <div class="opacity-90 space-y-1 font-mono text-[11px]">
-    <div><span class="text-amber-300">race_id</span> (PK) · <span class="text-amber-300">tournament_id</span> (FK)</div>
-    <div><span class="text-amber-300">race_number</span></div>
-    <div><span class="text-amber-300">race_category</span> ENUM (default <i>Maiden</i>)</div>
-    <div><span class="text-amber-300">distance</span> (default 1200) · <span class="text-amber-300">start_time</span></div>
-    <div><span class="text-amber-300">max_runners</span> (default 14)</div>
-    <div><span class="text-amber-300">status</span> ENUM(<i>Open for Entries / Declared / Running / Completed / Cancelled</i>)</div>
-  </div>
-</div>
-
-</div>
-
-<div class="renote mt-4"><b>RE</b> — Every field carries <b>type, uniqueness, required-flag, editability, size, default</b> — six attributes per column. That is what makes the schema <b>build-ready</b>: a developer creates the tables with zero interpretation. The <b>status ENUMs</b> map directly onto the use-case flows &amp; state machine.</div>
-
-<!--
-The data dictionary isn't just column names — every field has six attributes: type, unique, required, editable, size, default. A developer builds the database straight from this with no guessing. And the status enums map exactly onto the use case flows and the state machine. Consistency across views is how we know the model is right.
--->
-
 ---
 class: py-7
 glowSeed: 283
@@ -1638,18 +1589,17 @@ glowSeed: 283
 
 </div>
 
-<div class="renote mt-3"><b>RE</b> — <b>Nullable fields tell a story</b>: <code>jockey_id</code> &amp; <code>barrier_position</code> are null <i>before</i> a jockey confirms or a gate is drawn. <code>entry_status</code> literally enumerates the Appendix-A state-machine states. The data dictionary and the dynamic model are <b>two views of the same truth</b>.</div>
+<div class="renote mt-3"><b>RE</b> — <b>Nullable fields tell một story</b>: <code>jockey_id</code> &amp; <code>barrier_position</code> là null <i>trước</i> một jockey confirms hoặc một gate được draw. <code>entry_status</code> literally enumerates các Appendix-A state-machine states. Data dictionary và dynamic model là <b>hai views của cùng một truth</b>.</div>
 
 <!--
-Nullable fields aren't sloppy — they're meaningful. A jockey ID is null until the jockey confirms; a barrier position is null until the draw assigns it. And the entry_status enum is the exact state list from our state machine. The data model and the behavior model describe the same system from two angles.
+Nullable fields không phải sloppy — chúng meaningful. Một jockey ID là null cho đến khi jockey confirms; một barrier position là null cho đến khi draw assigns nó. Và entry_status enum là exact state list từ state machine của chúng tôi. Data model và behavior model describe cùng một hệ thống từ hai góc độ.
 -->
-
 ---
 class: header-compact
 glowSeed: 293
 ---
 
-# §4.3 UI Wireframes — Create Tournament &amp; Register Horse
+# §4.3 UI Wireframes — Create Tournament & Register Horse
 
 <div class="grid grid-cols-2 gap-4 mt-2">
 
@@ -1665,10 +1615,10 @@ glowSeed: 293
 
 </div>
 
-<div class="renote mt-2"><b>RE</b> — Wireframes are <b>low-fidelity on purpose</b>. In requirements we validate <b>structure and flow</b>, not colors or fonts — those come later. Keeping them rough avoids premature commitment and keeps stakeholders focused on 'does this flow match how you work?'</div>
+<div class="renote mt-2"><b>RE</b> — Wireframes là <b>low-fidelity on purpose</b>. Trong requirements chúng tôi validate <b>structure và flow</b>, không phải colors hoặc fonts — những cái đến sau. Keeping them rough avoids premature commitment và keeps stakeholders focused vào 'liệu flow này match cách bạn work?'</div>
 
 <!--
-We sketched four wireframes for the highest-traffic screens, deliberately low-fidelity. In requirements, we're validating structure and flow, not pixel-perfect visuals. Keeping them rough keeps the conversation on 'is this the right flow,' not 'is that the right blue.'
+Chúng tôi sketched bốn wireframes cho highest-traffic screens, có chủ ý low-fidelity. Trong requirements, chúng tôi validating structure và flow, không phải visuals pixel-perfect. Keeping them rough keeps conversation vào 'liệu đây là flow đúng,' không phải 'liệu đó là blue đúng.'
 -->
 
 ---
@@ -1676,7 +1626,7 @@ class: header-compact
 glowSeed: 307
 ---
 
-# §4.3 UI Wireframes — Enter Horse &amp; Record Results
+# §4.3 UI Wireframes — Enter Horse & Record Results
 
 <div class="grid grid-cols-2 gap-4 mt-2">
 
@@ -1692,18 +1642,14 @@ glowSeed: 307
 
 </div>
 
-<div class="text-xs opacity-75 mt-2 text-center">Wireframe 3 is the Trainer dashboard for entering horses; Wireframe 4 is the steward terminal for recording results — designed for speed on a busy race day. Each maps directly to a use case.</div>
-
-<!--
-Wireframe three is the Trainer dashboard for entering horses; wireframe four is the steward terminal for recording results — designed for speed on a busy race day. Together these four screens cover the bulk of operator activity, each mapping to a use case.
--->
+<div class="text-xs opacity-75 mt-2 text-center">Wireframe 3 là Trainer dashboard cho entering horses; Wireframe 4 là steward terminal cho recording results — designed cho speed trên một busy race day. Mỗi cái maps trực tiếp đến một use case.</div>
 
 ---
 class: py-7
 glowSeed: 311
 ---
 
-# §4.4 Reports &nbsp;·&nbsp; §4.5 Integrity, Retention &amp; Disposal
+# §4.4 Reports &nbsp;·&nbsp; §4.5 Integrity, Retention & Disposal
 
 <div class="grid grid-cols-2 gap-4 mt-6 text-sm">
 
@@ -1711,9 +1657,9 @@ glowSeed: 311
   <div class="font-bold text-emerald-200 mb-2">§4.4 Report — HRTMS-RPT-01</div>
   <div class="opacity-90 space-y-1">
     <div><b>Name:</b> Tournament Summary &amp; Performance Report.</div>
-    <div><b>Purpose:</b> complete audit — registrations, financial splits, avg race times, regulatory scratches.</div>
+    <div><b>Purpose:</b> audit hoàn chỉnh — registrations, financial splits, avg race times, regulatory scratches.</div>
     <div><b>Export:</b> PDF, CSV.</div>
-    <div><b>Access:</b> restricted to <b>Organizers &amp; Regulatory Officials</b> only.</div>
+    <div><b>Access:</b> restricted đến <b>Organizers &amp; Regulatory Officials</b> chỉ.</div>
   </div>
 </div>
 
@@ -1721,18 +1667,14 @@ glowSeed: 311
   <div class="font-bold text-amber-200 mb-2">§4.5 Retention &amp; Disposal</div>
   <div class="opacity-90 space-y-1">
     <div><b>DI-1:</b> Official results retained <b>≥10 years</b>.</div>
-    <div><b>DI-2:</b> Active horse records <b>permanent</b>; retired archived 5 yrs then purged.</div>
+    <div><b>DI-2:</b> Active horse records <b>permanent</b>; retired archived 5 yrs sau đó purged.</div>
     <div><b>DI-3:</b> Audit logs read-only, <b>≥3 years</b>.</div>
   </div>
 </div>
 
 </div>
 
-<div class="renote mt-3"><b>RE</b> — Reports are <b>requirements too</b> — they specify information <i>output</i>. Restricting access is a <b>security requirement at the data level</b>. Retention figures are driven by <b>regulatory stakeholders</b>, not preference — and specifying <i>disposal</i> is a data-protection discipline.</div>
-
-<!--
-Reports are real requirements — what information comes out, for whom, in what format. Retention isn't a preference — it's regulation. The 10-year and 3-year figures come from racing authorities. And we specify disposal, not just retention — holding data longer than needed is itself a risk.
--->
+<div class="renote mt-3"><b>RE</b> — Reports là <b>requirements too</b> — chúng specify information <i>output</i>. Restricting access là một <b>security requirement ở data level</b>. Retention figures được driven bởi <b>regulatory stakeholders</b>, không phải preference — và specifying <i>disposal</i> là một discipline data-protection.</div>
 
 ---
 class: py-7
@@ -1744,19 +1686,15 @@ glowSeed: 313
 <div class="grid grid-cols-2 gap-2 mt-6 text-sm">
 
 <div class="rounded-lg border border-blue-400/20 bg-blue-400/8 p-3"><b class="text-blue-300">UI-1</b><div class="text-xs opacity-90 mt-1">Responsive breakpoints: mobile 320–480px · tablet 768–1024px · desktop 1280px+</div></div>
-<div class="rounded-lg border border-blue-400/20 bg-blue-400/8 p-3"><b class="text-blue-300">UI-2</b><div class="text-xs opacity-90 mt-1">Status colors: 🟢 active/approved · 🔴 scratch/suspended · 🟡 pending</div></div>
-<div class="rounded-lg border border-fuchsia-400/20 bg-fuchsia-400/8 p-3"><b class="text-fuchsia-300">SI-1</b><div class="text-xs opacity-90 mt-1">National Horse Registry via authenticated <b>RESTful JSON API</b></div></div>
-<div class="rounded-lg border border-fuchsia-400/20 bg-fuchsia-400/8 p-3"><b class="text-fuchsia-300">SI-2</b><div class="text-xs opacity-90 mt-1"><b>Twilio</b> SMS + <b>SendGrid</b> email for push alerts</div></div>
-<div class="rounded-lg border border-white/10 bg-white/5 p-3"><b class="opacity-90">Hardware</b><div class="text-xs opacity-90 mt-1">None in R1; R3 adds photo-finish triggers + RFID transponders</div></div>
-<div class="rounded-lg border border-white/10 bg-white/5 p-3"><b class="opacity-90">Comms</b><div class="text-xs opacity-90 mt-1"><b>SSL/TLS 1.2+</b> for all HTTP; <b>WebSockets</b> for live race-card updates</div></div>
+<div class="rounded-lg border border-blue-400/20 bg-blue-400/8 p-3"><b class="text-blue-300">UI-2</b><div class="text-xs opacity-90 mt-1">Status colors: active/approved · scratch/suspended · pending</div></div>
+<div class="rounded-lg border border-fuchsia-400/20 bg-fuchsia-400/8 p-3"><b class="text-fuchsia-300">SI-1</b><div class="text-xs opacity-90 mt-1">National Horse Registry qua authenticated <b>RESTful JSON API</b></div></div>
+<div class="rounded-lg border border-fuchsia-400/20 bg-fuchsia-400/8 p-3"><b class="text-fuchsia-300">SI-2</b><div class="text-xs opacity-90 mt-1"><b>Twilio</b> SMS + <b>SendGrid</b> email cho push alerts</div></div>
+<div class="rounded-lg border border-white/10 bg-white/5 p-3"><b class="opacity-90">Hardware</b><div class="text-xs opacity-90 mt-1">None trong R1; R3 adds photo-finish triggers + RFID transponders</div></div>
+<div class="rounded-lg border border-white/10 bg-white/5 p-3"><b class="opacity-90">Comms</b><div class="text-xs opacity-90 mt-1"><b>SSL/TLS 1.2+</b> cho tất cả HTTP; <b>WebSockets</b> cho live race-card updates</div></div>
 
 </div>
 
-<div class="renote mt-3"><b>RE</b> — Naming concrete technologies (Twilio, SendGrid, TLS 1.2, WebSockets) turns vague dependencies into <b>testable interface contracts</b>. UI-2's color coding is a small but powerful usability decision — one glance conveys state, reducing cognitive load for high-frequency operators.</div>
-
-<!--
-Interfaces are the contracts at the boundary we drew earlier. We name real technologies because vague dependencies aren't testable. And the status color coding looks trivial but it's huge for an operator who scans hundreds of entries a day: one glance tells them the state.
--->
+<div class="renote mt-3"><b>RE</b> — Naming concrete technologies (Twilio, SendGrid, TLS 1.2, WebSockets) turns vague dependencies thành <b>testable interface contracts</b>. UI-2's color coding là một decision usability nhỏ nhưng powerful — một glance conveys state, reducing cognitive load cho high-frequency operators.</div>
 
 ---
 class: py-7
@@ -1776,11 +1714,7 @@ glowSeed: 317
 
 </div>
 
-<div class="renote mt-5"><b>RE</b> — Using <b>ISO 25010</b> as the backbone guarantees our NFRs are <b>complete and non-overlapping</b>. Six distinct lenses — so we don't forget robustness while obsessing over performance. Every quality requirement is <b>measurable</b>: 'fast' becomes '&lt;3-second paint.'</div>
-
-<!--
-Section 6 is built on ISO 25010 — the international quality model. Using it as our backbone guarantees completeness: six distinct lenses. And every quality requirement is measurable — no 'fast' or 'secure,' only 'under 3 seconds' and 'bcrypt plus RBAC.'
--->
+<div class="renote mt-5"><b>RE</b> — Sử dụng <b>ISO 25010</b> như backbone đảm bảo NFRs của chúng tôi là <b>complete và non-overlapping</b>. Sáu lenses riêng biệt — nên chúng tôi không forget robustness trong khi obsessing over performance. Mọi quality requirement là <b>measurable</b>: 'fast' trở thành '&lt;3-second paint.'</div>
 
 ---
 class: py-7
@@ -1794,7 +1728,7 @@ glowSeed: 331
 <div class="rounded-xl border border-emerald-400/20 bg-emerald-400/8 p-5">
   <div class="font-bold text-emerald-200 mb-3">Usability</div>
   <div class="space-y-2 opacity-90">
-    <div><b class="text-emerald-300">USE-1:</b> 95% of trainers/owners complete horse registration <b>&lt;5 min</b>, unguided. <span class="text-xs opacity-70">(mitigates RI-2)</span></div>
+    <div><b class="text-emerald-300">USE-1:</b> 95% của trainers/owners complete horse registration <b>&lt;5 min</b>, unguided. <span class="text-xs opacity-70">(mitigates RI-2)</span></div>
     <div><b class="text-emerald-300">USE-2:</b> Touch targets <b>≥44×44px</b> (accessibility/WCAG).</div>
   </div>
 </div>
@@ -1802,7 +1736,7 @@ glowSeed: 331
 <div class="rounded-xl border border-blue-400/20 bg-blue-400/8 p-5">
   <div class="font-bold text-blue-200 mb-3">Performance</div>
   <div class="space-y-2 opacity-90">
-    <div><b class="text-blue-300">PER-1:</b> Support <b>200 concurrent users</b> on peak race days, <b>&lt;3s</b> page paint.</div>
+    <div><b class="text-blue-300">PER-1:</b> Support <b>200 concurrent users</b> trên peak race days, <b>&lt;3s</b> page paint.</div>
     <div><b class="text-blue-300">PER-2:</b> Result-validation queries <b>&lt;2s</b>.</div>
   </div>
 </div>
@@ -1814,11 +1748,7 @@ glowSeed: 331
   <div class="bg-black/30 rounded-xl p-5 text-center"><div class="text-4xl font-extrabold text-blue-400">200 / &lt;3s</div><div class="text-xs opacity-70 mt-1">concurrent users / page paint (PER-1)</div></div>
 </div>
 
-<div class="renote mt-3"><b>RE</b> — <b>USE-1</b> is the direct counter to adoption risk <b>RI-2</b> — a 5-min unguided registration is what makes resistant users willing to try. The 44×44px target comes from WCAG. Performance NFRs carry concrete numbers so QA writes load tests with exact thresholds.</div>
-
-<!--
-Usability directly fights adoption risk — a sub-5-minute registration is what makes a reluctant owner willing to try. The 44-pixel touch target is from WCAG. And the performance numbers are exact, so QA can write load tests against them.
--->
+<div class="renote mt-3"><b>RE</b> — <b>USE-1</b> là direct counter đến adoption risk <b>RI-2</b> — một registration 5-min unguided là những gì làm resistant users willing để try. Touch target 44×44px đến từ WCAG. Performance NFRs carry concrete numbers nên QA writes load tests với exact thresholds.</div>
 
 ---
 class: py-7
@@ -1830,39 +1760,35 @@ glowSeed: 337
 <div class="grid grid-cols-2 gap-3 mt-5 text-sm">
 
 <div class="rounded-xl border border-red-400/20 bg-red-400/8 p-4">
-  <div class="font-bold text-red-200 mb-2">§6.3 Security <span class="text-xs opacity-60 font-normal">(design response to RI-4)</span></div>
+  <div class="font-bold text-red-200 mb-2">§6.3 Security <span class="text-xs opacity-60 font-normal">(design response đến RI-4)</span></div>
   <div class="space-y-1 opacity-90">
-    <div><b class="text-red-300">SEC-1:</b> <b>RBAC</b> — Vets edit health only, Stewards edit results only (separation of duties).</div>
-    <div><b class="text-red-300">SEC-2:</b> Passwords hashed with <b>bcrypt</b>.</div>
+    <div><b class="text-red-300">SEC-1:</b> <b>RBAC</b> — Vets edit health chỉ, Stewards edit results chỉ (separation of duties).</div>
+    <div><b class="text-red-300">SEC-2:</b> Passwords hashed với <b>bcrypt</b>.</div>
     <div><b class="text-red-300">SEC-3:</b> Automatic <b>30-min session timeout</b>.</div>
   </div>
 </div>
 
 <div class="rounded-xl border border-rose-400/20 bg-rose-400/8 p-4">
   <div class="font-bold text-rose-200 mb-2">§6.4 Safety</div>
-  <div class="opacity-90"><b class="text-rose-300">SAF-1:</b> No horse may start if marked <b>"Unfit"</b> by the Veterinarian.</div>
-  <div class="opacity-75 text-xs mt-2">A safety requirement protecting a living animal — enforced as a hard system rule (UC-8).</div>
+  <div class="opacity-90"><b class="text-rose-300">SAF-1:</b> No horse có thể start nếu marked <b>"Unfit"</b> bởi Veterinarian.</div>
+  <div class="opacity-75 text-xs mt-2">Một safety requirement bảo vệ một animal sống — enforced như một hard system rule (UC-8).</div>
 </div>
 
 <div class="rounded-xl border border-amber-400/20 bg-amber-400/8 p-4">
   <div class="font-bold text-amber-200 mb-2">§6.5 Availability</div>
-  <div class="opacity-90"><b class="text-amber-300">AVL-1:</b> <b>&gt;99.5% uptime</b> during active tournament seasons.</div>
-  <div class="opacity-75 text-xs mt-2">SLA scoped to seasons — tuned to the business calendar, not an arbitrary round number.</div>
+  <div class="opacity-90"><b class="text-amber-300">AVL-1:</b> <b>&gt;99.5% uptime</b> trong active tournament seasons.</div>
+  <div class="opacity-75 text-xs mt-2">SLA scoped đến seasons — tuned đến business calendar, không phải một round number arbitrary.</div>
 </div>
 
 <div class="rounded-xl border border-cyan-400/20 bg-cyan-400/8 p-4">
   <div class="font-bold text-cyan-200 mb-2">§6.6 Robustness</div>
-  <div class="opacity-90"><b class="text-cyan-300">ROB-1:</b> On network drop during results entry → <b>form cached locally</b>, no data loss.</div>
-  <div class="opacity-75 text-xs mt-2">(mitigates RI-5) — the engineering answer to connectivity risk: offline-first, auto-recover.</div>
+  <div class="opacity-90"><b class="text-cyan-300">ROB-1:</b> On network drop trong results entry → <b>form cached locally</b>, không có data loss.</div>
+  <div class="opacity-75 text-xs mt-2">(mitigates RI-5) — câu trả lời kỹ thuật đến connectivity risk: offline-first, auto-recover.</div>
 </div>
 
 </div>
 
-<div class="renote mt-3"><b>RE</b> — Traceability runs <b>risk → diagram → use case → NFR</b>. SEC-1's RBAC is the same separation of duties from Diagram 5 &amp; UC-6, now a security control. Every quality attribute here traces to a risk or objective.</div>
-
-<!--
-This whole section traces back. RI-4, our highest-impact risk, is designed away by RBAC, bcrypt and timeout. SAF-1 protects a living animal. AVL-1's 99.5% is scoped to racing seasons. And ROB-1 — caching on a network drop — is RI-5 designed away. Every quality attribute traces to a risk or objective.
--->
+<div class="renote mt-3"><b>RE</b> — Traceability runs <b>risk → diagram → use case → NFR</b>. SEC-1's RBAC là cùng separation of duties từ Diagram 5 &amp; UC-6, bây giờ một security control. Mọi quality attribute ở đây traces đến một risk hoặc objective.</div>
 
 ---
 class: header-compact
@@ -1878,19 +1804,15 @@ glowSeed: 347
 </div>
 
 <div class="text-[11px] flex flex-col gap-2">
-  <div class="rounded-lg border border-amber-400/20 bg-amber-400/8 p-3"><b class="text-amber-200">8-state lifecycle of a race entry</b></div>
+  <div class="rounded-lg border border-amber-400/20 bg-amber-400/8 p-3"><b class="text-amber-200">8-state lifecycle của một race entry</b></div>
   <div class="rounded-lg border border-white/10 bg-white/5 p-3 opacity-90">
     <b>Pending</b> → (trainer finalizes) <b>Declared</b> → (draw assigns gate) <b>Confirmed</b> → (start signal) <b>Started</b> → (finishes) <b>Finished</b>.
   </div>
   <div class="rounded-lg border border-cyan-400/20 bg-cyan-400/8 p-3 opacity-90"><b class="text-cyan-200">Terminal exits:</b> <b>Withdrawn</b> (cancel/med cert) · <b>Balloted Out</b> (oversubscription, BR-07) · <b>Disqualified</b> (rules violation / inquiry, BR-24).</div>
-  <div class="renote"><b>RE</b> — The <b>dynamic view</b> that reconciles all others. Its states are <i>exactly</i> the <code>entry_status</code> ENUM; its transitions are <i>exactly</i> UC-5's alt/exception flows. Three independent views agree → strongest evidence the requirements are correct.</div>
+  <div class="renote"><b>RE</b> — <b>Dynamic view</b> reconciles tất cả những cái khác. States của nó là <i>exactly</i> <code>entry_status</code> ENUM; transitions của nó là <i>exactly</i> UC-5's alt/exception flows. Ba independent views agree → evidence mạnh nhất rằng requirements là correct.</div>
 </div>
 
 </div>
-
-<!--
-We close the SRS with a state machine — the dynamic view. Its states are exactly the entry_status enum from our data dictionary, and its transitions are exactly the alternative and exception flows from UC-5. Three independent models — data, behavior, dynamics — all agree. When separate views converge on the same truth, that's our strongest evidence the requirements are right.
--->
 
 ---
 layout: center
@@ -1898,9 +1820,9 @@ class: text-center
 glowSeed: 349
 ---
 
-<div class="text-sm opacity-60 tracking-widest">SECTION 4</div>
+<div class="text-sm opacity-60 tracking-widest">PHẦN 4</div>
 <h1 class="text-4xl font-extrabold mt-2 bg-gradient-to-r from-amber-300 to-orange-300 bg-clip-text text-transparent">Validation, Traceability &amp; Reflection</h1>
-<div class="mt-3 text-base opacity-70 max-w-2xl mx-auto">How we proved quality — and what the process taught us.</div>
+<div class="mt-3 text-base opacity-70 max-w-2xl mx-auto">Cách chúng tôi proved quality — và cái gì process taught chúng tôi.</div>
 
 ---
 class: py-6
@@ -1911,21 +1833,17 @@ glowSeed: 353
 
 <div class="text-xs mt-3">
 <table>
-<tr><th>Technique</th><th>What it caught</th></tr>
-<tr><td><b>Peer cross-review</b> <span class="opacity-60">(each section read by a non-owner)</span></td><td>Ambiguity, missing flows, internal contradictions</td></tr>
-<tr><td><b>Team inspection</b> <span class="opacity-60">(the v0.1 → v1.0 gate)</span></td><td>Completeness vs Vision, ID consistency</td></tr>
+<tr><th>Technique</th><th>Cái gì nó caught</th></tr>
+<tr><td><b>Peer cross-review</b> <span class="opacity-60">(mỗi section được đọc bởi một non-owner)</span></td><td>Ambiguity, missing flows, internal contradictions</td></tr>
+<tr><td><b>Team inspection</b> <span class="opacity-60">(cổng v0.1 → v1.0)</span></td><td>Completeness vs Vision, ID consistency</td></tr>
 <tr><td><b>Cross-view consistency check</b></td><td>ER status enums ↔ UC flows ↔ state-machine states</td></tr>
-<tr><td><b>Traceability audit</b></td><td>Every REQ/UC traces to a feature → objective → metric</td></tr>
-<tr><td><b>Standards checklist</b> <span class="opacity-60">(ISO 25010, IEEE 830, OWASP, WCAG)</span></td><td>Completeness of NFRs; structural compliance</td></tr>
-<tr><td><b>Domain grounding</b> <span class="opacity-60">(IFHA rules)</span></td><td>Realism of business rules BR-XX</td></tr>
+<tr><td><b>Traceability audit</b></td><td>Mọi REQ/UC traces đến một feature → objective → metric</td></tr>
+<tr><td><b>Standards checklist</b> <span class="opacity-60">(ISO 25010, IEEE 830, OWASP, WCAG)</span></td><td>Completeness của NFRs; structural compliance</td></tr>
+<tr><td><b>Domain grounding</b> <span class="opacity-60">(IFHA rules)</span></td><td>Realism của business rules BR-XX</td></tr>
 </table>
 </div>
 
-<div class="renote mt-3"><b>RE</b> — Validation is the phase most student teams skip — and the one instructors weight heavily. We used <b>several</b> techniques because no single one catches everything: review finds ambiguity, inspection finds gaps, cross-view checking finds inconsistency, traceability finds orphans.</div>
-
-<!--
-How did we know the requirements were good? Not by reading them once. We used six validation techniques. Peer review caught ambiguity; inspection caught gaps; cross-view checking caught inconsistencies; and the traceability audit found orphans — requirements that traced to nothing.
--->
+<div class="renote mt-3"><b>RE</b> — Validation là phase hầu hết các team student skip — và một instructors weight heavily. Chúng tôi sử dụng <b>several</b> techniques vì không có single technique nào catches everything: review finds ambiguity, inspection finds gaps, cross-view checking finds inconsistency, traceability finds orphans.</div>
 
 ---
 class: py-6
@@ -1946,11 +1864,7 @@ glowSeed: 359
 </table>
 </div>
 
-<div class="renote mt-3"><b>RE</b> — The <b>capstone artifact</b>. It proves <b>vertical traceability</b> — every objective decomposes through metrics &amp; features into concrete UCs &amp; rules — and <b>risk coverage</b> — every high-impact risk has a mitigating requirement. An empty cell would reveal an orphan requirement or unaddressed objective.</div>
-
-<!--
-This matrix is the capstone. Read a row left to right: a business objective becomes a metric, delivered by a feature, realized in a use case, governed by rules, mitigating a risk. No empty cells — every objective has a path to a verifiable requirement, and every risk has a control. This is what 'complete and traceable' looks like.
--->
+<div class="renote mt-3"><b>RE</b> — <b>Artifact capstone</b>. Nó proves <b>traceability dọc</b> — mọi objective decomposes qua metrics &amp; features thành concrete UCs &amp; rules — và <b>risk coverage</b> — mọi high-impact risk có một mitigating requirement. Một cell rỗng sẽ reveal một orphan requirement hoặc unaddressed objective.</div>
 
 ---
 class: py-7
@@ -1961,18 +1875,14 @@ glowSeed: 367
 
 <div class="grid grid-cols-2 gap-3 mt-5 text-sm">
 
-<div class="rounded-xl border border-amber-400/20 bg-amber-400/8 p-4 flex gap-3"><span class="i-carbon:number-1 text-amber-300 text-xl shrink-0" /><span><b>Elicit before you specify.</b> Starting with the Vision prevented a precise solution to the wrong problem.</span></div>
-<div class="rounded-xl border border-amber-400/20 bg-amber-400/8 p-4 flex gap-3"><span class="i-carbon:number-2 text-amber-300 text-xl shrink-0" /><span><b>Quantify everything.</b> Baselines made objectives measurable; vague goals stayed vague until we forced numbers.</span></div>
-<div class="rounded-xl border border-amber-400/20 bg-amber-400/8 p-4 flex gap-3"><span class="i-carbon:number-3 text-amber-300 text-xl shrink-0" /><span><b>Multiple views catch more defects.</b> Context, use-case, ER &amp; state-machine views agreed — where they almost didn't, we found bugs.</span></div>
-<div class="rounded-xl border border-amber-400/20 bg-amber-400/8 p-4 flex gap-3"><span class="i-carbon:number-4 text-amber-300 text-xl shrink-0" /><span><b>Say "no" explicitly.</b> The exclusions list did as much for success as the feature list.</span></div>
-<div class="rounded-xl border border-amber-400/20 bg-amber-400/8 p-4 flex gap-3"><span class="i-carbon:number-5 text-amber-300 text-xl shrink-0" /><span><b>Traceability is cheap insurance.</b> Stable IDs cost minutes, saved hours in review &amp; change-impact analysis.</span></div>
-<div class="rounded-xl border border-amber-400/20 bg-amber-400/8 p-4 flex gap-3"><span class="i-carbon:number-6 text-amber-300 text-xl shrink-0" /><span><b>Risks designed in early are free; found late, expensive.</b> RI-4 &amp; RI-5 became SEC &amp; ROB requirements at near-zero cost.</span></div>
+<div class="rounded-xl border border-amber-400/20 bg-amber-400/8 p-4 flex gap-3"><span class="i-carbon:number-1 text-amber-300 text-xl shrink-0" /><span><b>Elicit trước khi bạn specify.</b> Bắt đầu với Vision prevented một precise solution đến wrong problem.</span></div>
+<div class="rounded-xl border border-amber-400/20 bg-amber-400/8 p-4 flex gap-3"><span class="i-carbon:number-2 text-amber-300 text-xl shrink-0" /><span><b>Quantify mọi thứ.</b> Baselines làm objectives measurable; vague goals stayed vague cho đến khi chúng tôi forced numbers.</span></div>
+<div class="rounded-xl border border-amber-400/20 bg-amber-400/8 p-4 flex gap-3"><span class="i-carbon:number-3 text-amber-300 text-xl shrink-0" /><span><b>Multiple views catch nhiều defects hơn.</b> Context, use-case, ER &amp; state-machine views agreed — nơi chúng gần không, chúng tôi found bugs.</span></div>
+<div class="rounded-xl border border-amber-400/20 bg-amber-400/8 p-4 flex gap-3"><span class="i-carbon:number-4 text-amber-300 text-xl shrink-0" /><span><b>Say "no" explicitly.</b> Exclusions list did nhiều cho success như feature list.</span></div>
+<div class="rounded-xl border border-amber-400/20 bg-amber-400/8 p-4 flex gap-3"><span class="i-carbon:number-5 text-amber-300 text-xl shrink-0" /><span><b>Traceability là bảo hiểm rẻ.</b> Stable IDs cost minutes, saved hours trong review &amp; change-impact analysis.</span></div>
+<div class="rounded-xl border border-amber-400/20 bg-amber-400/8 p-4 flex gap-3"><span class="i-carbon:number-6 text-amber-300 text-xl shrink-0" /><span><b>Risks designed trong sớm là free; found late, expensive.</b> RI-4 &amp; RI-5 became SEC &amp; ROB requirements tại near-zero cost.</span></div>
 
 </div>
-
-<!--
-To close, the lessons. Elicit before you specify. Quantify — a goal without a number is a wish. Multiple views catch more defects. Saying no is a feature. Traceability is cheap insurance. And the biggest one — risks designed in early are free; risks found late are expensive. Thank you. We'll take your questions.
--->
 
 ---
 layout: center
@@ -1993,9 +1903,9 @@ glowSeed: 373
   Horse Racing Tournament Management System — Vision &amp; Scope (v1.0) + SRS (v1.0)
 </div>
 
-<!--
-Thank you. We are ready for your questions.
--->
+---
+layout: false
+---
 
 <style>
 /* ---------- Tables (this deck only) ---------- */
