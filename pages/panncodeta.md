@@ -50,7 +50,16 @@ routerMode: hash
 
 <div class="mt-4 flex flex-wrap gap-2 text-xs opacity-90">
   <div class="border border-white/20 bg-white/5 rounded-lg px-3 py-1.5 font-mono">"Buy a sweet, share a smile."</div>
-  <div class="border border-white/20 bg-white/5 rounded-lg px-3 py-1.5">Team SSG</div>
+</div>
+
+<div class="mt-4 text-xs font-mono tracking-widest text-rose-400/70">THÀNH VIÊN NHÓM</div>
+
+<div class="mt-2 flex flex-wrap gap-2 text-xs opacity-90">
+  <div class="border border-white/20 bg-white/5 rounded-lg px-3 py-1.5">Ngọc Phúc</div>
+  <div class="border border-white/20 bg-white/5 rounded-lg px-3 py-1.5">Nhật Huy</div>
+  <div class="border border-white/20 bg-white/5 rounded-lg px-3 py-1.5">Phạm An</div>
+  <div class="border border-white/20 bg-white/5 rounded-lg px-3 py-1.5">Thiên Phú</div>
+  <div class="border border-white/20 bg-white/5 rounded-lg px-3 py-1.5">Tuấn Anh</div>
 </div>
 
 </div>
@@ -723,30 +732,42 @@ glowSeed: 98
 glowHue: 330
 ---
 
-# TIMELINE · 4 TUẦN + CHARITY DAY
+# TIMELINE · 4 TUẦN + CHARITY DAY — HOÀN TẤT 31/10
 
 <div class="grid grid-cols-4 gap-3 text-xs mt-1">
 
 <div class="border-2 border-solid border-white/15 bg-white/5 rounded-lg p-3">
+<div class="flex items-baseline justify-between">
 <div class="font-mono text-rose-300 font-bold">WEEK 1</div>
+<div class="font-mono opacity-60">28/9 – 4/10</div>
+</div>
 <div class="font-bold text-sm mt-0.5">Preparation</div>
 <div class="opacity-80 mt-1.5 leading-relaxed">Hoàn thiện công thức · Test panna cotta · Tính chi phí · Thiết kế logo · Tạo fanpage · Chụp hình sản phẩm · Mở pre-order</div>
 </div>
 
 <div class="border-2 border-solid border-rose-800 bg-rose-900/25 rounded-lg p-3">
+<div class="flex items-baseline justify-between">
 <div class="font-mono text-rose-300 font-bold">WEEK 2</div>
+<div class="font-mono opacity-60">5/10 – 11/10</div>
+</div>
 <div class="font-bold text-sm mt-0.5">Launch</div>
 <div class="opacity-80 mt-1.5 leading-relaxed">Bắt đầu bán · Đăng content · Thu feedback · Điều chỉnh sản lượng</div>
 </div>
 
 <div class="border-2 border-solid border-white/15 bg-white/5 rounded-lg p-3">
+<div class="flex items-baseline justify-between">
 <div class="font-mono text-rose-300 font-bold">WEEK 3</div>
+<div class="font-mono opacity-60">12/10 – 18/10</div>
+</div>
 <div class="font-bold text-sm mt-0.5">Growth</div>
 <div class="opacity-80 mt-1.5 leading-relaxed">Combo · Group order · Video marketing · Referral · Đẩy mạnh pre-order</div>
 </div>
 
 <div class="border-2 border-solid border-white/15 bg-white/5 rounded-lg p-3">
+<div class="flex items-baseline justify-between">
 <div class="font-mono text-rose-300 font-bold">WEEK 4</div>
+<div class="font-mono opacity-60">19/10 – 25/10</div>
+</div>
 <div class="font-bold text-sm mt-0.5">Final Campaign</div>
 <div class="opacity-80 mt-1.5 leading-relaxed">Countdown · Chốt doanh thu · Công khai tài chính · Chuẩn bị hoạt động thiện nguyện</div>
 </div>
@@ -756,13 +777,13 @@ glowHue: 330
 <div class="mt-4 border-2 border-solid border-amber-700 bg-amber-900/25 rounded-lg px-4 py-3 flex items-center gap-3">
 <span class="i-mdi:hand-heart-outline text-2xl text-amber-300" />
 <div>
-<span class="font-bold text-amber-300">CHARITY DAY</span>
-<span class="text-sm opacity-90"> — Liên hệ địa điểm → thống nhất nhu cầu → mua vật phẩm → bàn giao → tổng kết dự án</span>
+<span class="font-bold text-amber-300">CHARITY DAY · 26 – 31/10</span>
+<span class="text-sm opacity-90"> — Liên hệ địa điểm → thống nhất nhu cầu → mua vật phẩm → bàn giao → tổng kết dự án · <strong>deadline hoàn tất toàn bộ 31/10</strong></span>
 </div>
 </div>
 
 <!--
-4 tuần: chuẩn bị (W1), bán hàng (W2), tăng trưởng combo/đơn nhóm (W3), chiến dịch cuối + công khai tài chính (W4). Kết thúc bằng Charity Day: trao quà và tổng kết.
+4 tuần chạy từ 28/9 đến 25/10: chuẩn bị (W1), bán hàng (W2), tăng trưởng combo/đơn nhóm (W3), chiến dịch cuối + công khai tài chính (W4). Tuần cuối 26–31/10 dành cho Charity Day: trao quà và tổng kết — toàn bộ dự án hoàn tất trước 31/10.
 -->
 
 ---
