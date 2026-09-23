@@ -1,5 +1,5 @@
 ---
-src: ./pages/hrtms.md
+src: ./pages/panncodeta.md
 hide: false
 highlighter: shiki
 css: unocss
